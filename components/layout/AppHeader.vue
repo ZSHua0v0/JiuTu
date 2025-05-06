@@ -68,7 +68,7 @@
         <nuxt-link to="/CaseStudies">
           <li>成功案例</li>
         </nuxt-link>
-        <nuxt-link to="/Guide">
+        <nuxt-link to="/pages/guide">
           <li>使用指南</li>
         </nuxt-link>
       </ul>
@@ -77,14 +77,14 @@
 </template>
 
 <script setup>
-import { ref, onMounted, onBeforeUnmount, computed } from 'vue'
-import { useMenuStore } from '~/stores/menu' // 使用 Pinia Store
-import { useRouter } from 'vue-router' // 用于监听页面跳转
+import {ref, onMounted, onBeforeUnmount, computed} from 'vue'
+import {useMenuStore} from '~/stores/menu' // 使用 Pinia Store
+import {useRouter} from 'vue-router' // 用于监听页面跳转
 
 import NavMenu from './ui/NavMenu.vue'
 import LanguageButton from "./ui/LanguageButton.vue"
 import MenuClickButton from "./ui/MenuClickButton.vue"
-import { contactLinks as contactLinksRaw } from '../../public/js/contact_link.js' // 建议改为 ~/data 结构
+import {contactLinks as contactLinksRaw} from '../../public/js/contact_link.js' // 建议改为 ~/data 结构
 
 const contactLinks = contactLinksRaw
 const isMobile = ref(false)
@@ -133,9 +133,13 @@ onBeforeUnmount(() => {
 </script>
 
 
-
-
 <style scoped>
+.logo {
+  width: 2.7rem;
+  height: 2.7rem;
+
+}
+
 /* 基础样式 */
 .app-header {
   background: white;
@@ -150,6 +154,7 @@ onBeforeUnmount(() => {
   position: relative;
   z-index: 100;
 }
+
 /* Drawer Menu Styles */
 .drawer-menu {
   background-color: rgba(255, 255, 255, 0.8);
@@ -165,6 +170,7 @@ onBeforeUnmount(() => {
   border-top: 1.5px solid #ff6702;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
 }
+
 /* Logo 样式 */
 .logo a {
   display: flex;
@@ -335,15 +341,17 @@ onBeforeUnmount(() => {
     height: 40px;
   }
 
-  .drawer-logo{
+  .drawer-logo {
     width: 65px;
     height: 65px;
   }
+
   .drawer-logo img {
     width: 65px;
     height: auto;
   }
-  .app-header{
+
+  .app-header {
     height: 65px;
   }
 }

@@ -542,7 +542,14 @@ a {
   transform: translateX(0);
   transition: .3s transform linear, .3s height linear .5s;
 }
-
+@media (min-width: 768px) and (max-width: 1700px) {
+  .__border_right{
+    min-height: 310px;
+  }
+  .features{
+    width: 63%;
+  }
+}
 @media (max-width: 768px) {
   .features {
     grid-template-columns: 1fr;

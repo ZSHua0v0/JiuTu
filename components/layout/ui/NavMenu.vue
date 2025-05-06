@@ -2,13 +2,21 @@
   <nav class="nav-menu">
     <ul>
       <li v-for="item in menuItems" :key="item.path" @click="$emit('item-click')">
-        <NuxtLink :to="item.path">{{ item.label }}</NuxtLink>
+        <NuxtLink :to="item.path" :class="{ active: isActive(item.path) }">{{ item.label }}</NuxtLink>
       </li>
     </ul>
   </nav>
 </template>
 
 <script setup>
+import { useRoute } from 'vue-router'
+const route = useRoute()
+
+const isActive = (path) => {
+  if (path === '/') return route.path === '/'
+  return route.path.startsWith(path)
+}
+
 const menuItems = [
   {path: '/', label: '首页'},
   {path: '/GlobalAlibaba', label: '阿里国际'},
@@ -16,7 +24,7 @@ const menuItems = [
   {path: '/FastRegister', label: '极速开户'},
   {path: '/Solutions', label: '解决方案'},
   {path: '/CaseStudies', label: '成功案例'},
-  {path: '/Guide', label: '使用指南'},
+  {path: '/guide', label: '使用指南'},
 
 ]
 defineEmits(['item-click']) // 添加事件发射
@@ -43,4 +51,8 @@ defineEmits(['item-click']) // 添加事件发射
 .nav-menu a.router-link-active {
   color: #f5cb6c;
 }
+.nav-menu a.active {
+  color: #f5cb6c;
+}
+
 </style>

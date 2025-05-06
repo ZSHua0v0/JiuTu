@@ -125,7 +125,9 @@
                 <li>网络攻击和作弊行为</li>
                 <li>全球数据同步</li>
               </ul>
-              <div v-if="isMobile" style="border-bottom: 2px solid #feb001;padding-bottom: 3%;padding-left: 9%">延迟和丢包率，访问速度、流量高峰多并发、网络攻击和作弊行为、全球数据同步</div>
+              <div v-if="isMobile" style="border-bottom: 2px solid #feb001;padding-bottom: 3%;padding-left: 9%">
+                延迟和丢包率，访问速度、流量高峰多并发、网络攻击和作弊行为、全球数据同步
+              </div>
             </div>
 
             <div class="scheme-section">
@@ -134,7 +136,8 @@
                 <h3>解决 Scheme:</h3>
               </div>
               <p style="background: white" :style="isMobile ? { paddingLeft: '9%' } : {}">
-                云服务器提供商在全球主要区域部署数据中心，确保游戏服务器尽可能靠近玩家，减少延迟和丢包率，提升游戏体验。<br  v-if="!isMobile"/>
+                云服务器提供商在全球主要区域部署数据中心，确保游戏服务器尽可能靠近玩家，减少延迟和丢包率，提升游戏体验。<br
+                  v-if="!isMobile"/>
                 云服务器支持快速扩容和缩容，以应对游戏出海过程中可能出现的流量高峰，保证服务稳定性。<br v-if="!isMobile"/>
                 提供DDoS攻击防护、数据安全和反作弊等安全服务，保护游戏免受网络攻击和作弊行为的影响。<br v-if="!isMobile"/>
                 通过CDN加速游戏内容的分发，减少加载时间，提高全球玩家的访问速度。 </p>
@@ -154,7 +157,7 @@
                 <img src="../public/assets/IMG/icons/wrong.png" alt="jiutu" class="icon"/>
                 <h3>问题 Issue:</h3>
               </div>
-              <ul style="background: white" :style="isMobile ? { paddingLeft: '9%',margin: '0' } : {}">
+              <ul class="__padding_leFt" style="background: white" :style="isMobile ? { paddingLeft: '9%',margin: '0' } : {}">
                 <li>流量高峰时确保网站的稳定运行网站的搭建流程</li>
               </ul>
             </div>
@@ -168,7 +171,8 @@
                 <h3>解决 Scheme:</h3>
               </div>
               <p :style="isMobile ? { paddingLeft: '9%' } : {}">
-                独立站可能面临访问量波动的问题，尤其在促销或特殊活动期间。云服务器提供的弹性扩展能力可以动态调整资源如CPU和内存，以应对流量高峰，确保网站的稳定运行。<br v-if="!isMobile"/>
+                独立站可能面临访问量波动的问题，尤其在促销或特殊活动期间。云服务器提供的弹性扩展能力可以动态调整资源如CPU和内存，以应对流量高峰，确保网站的稳定运行。<br
+                  v-if="!isMobile"/>
                 云服务器支持快速部署和配置，帮助独立站快速上线和迭代。一些云服务商还提供一键搭建服务，简化了网站的搭建流程。
               </p>
             </div>
@@ -423,24 +427,52 @@ onBeforeUnmount(() => {
   padding-left: 2rem;
   padding-top: 1.5rem;
 }
+.issue-section ul {
+  list-style: none;
+  padding-left: 2rem;
+}
+
+.scheme-section p {
+  list-style: none;
+  padding-left: 2rem;
+}
+.left-block ul{
+  list-style: none;
+  width: 76%;
+  margin: 0 auto;
+  padding-left: 0.8rem;
+}
+.__padding_leFt{
+  padding-left: 2rem !important;
+}
+@media (min-width: 768px) and (max-width: 1700px) {
+  .left-block ul{
+    padding-left: 1rem;
+  }
+}
 
 @media (max-width: 768px) {
   .Solutions_box {
     width: 90%;
   }
-
+  .__padding_leFt{
+    padding-left: 9% !important;
+  }
   .solution-container {
     display: block;
     margin: 1rem 0;
   }
+
   .solution-container2 {
     display: block;
     margin: 1rem 0;
   }
+
   .solution-container3 {
     display: block;
     margin: 1rem 0;
   }
+
   .solution-left {
     width: 100%;
     border-radius: 5%;
@@ -451,39 +483,48 @@ onBeforeUnmount(() => {
   .solution-left-mobile-margin {
     margin-left: 12%;
   }
-  .__background0{
+
+  .__background0 {
     background: #ffe3b3;
   }
-  .__hr{
+
+  .__hr {
     border-bottom: 2px solid #feb001;
     padding-bottom: 5%;
     margin-bottom: 5%;
   }
-  .left-block{
+
+  .left-block {
     margin-top: 0;
   }
-  .__background1{
+
+  .__background1 {
     background: white;
   }
-  .solution-left2{
+
+  .solution-left2 {
     width: 100%;
     border-radius: 0;
     padding: 1.5rem 1.5rem 0.5rem 1.5rem;
     margin-bottom: 0;
     border-bottom: 2px solid #feb001;
   }
-  .blockchain-cards{
+
+  .blockchain-cards {
     display: block;
   }
-  .block-card{
+
+  .block-card {
     width: 100%;
     border: none;
     margin-bottom: 5%;
   }
-  .block-card p{
+
+  .block-card p {
     padding: 0 0 0 10%;
   }
-  .blockchain-section{
+
+  .blockchain-section {
     margin: 1rem auto;
     color: #333;
   }

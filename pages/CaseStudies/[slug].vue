@@ -20,7 +20,7 @@ const { data: article } = await useAsyncData(
 
 <style scoped>
 .case-wrapper {
-  max-width: 860px;
+  max-width: 50%;
   margin: auto;
   padding: 20px;
   font-size: 16px;

@@ -423,13 +423,13 @@ const companies = [
     imgSrc: '/assets/IMG/logos/amused-logo.jpg',
     title: 'Amused Group',
     description: 'Amused Group 是一家文化创意产业公司。它主要经营两个领域：创意活动和实体产品。Amused Group 旗下共有四家公司，分别是 Amused Style、Amused Life、Amused Art 和 Amused Touch。它的最终目标是成为可与 Disney 匹敌的文化商业帝国。',
-    link: '/details/amused'
+    link: '/CaseStudies/amused-group'
   },
   {
     imgSrc: '/assets/IMG/logos/blue-map-logo.jpg',
     title: '蔚蓝地图',
     description: '蔚蓝地图是公众环境研究中心开发的一款环保APP，囊括实时空气信息、全国空气质量地图、水质地图和污染源地图，旨在为公众提供方便快捷的环境信息服务。通过蔚蓝地图APP至今已经推动超过450家污染企业反馈整改。',
-    link: '/details/blue-map'
+    link: '/CaseStudies/bluemap'
   }
 ]
 // 声明响应式数组
@@ -887,7 +887,7 @@ a {
 }
 
 .home_04_Advantages__right_mini_box_title {
-  padding-top: 2%;
+  padding-top: 4%;
   padding-left: 5%;
 }
 
