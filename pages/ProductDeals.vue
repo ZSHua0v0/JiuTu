@@ -431,7 +431,7 @@ a {
 
 .__border_right {
   border-right: #feb001 solid 2px;
-  height: auto;
+  min-height: 310px;
 
 }
 

@@ -28,9 +28,9 @@
               <div>丰富的云架构设计、迁移、实验和运维经验<br/></div>
               <div class="home_02_banner__left__btn">
                 <div class="cire"></div>
-                <nuxt-link to="/contact" style="text-decoration: none">
+                <a :href="contactLinks.CustomerService" style="text-decoration: none">
                   <div class="contact_btn">联系我们</div>
-                </nuxt-link>
+                </a>
               </div>
             </div>
           </div>
