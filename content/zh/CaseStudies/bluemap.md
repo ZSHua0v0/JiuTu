@@ -2,7 +2,7 @@
 title: 蔚蓝地图
 description: 蔚蓝地图是公众环境研究中心开发的一款环保APP，囊括实时空气信息，全国空气质量地图、水质地图和污染源地图，旨在为公众提供方便快捷的环境信息服务。通过蔚蓝地图APP至今已经推动超过450家污染企业反馈整改。蔚蓝地图“前身”为公众熟知的“污染地图”，目前已有近300万用户，并曾被苹果商店评为“最佳应用”。
 image: /assets/IMG/logos/blue-map-logo.jpg
-_path: /CaseStudies/bluemap
+_path: /zh/CaseStudies/bluemap
 order: 2
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: 创建EC2与宝塔部署
 description:
-_path: /guide/ec2-bt
+_path: /zh/guide/ec2-bt
 order: 6
 ---
 

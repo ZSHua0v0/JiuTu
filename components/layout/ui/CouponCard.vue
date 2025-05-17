@@ -19,7 +19,7 @@ defineProps({
   position: relative;
   width: 150px;
   height: 150px;
-  background: url("../../../public/assets/IMG/icons/CouponCard.png") no-repeat;
+  background: url("/assets/IMG/icons/CouponCard.png") no-repeat;
   background-size: 100% 100%;
   border-radius: 12px;
   display: flex;

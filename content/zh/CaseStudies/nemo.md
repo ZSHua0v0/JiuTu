@@ -2,7 +2,7 @@
 title: 小鱼办公
 description: A.I.Nemo 创立于 2014 年，是一家专注于 A.I（人工智能）技术的中国硬件初创企业。核心产品包括 A.I.Nemo Office 和 A.I.Nemo at Home。
 image: /assets/IMG/logos/nemo-logo.jpg
-_path: /CaseStudies/nemo
+_path: /zh/CaseStudies/nemo
 order: 3
 ---
 

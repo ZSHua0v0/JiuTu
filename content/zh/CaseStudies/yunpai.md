@@ -2,7 +2,7 @@
 title: 云派网络
 description: 北京云派科技有限公司专注移动云技术，核心产品为“云派手游管家”，支持云端游戏点击即玩，跨平台智能辅助。
 image: /assets/IMG/logos/yunpai-logo.jpg
-_path: /CaseStudies/yunpai
+_path: /zh/CaseStudies/yunpai
 order: 4
 ---
 

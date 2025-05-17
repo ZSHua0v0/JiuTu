@@ -13,44 +13,13 @@
 </template>
 
 <script setup>
-// const guideList = [
-//   {
-//     title: '云服务器ECS',
-//     description: '云服务器ECS(Elastic Compute Serice)是阿里云提供的性能卓越、稳定可靠、弹性扩展的Iaas(Infrastructure asaService)级别云计算服务,云服务器 ECS 免去了您采购IT硬件的前期准备，让您像使用水、电、天然气等公共资源一样便捷、高效地使用服务器，实现计算资源的即开即用和弹性伸缩。阿里云 ECS 持续提供创新型服务器，解决多种业务需求，助力您的业务发展。',
-//     link: '/guide/ecs'
-//   },
-//   {
-//     title: '边缘网络加速',
-//     description: '边缘网络加速服务(Edge Network Acceleration)基于阿里云广泛分布的边缘计算节点及运营商合规网络资源构建，可以为企业客户提供企业内部分支机构之间的加速连接、企业各DC之间的加速连接、企业内网到阿里云之间的加速连接等全程端到端的快速连接服务。',
-//     link: '/guide/ena'
-//   },
-//   {
-//     title: '轻量应用服务器',
-//     description: '轻量应用服务器(Simple Application Server)是可以快速搭建且易于管理的轻量级云服务器，面向单台服务器提供了一键部署应用、一站式域名解\n' +
-//         '析、安全管理以及运维监控等服务。轻量应用服务器操作简单便捷，能让您快速上手部署简单的应用。',
-//     link: '/guide/sas'
-//   },
-//   {
-//     title: '专有宿主机DDH',
-//     description: '专有宿主机DDH(Dedicated Host)是阿里云专为企业客户定制优化的云端解决方案，具有物理资源独享、部署更灵活、配置更丰富、性价比更高\n' +
-//         '等特点，可以有效地降低企业上云的总所有成本TCO(TotalCostofOwnership)。',
-//     link: '/guide/ddh'
-//   },
-//   {
-//     title: '域名购买及解析',
-//     description: '',
-//     link: '/guide/domain'
-//   },
-//   {
-//     title: '创建EC2与宝塔部署',
-//     description: '',
-//     link: '/guide/ec2-bt'
-//   }
-// ]
 import {computed} from "vue";
+import { useI18n } from 'vue-i18n'
+
+const { locale } = useI18n()
 
 const { data: rawList } = await useAsyncData('guide-list', () =>
-    queryContent('guide')
+    queryContent(`${locale.value}/guide`)
         .only(['title', 'description', 'image', '_path', 'order'])
         .sort({ order: 1 })
         .find()
@@ -61,9 +30,10 @@ const guideList = computed(() =>
       title: item.title || '未命名',
       description: item.description || '',
       image: item.image || '/default-image.png',
-      link: item._path // ✅ 现在 Markdown 中的 _path 就是目标跳转地址
+      link: item._path // ⚠️ 这里保留原始路径，不要包 localePath，否则会重复 zh
     }))
 )
+
 
 </script>
 

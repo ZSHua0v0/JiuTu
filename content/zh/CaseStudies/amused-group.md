@@ -2,7 +2,7 @@
 title: "Amused Group"
 description: "Amused Group 是一家文化创意产业公司。它主要经营两个领域:创意活动和实体产品。Amused Group 旗下共有四家公司，分别是 Amused Style、Amused Life、Amused Art 和Amused Touch。它的最终目标是成为可与 Disney 匹敌的文化商业帝国。"
 image: "/assets/IMG/logos/amused-logo.jpg"
-_path: "/CaseStudies/amused-group"
+_path: "/zh/CaseStudies/amused-group"
 order: 1
 ---
 

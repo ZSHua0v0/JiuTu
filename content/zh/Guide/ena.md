@@ -1,7 +1,7 @@
 ---
 title: 边缘网络加速
 description: 边缘网络加速服务基于阿里云广泛分布的边缘节点资源构建，提供全程端到端的快速连接服务。
-_path: /guide/ena
+_path: /zh/guide/ena
 order: 2
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: 轻量应用服务器
 description: 轻量应用服务器是快速搭建、易于管理的轻量级云服务器，适用于部署简单应用。
-_path: /guide/sas
+_path: /zh/guide/sas
 order: 3
 ---
 

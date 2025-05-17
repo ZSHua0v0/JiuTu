@@ -1,7 +1,7 @@
 ---
 title: 域名购买及解析
 description: 
-_path: /guide/domain
+_path: /zh/guide/domain
 order: 5
 ---
 

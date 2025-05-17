@@ -53,8 +53,10 @@ onBeforeUnmount(() => {
   window.removeEventListener('resize', checkIsMobile)
 })
 
+const { locale } = useI18n()
+
 const { data: rawList } = await useAsyncData('case-list', () =>
-    queryContent('CaseStudies') // 保持目录是 content/cases/
+    queryContent(`/${locale.value}/CaseStudies`)  // 注意加语言前缀
         .only(['title', 'description', 'image', '_path', 'order'])
         .sort({ order: 1 })
         .find()

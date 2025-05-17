@@ -1,7 +1,7 @@
 ---
 title: 云服务器ECS
 description: 云服务器ECS(Elastic Compute Serice)是阿里云提供的性能卓越、稳定可靠、弹性扩展的Iaas云计算服务。
-_path: /guide/ecs
+_path: /zh/guide/ecs
 order: 1
 ---
 <div style="margin: 5% 0;font-family: '微软雅黑',serif">

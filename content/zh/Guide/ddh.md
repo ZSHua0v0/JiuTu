@@ -1,7 +1,7 @@
 ---
 title: 专有宿主机DDH
 description: 专有宿主机DDH是阿里云为企业客户定制的物理资源独享的云主机服务。
-_path: /guide/ddh
+_path: /zh/guide/ddh
 order: 4
 ---
 
