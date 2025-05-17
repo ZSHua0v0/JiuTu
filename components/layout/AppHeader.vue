@@ -50,27 +50,10 @@
     <!-- Drawer Menu -->
     <div v-if="isMenuChecked" class="drawer-menu" ref="drawerMenu">
       <ul class="navbar-list2">
-        <nuxt-link to="/">
-          <li>首页</li>
-        </nuxt-link>
-        <nuxt-link to="/GlobalAlibaba">
-          <li>阿里国际</li>
-        </nuxt-link>
-        <nuxt-link to="/ProductDeals">
-          <li>产品优惠</li>
-        </nuxt-link>
-        <nuxt-link to="/FastRegister">
-          <li>极速开户</li>
-        </nuxt-link>
-        <nuxt-link to="/Solutions">
-          <li>解决方案</li>
-        </nuxt-link>
-        <nuxt-link to="/CaseStudies">
-          <li>成功案例</li>
-        </nuxt-link>
-        <nuxt-link to="/pages/guide">
-          <li>使用指南</li>
-        </nuxt-link>
+        <NuxtLink v-for="item in menuItems" :key="item.path" :to="localePath(item.path)">
+          <li>{{ $t(item.key) }}</li>
+        </NuxtLink>
+
       </ul>
     </div>
   </header>
@@ -94,6 +77,21 @@ const isMenuChecked = computed(() => menuStore.isMenuChecked)
 const toggleMenu = () => menuStore.toggleMenu()
 
 const router = useRouter()
+
+import { useLocalePath } from '#i18n'
+
+const localePath = useLocalePath()
+
+const menuItems = [
+  { path: '/', key: 'menu.home' },
+  { path: '/GlobalAlibaba', key: 'menu.alibaba' },
+  { path: '/ProductDeals', key: 'menu.deals' },
+  { path: '/FastRegister', key: 'menu.register' },
+  { path: '/Solutions', key: 'menu.solutions' },
+  { path: '/CaseStudies', key: 'menu.cases' },
+  { path: '/guide', key: 'menu.guide' }
+]
+
 
 // 响应式更新窗口宽度
 const handleResize = () => {
@@ -179,8 +177,9 @@ onBeforeUnmount(() => {
 }
 
 .logo img {
-  width: 2.7rem;
-  height: 2.7rem;
+  max-width: 50px;
+  height: auto;
+  object-fit: contain;
 }
 
 .brand {

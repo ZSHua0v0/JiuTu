@@ -34,7 +34,9 @@ import { useAsyncData } from '#app'
 //     queryContent('/CaseStudies').find()
 // )
 
+import { useLocalePath } from '#i18n'
 
+const localePath = useLocalePath()
 
 const isMobile = ref(false)
 
@@ -63,9 +65,10 @@ const caseList = computed(() =>
       title: item.title || '未命名',
       description: item.description || '',
       image: item.image || '/default-image.png',
-      link: item._path // ✅ 现在 Markdown 中的 _path 就是目标跳转地址
+      link: localePath(item._path) // ✅ 包装路径为多语言链接
     }))
 )
+
 
 
 </script>

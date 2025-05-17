@@ -2,7 +2,7 @@
   <nav class="nav-menu">
     <ul>
       <li v-for="item in menuItems" :key="item.path" @click="$emit('item-click')">
-        <NuxtLink :to="item.path" :class="{ active: isActive(item.path) }">{{ item.label }}</NuxtLink>
+        <NuxtLink :to="item.localizedPath" :class="{ active: isActive(item.path) }">{{ $t(item.key) }}</NuxtLink>
       </li>
     </ul>
   </nav>
@@ -10,23 +10,30 @@
 
 <script setup>
 import { useRoute } from 'vue-router'
+import { useLocalePath } from '#i18n'
+
+const localePath = useLocalePath()
+
 const route = useRoute()
 
 const isActive = (path) => {
-  if (path === '/') return route.path === '/'
-  return route.path.startsWith(path)
+  const currentPath = route.path.replace(/^\/(zh|en|zh-Hant)?(?=\/|$)/, '') || '/'
+  return path === '/' ? currentPath === '/' : currentPath.startsWith(path)
 }
 
-const menuItems = [
-  {path: '/', label: '首页'},
-  {path: '/GlobalAlibaba', label: '阿里国际'},
-  {path: '/ProductDeals', label: '产品优惠'},
-  {path: '/FastRegister', label: '极速开户'},
-  {path: '/Solutions', label: '解决方案'},
-  {path: '/CaseStudies', label: '成功案例'},
-  {path: '/guide', label: '使用指南'},
-
-]
+// ✅ 关键：computed 保证 language 切换后重新生成路径
+const menuItems = computed(() => [
+  { path: '/', key: 'menu.home' },
+  { path: '/GlobalAlibaba', key: 'menu.alibaba' },
+  { path: '/ProductDeals', key: 'menu.deals' },
+  { path: '/FastRegister', key: 'menu.register' },
+  { path: '/Solutions', key: 'menu.solutions' },
+  { path: '/CaseStudies', key: 'menu.cases' },
+  { path: '/guide', key: 'menu.guide' }
+].map(item => ({
+  ...item,
+  localizedPath: localePath(item.path)
+})))
 defineEmits(['item-click']) // 添加事件发射
 </script>
 

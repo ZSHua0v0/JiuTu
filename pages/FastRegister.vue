@@ -34,7 +34,7 @@
         <div class="h_03_r_b_content">
           <div class="h_03_r_b_content__box">
             <div class="h_03_r_b_content__title__box">
-              <div class="h_03_r_b_content__title__icons"><img src="../public/assets/IMG/icons/information.png"
+              <div class="h_03_r_b_content__title__icons"><img src="/assets/IMG/icons/information.png"
                                                                alt="jiutu"/></div>
               <div class="h_03_r_b_content__title__h2">联系客户经理</div>
             </div>
@@ -46,11 +46,11 @@
                 <div>无障碍快捷沟通</div>
                 <div class="connect_icons">
                   <div class="connect_icons__flex">
-                    <img src="../public/assets/IMG/icons/tg_white_bg.png" alt="tg"/>
-                    <img src="../public/assets/IMG/icons/phone_white_bg.png" alt="phone"/>
-                    <img src="../public/assets/IMG/icons/facebook_white_bg.png" alt="facebook"/>
-                    <img src="../public/assets/IMG/icons/wechat_white_bg.png" alt="wechat"/>
-                    <img src="../public/assets/IMG/icons/email_white_bg.png" alt="email"/>
+                    <img src="/assets/IMG/icons/tg_white_bg.png" alt="tg"/>
+                    <img src="/assets/IMG/icons/phone_white_bg.png" alt="phone"/>
+                    <img src="/assets/IMG/icons/facebook_white_bg.png" alt="facebook"/>
+                    <img src="/assets/IMG/icons/wechat_white_bg.png" alt="wechat"/>
+                    <img src="/assets/IMG/icons/email_white_bg.png" alt="email"/>
                   </div>
                 </div>
               </div>
@@ -58,7 +58,7 @@
           </div>
           <div class="h_03_r_b_content__box">
             <div class="h_03_r_b_content__title__box">
-              <div class="h_03_r_b_content__title__icons"><img src="../public/assets/IMG/icons/CustomerS.png"
+              <div class="h_03_r_b_content__title__icons"><img src="/assets/IMG/icons/CustomerS.png"
                                                                alt="jiutu"/></div>
               <div class="h_03_r_b_content__title__h2">沟通需求配置</div>
             </div>
@@ -74,7 +74,7 @@
           <div class="h_03_r_b_content__box">
             <div class="h_03_r_b_content__title__box">
               <div class="h_03_r_b_content__title__icons"><img style="width: 4.5rem;height: 4.5rem;margin-left: 6px;"
-                                                               src="../public/assets/IMG/icons/Register.png"
+                                                               src=" /assets/IMG/icons/Register.png"
                                                                alt="jiutu"/></div>
               <div class="h_03_r_b_content__title__h2">极速开户</div>
             </div>
@@ -86,11 +86,11 @@
                 <div>支持全通道支付方式</div>
                 <div class="connect_icons">
                   <div class="connect_icons__flex">
-                    <img src="../public/assets/IMG/icons/wechat_white_bg.png" alt="wechat"/>
-                    <img src="../public/assets/IMG/icons/paypal.png" alt="paypal"/>
-                    <img src="../public/assets/IMG/icons/corporate.png" alt="corporate"/>
-                    <img src="../public/assets/IMG/icons/usd.png" alt="usd"/>
-                    <img src="../public/assets/IMG/icons/usdt.png" alt="usdt"/>
+                    <img src=" /assets/IMG/icons/wechat_white_bg.png" alt="wechat"/>
+                    <img src=" /assets/IMG/icons/paypal.png" alt="paypal"/>
+                    <img src=" /assets/IMG/icons/corporate.png" alt="corporate"/>
+                    <img src=" /assets/IMG/icons/usd.png" alt="usd"/>
+                    <img src=" /assets/IMG/icons/usdt.png" alt="usdt"/>
                   </div>
                 </div>
               </div>
@@ -152,11 +152,11 @@
               <div class="register-title">极速开户</div>
               <div class="register-desc">预付款项 直接开户<br/>支持全通道支付方式</div>
               <div class="register-icons">
-                <img src="/public/assets/IMG/icons/wechat_white_bg.png" alt="WeChat"/>
-                <img src="/public/assets/IMG/icons/paypal.png" alt="PayPal"/>
-                <img src="/public/assets/IMG/icons/corporate.png" alt="Corporate"/>
-                <img src="/public/assets/IMG/icons/usd.png" alt="USD"/>
-                <img src="/public/assets/IMG/icons/usdt.png" alt="USDT"/>
+                <img src="/assets/IMG/icons/wechat_white_bg.png" alt="WeChat"/>
+                <img src="/assets/IMG/icons/paypal.png" alt="PayPal"/>
+                <img src="/assets/IMG/icons/corporate.png" alt="Corporate"/>
+                <img src="/assets/IMG/icons/usd.png" alt="USD"/>
+                <img src="/assets/IMG/icons/usdt.png" alt="USDT"/>
               </div>
             </div>
           </div>
@@ -212,11 +212,11 @@
           </form>
           <!-- 底部图标 -->
           <div class="contact-icons">
-            <a href="/" target="_blank"><img src="../public/assets/IMG/icons/email_white_bg.png" alt="jiutu"/></a>
-            <a href="/" target="_blank"><img src="../public/assets/IMG/icons/wechat_white_bg.png" alt="jiutu"/></a>
-            <a href="/" target="_blank"><img src="../public/assets/IMG/icons/tg_white_bg.png" alt="jiutu"/></a>
-            <a href="/" target="_blank"><img src="../public/assets/IMG/icons/phone_white_bg.png" alt="jiutu"/></a>
-            <a href="/" target="_blank"><img src="../public/assets/IMG/icons/facebook_white_bg.png" alt="jiutu"/></a>
+            <a href="/" target="_blank"><img src=" /assets/IMG/icons/email_white_bg.png" alt="jiutu"/></a>
+            <a href="/" target="_blank"><img src=" /assets/IMG/icons/wechat_white_bg.png" alt="jiutu"/></a>
+            <a href="/" target="_blank"><img src=" /assets/IMG/icons/tg_white_bg.png" alt="jiutu"/></a>
+            <a href="/" target="_blank"><img src=" /assets/IMG/icons/phone_white_bg.png" alt="jiutu"/></a>
+            <a href="/" target="_blank"><img src=" /assets/IMG/icons/facebook_white_bg.png" alt="jiutu"/></a>
           </div>
         </div>
       </div>
@@ -272,11 +272,11 @@
         </form>
         <!-- 底部图标 -->
         <div class="contact-icons">
-          <a href="/" target="_blank"><img src="../public/assets/IMG/icons/email_white_bg.png" alt="jiutu"/></a>
-          <a href="/" target="_blank"><img src="../public/assets/IMG/icons/wechat_white_bg.png" alt="jiutu"/></a>
-          <a href="/" target="_blank"><img src="../public/assets/IMG/icons/tg_white_bg.png" alt="jiutu"/></a>
-          <a href="/" target="_blank"><img src="../public/assets/IMG/icons/phone_white_bg.png" alt="jiutu"/></a>
-          <a href="/" target="_blank"><img src="../public/assets/IMG/icons/facebook_white_bg.png" alt="jiutu"/></a>
+          <a href="/" target="_blank"><img src=" /assets/IMG/icons/email_white_bg.png" alt="jiutu"/></a>
+          <a href="/" target="_blank"><img src=" /assets/IMG/icons/wechat_white_bg.png" alt="jiutu"/></a>
+          <a href="/" target="_blank"><img src=" /assets/IMG/icons/tg_white_bg.png" alt="jiutu"/></a>
+          <a href="/" target="_blank"><img src=" /assets/IMG/icons/phone_white_bg.png" alt="jiutu"/></a>
+          <a href="/" target="_blank"><img src=" /assets/IMG/icons/facebook_white_bg.png" alt="jiutu"/></a>
         </div>
       </div>
     </div>
@@ -297,7 +297,7 @@ a{
 .FastRegister_banner_01 {
   width: 100%;
   height: 550px;
-  background: url("../public/assets/IMG/backgrounds/FastRegister_banner_01.jpg") no-repeat;
+  background: url("/assets/IMG/backgrounds/FastRegister_banner_01.jpg") no-repeat;
   background-size: 100% 100%;
   position: relative;
   color: #fff;
@@ -328,7 +328,7 @@ a{
 }
 
 .star {
-  background: url("../public/assets/IMG/icons/start.png") no-repeat;
+  background: url("/assets/IMG/icons/start.png") no-repeat;
   width: 2rem;
   height: 3rem;
   background-size: 100% 100%;
@@ -355,7 +355,7 @@ h1 {
   width: 10rem;
   height: 2.5rem;
   line-height: 2.5rem;
-  background: url("../public/assets/IMG/icons/Fast_button.png") no-repeat;
+  background: url("/assets/IMG/icons/Fast_button.png") no-repeat;
   background-size: 100% 100%;
   color: #f90;
   border: none;
@@ -676,7 +676,7 @@ h1 {
 
 @media (max-width: 768px) {
   .FastRegister_banner_01 {
-    background: url("../public/assets/IMG/backgrounds/FastRegister_01_2.jpg") no-repeat;
+    background: url("/assets/IMG/backgrounds/FastRegister_01_2.jpg") no-repeat;
     background-size: 100% 100%;
     height: 280px;
   }

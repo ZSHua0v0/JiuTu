@@ -4,7 +4,7 @@
     </div>
     <div class="GlobalAlibaba_box_02">
       <div class="GlobalAlibaba_box_02_mini_box">
-        <div class="GlobalAlibaba_box_02_mini_box_icons"><img src="../public/assets/IMG/icons/Gold.png"
+        <div class="GlobalAlibaba_box_02_mini_box_icons"><img src="/assets/IMG/icons/Gold.png"
                                                               alt="jiutu"/><span>1</span></div>
         <div class="GlobalAlibaba_box_02_mini_box_title">亚太计算市场<span>No.1</span></div>
       </div>
@@ -24,7 +24,7 @@
 
 
       <div class="GlobalAlibaba_box_02_mini_box">
-        <div class="GlobalAlibaba_box_02_mini_box_icons"><img src="../public/assets/IMG/icons/Gold.png"
+        <div class="GlobalAlibaba_box_02_mini_box_icons"><img src="/assets/IMG/icons/Gold.png"
                                                               alt="jiutu"/><span>1</span></div>
         <div class="GlobalAlibaba_box_02_mini_box_title">中国云计算市场<span>No.1</span></div>
       </div>
@@ -44,7 +44,7 @@
 
 
       <div class="GlobalAlibaba_box_02_mini_box">
-        <div class="GlobalAlibaba_box_02_mini_box_icons"><img src="../public/assets/IMG/icons/Gold.png"
+        <div class="GlobalAlibaba_box_02_mini_box_icons"><img src="/assets/IMG/icons/Gold.png"
                                                               alt="jiutu"/><span>3</span></div>
         <div class="GlobalAlibaba_box_02_mini_box_title">全球云计算市场<span>No.3</span></div>
       </div>
@@ -72,14 +72,14 @@
         <div class="GlobalAlibaba_box_03_mini_box_left"></div>
         <div class="GlobalAlibaba_box_03_mini_box_right">
           <div>
-            <div class="GlobalAlibaba_box_03_mini_box_icons"><img src="../public/assets/IMG/icons/star.png" alt="star">
+            <div class="GlobalAlibaba_box_03_mini_box_icons"><img src="/assets/IMG/icons/star.png" alt="star">
             </div>
             <div class="GlobalAlibaba_box_03_mini_box_content">
               本地数据中心已经成为数字时代城市的重要基础设施，其重要性不亚于公路、铁路、桥梁。阿里云持续投资在全球建立稳定可靠的数据中心，与与本地生态合作伙伴建立生态圈致力为客户提供能解决其业务痛点的本地化解决方案，成为在亚太地区拥有数据中心最多、拥有CDN节点最多的云服务提供商。
             </div>
           </div>
           <div>
-            <div class="GlobalAlibaba_box_03_mini_box_icons"><img src="../public/assets/IMG/icons/star.png" alt="star">
+            <div class="GlobalAlibaba_box_03_mini_box_icons"><img src="/assets/IMG/icons/star.png" alt="star">
             </div>
             <div class="GlobalAlibaba_box_03_mini_box_content">
               提供可靠易用的云、全局智能的大数据、云端一体的智联网和随时随地的移动协同。阿里云提供多个行业解决方案和行业通用解决方案，全方面为企业赋能，至今已服务全球200多个国家的300多万客户。
@@ -87,14 +87,14 @@
 
           </div>
           <div>
-            <div class="GlobalAlibaba_box_03_mini_box_icons"><img src="../public/assets/IMG/icons/star.png" alt="star">
+            <div class="GlobalAlibaba_box_03_mini_box_icons"><img src="/assets/IMG/icons/star.png" alt="star">
             </div>
             <div class="GlobalAlibaba_box_03_mini_box_content">
               阿里云提供了一系列的中国门户解决方案帮助海外客户进入中国并在中国快速发展。阿里云完整的产品与服务，一站式帮助客户完成从注册公司到快速搭建信息技术架构等一系列需求。另外，阿里云能够帮助海外客户接入阿里巴巴生态体，并且与全球合作伙伴携手将海外客户带入中国市场。
             </div>
           </div>
           <div>
-            <div class="GlobalAlibaba_box_03_mini_box_icons"><img src="../public/assets/IMG/icons/star.png" alt="star">
+            <div class="GlobalAlibaba_box_03_mini_box_icons"><img src="/assets/IMG/icons/star.png" alt="star">
             </div>
             <div class="GlobalAlibaba_box_03_mini_box_content">
               阿里云拥有守护阿里巴巴集团安全的丰富经验，帮助客户抵御各种安全威胁。云安全自带安全能力，作为安全资质最全的亚洲云计算服务商，阿里云满足全球安全合规标准，长期致力于保护个人隐私。
@@ -109,7 +109,7 @@
 
       <!-- 图1 -->
       <div class="image-crop">
-        <img src="../public/assets/IMG/backgrounds/GlobalAlibaba_banner_03.jpg" alt="图1" class="slice slice-1"/>
+        <img src="/assets/IMG/backgrounds/GlobalAlibaba_banner_03.jpg" alt="图1" class="slice slice-1"/>
       </div>
       <p>
         本地数据中心已成为数字时代城市的重要基础设施。其重要性不亚于金融、铁路、桥梁。
@@ -119,7 +119,7 @@
 
       <!-- 图2 -->
       <div class="image-crop">
-        <img src="../public/assets/IMG/backgrounds/GlobalAlibaba_banner_03.jpg" alt="图2" class="slice slice-2"/>
+        <img src="/assets/IMG/backgrounds/GlobalAlibaba_banner_03.jpg" alt="图2" class="slice slice-2"/>
       </div>
       <p>
         提供可靠易用的云、全局智能的大数据、云端一体的智能联网和随地域的移动协同。
@@ -129,7 +129,7 @@
 
       <!-- 图3 -->
       <div class="image-crop">
-        <img src="../public/assets/IMG/backgrounds/GlobalAlibaba_banner_03.jpg" alt="图3" class="slice slice-3"/>
+        <img src="/assets/IMG/backgrounds/GlobalAlibaba_banner_03.jpg" alt="图3" class="slice slice-3"/>
       </div>
       <p>
         阿里云提供了一系列的 China Gateway 解决方案帮助海外客户进入中国并在中国快速发展。
@@ -139,7 +139,7 @@
 
       <!-- 最后一段 -->
       <div class="image-crop">
-        <img src="../public/assets/IMG/backgrounds/GlobalAlibaba_banner_03.jpg" alt="图3" class="slice slice-4"/>
+        <img src="/assets/IMG/backgrounds/GlobalAlibaba_banner_03.jpg" alt="图3" class="slice slice-4"/>
       </div>
       <p class="last-paragraph">
         阿里云拥有守护阿里巴巴集团安全的丰富经验，帮助客户抵御各种安全威胁。
@@ -173,7 +173,7 @@ onBeforeUnmount(() => {
 .GlobalAlibaba_banner_01 {
   width: 100%;
   height: clamp(600px, 20vw + 200px, 700px);
-  background: url("../public/assets/IMG/backgrounds/GlobalAlibaba_banner_01.jpg") no-repeat;
+  background: url("/assets/IMG/backgrounds/GlobalAlibaba_banner_01.jpg") no-repeat;
   background-size: 100% 100%;
   margin: 0 auto;
 }
@@ -242,7 +242,7 @@ onBeforeUnmount(() => {
 }
 
 .GlobalAlibaba_box_03_mini_box_left {
-  background: url("../public/assets/IMG/backgrounds/GlobalAlibaba_banner_03.jpg") no-repeat;
+  background: url("/assets/IMG/backgrounds/GlobalAlibaba_banner_03.jpg") no-repeat;
   background-size: 100% 100%;
   width: 35%;
   height: 600px;
@@ -278,7 +278,7 @@ onBeforeUnmount(() => {
   .GlobalAlibaba_banner_01 {
     width: 100%;
     height: 480px;
-    background: url("../public/assets/IMG/backgrounds/GlobalAlibaba_banner_01_2.jpg") no-repeat;
+    background: url("/assets/IMG/backgrounds/GlobalAlibaba_banner_01_2.jpg") no-repeat;
     background-size: 100% 100%;
     margin: 0 auto;
   }

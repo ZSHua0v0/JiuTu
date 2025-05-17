@@ -2,17 +2,17 @@
   <div>
     <div class="home_01_banner">
       <div class="home_01_banner_background">
-        <div class="cover-image__tag">Alibaba Cloud</div>
-        <div class="cover-image__title">上云用九途<span>平步青云路</span></div>
-        <div class="cover-image__subtitle">阿里云国际版全球代理，助力您的企业扬帆出海，平步青云！</div>
-        <button class="cover-image__button"><a :href="contactLinks.CustomerService" target="_blank">立即咨询</a>
+        <div class="cover-image__tag">{{ $t('home.banner.tag') }}</div>
+        <div class="cover-image__title">{{ $t('home.banner.title_before') }}<span>{{ $t('home.banner.title_span') }}</span></div>
+        <div class="cover-image__subtitle">{{ $t('home.banner.subtitle') }}</div>
+        <button class="cover-image__button"><a :href="contactLinks.CustomerService" target="_blank">{{ $t('home.banner.button')}}</a>
         </button>
       </div>
     </div>
     <div class="home_tag_icons">
       <div v-for="item in items" :key="item.id">
         <img :src="item.imageUrl" :alt="item.title" class="home_tag_icon__item">
-        <p>{{ item.title }}</p>
+        <p>{{ $t(item.titleKey) }}</p>
       </div>
     </div>
     <div v-if="!isMobile" class="home_02_banner">
@@ -20,35 +20,35 @@
         <div class="home_02_banner__tag">
           <div class="home_02_banner__left">
             <div class="home_02_banner__tag__title">
-              <div>具有<span>12年</span>以上行业服务经验<br/></div>
-              <div><span>20+</span>专业技术工程师，<span>30+</span>资深客户经理<br/></div>
-              <div>服务超过<span>2000+</span>海内外企业<br/></div>
-              <div>国内外大型云厂商资质认证<br/></div>
-              <div><span>200+</span>云相关专业技术认证证书<br/></div>
-              <div>丰富的云架构设计、迁移、实验和运维经验<br/></div>
+              <div>{{ $t('home.features[0].before') }}<span>{{ $t('home.features[0].highlight') }}</span>{{ $t('home.features[0].after') }}<br/></div>
+              <div><span>{{ $t('home.features[1].highlight1') }}</span>{{ $t('home.features[1].mid') }}<span>{{ $t('home.features[1].highlight2') }}</span>{{ $t('home.features[1].after') }}<br/></div>
+              <div>{{ $t('home.features[2].before') }}<span>{{ $t('home.features[2].highlight') }}</span>{{ $t('home.features[2].after') }}<br/></div>
+              <div>{{ $t('home.features[3].text') }}<br/></div>
+              <div><span>{{ $t('home.features[4].highlight') }}</span>{{ $t('home.features[4].after') }}<br/></div>
+              <div>{{ $t('home.features[5].text') }}<br/></div>
               <div class="home_02_banner__left__btn">
                 <div class="cire"></div>
                 <a :href="contactLinks.CustomerService" style="text-decoration: none">
-                  <div class="contact_btn">联系我们</div>
+                  <div class="contact_btn">{{ $t('home.features[6].btn') }}</div>
                 </a>
               </div>
             </div>
           </div>
           <div class="home_02_banner__right">
             <div class="home_02_banner__tag__icons"><img v-for="i in 5" :key="i"
-                                                         src="../public/assets/IMG/icons/start.png"
+                                                         src=" /assets/IMG/icons/start.png"
                                                          alt="start"/></div>
           </div>
         </div>
         <div class="home_02_banner_footer__title">
-          <div v-if="isMobile==false" class="icon_cloud"><img src="../public/assets/IMG/icons/cloud.png" alt=""/></div>
+          <div v-if="isMobile==false" class="icon_cloud"><img src=" /assets/IMG/icons/cloud.png" alt=""/></div>
           <div class="content_flex">
-            <div>降低上云成本</div>
-            <div>专业技术支持</div>
-            <div>提供贴心服务</div>
-            <div>拓展行业人脉</div>
+            <div>{{ $t('home.features[7].title') }}</div>
+            <div>{{ $t('home.features[7].title1') }}</div>
+            <div>{{ $t('home.features[7].title2') }}</div>
+            <div>{{ $t('home.features[7].title3') }}</div>
           </div>
-          <div v-if="isMobile==false" class="icon_cloud"><img src="../public/assets/IMG/icons/cloud.png" alt=""/></div>
+          <div v-if="isMobile==false" class="icon_cloud"><img src=" /assets/IMG/icons/cloud.png" alt=""/></div>
         </div>
       </div>
 
@@ -59,43 +59,43 @@
         </div>
       </div>
       <div class="home_02_banner__tag__title">
-        <div>具有<span>12年</span>以上行业服务经验<br/></div>
-        <div><span>20+</span>专业技术工程师，<span>30+</span>资深客户经理<br/></div>
-        <div>服务超过<span>2000+</span>海内外企业<br/></div>
-        <div>国内外大型云厂商资质认证<br/></div>
-        <div><span>200+</span>云相关专业技术认证证书<br/></div>
-        <div>丰富的云架构设计、迁移、实验和运维经验<br/></div>
+        <div>{{ $t('home.features[0].before') }}<span>{{ $t('home.features[0].highlight') }}</span>{{ $t('home.features[0].after') }}<br/></div>
+        <div><span>{{ $t('home.features[1].highlight1') }}</span>{{ $t('home.features[1].mid') }}<span>{{ $t('home.features[1].highlight2') }}</span>{{ $t('home.features[1].after') }}<br/></div>
+        <div>{{ $t('home.features[2].before') }}<span>{{ $t('home.features[2].highlight') }}</span>{{ $t('home.features[2].after') }}<br/></div>
+        <div>{{ $t('home.features[3].text') }}<br/></div>
+        <div><span>{{ $t('home.features[4].highlight') }}</span>{{ $t('home.features[4].after') }}<br/></div>
+        <div>{{ $t('home.features[5].text') }}<br/></div>
         <div class="home_02_banner__left__btn">
-          <div class="contact_btn"><a :href="contactLinks.CustomerService" target="_blank">联系我们</a></div>
+          <div class="contact_btn"><a :href="contactLinks.CustomerService" target="_blank">{{ $t('home.features[6].btn') }}</a></div>
           <div class="cire"></div>
         </div>
       </div>
     </div>
     <div v-if="!isMobile" class="home_03_register">
       <div class="home_03_register__title">
-        开户流程
+        {{ $t('home.register.title') }}
         <span>/PROCESS</span></div>
       <div class="home_03_register__bg">
         <div class="h_03_r_b_content">
           <div class="h_03_r_b_content__box">
             <div class="h_03_r_b_content__title__box">
-              <div class="h_03_r_b_content__title__icons"><img src="../public/assets/IMG/icons/information.png"
+              <div class="h_03_r_b_content__title__icons"><img src=" /assets/IMG/icons/information.png"
                                                                alt="jiutu"/></div>
-              <div class="h_03_r_b_content__title__h2">联系客户经理</div>
+              <div class="h_03_r_b_content__title__h2">{{ $t('home.register.steps[0].title') }}</div>
             </div>
             <div class="h_03_r_b_content__mini_box">
               <div class="corner top-left"></div>
               <div class="corner bottom-right"></div>
               <div class="mini_box_content">
-                <div>多种联系方式</div>
-                <div>无障碍快捷沟通</div>
+                <div>{{ $t('home.register.steps[0].desc[0]') }}</div>
+                <div>{{ $t('home.register.steps[0].desc[1]') }}</div>
                 <div class="connect_icons">
                   <div class="connect_icons__flex">
-                    <img src="../public/assets/IMG/icons/tg_white_bg.png" alt="tg"/>
-                    <img src="../public/assets/IMG/icons/phone_white_bg.png" alt="phone"/>
-                    <img src="../public/assets/IMG/icons/facebook_white_bg.png" alt="facebook"/>
-                    <img src="../public/assets/IMG/icons/wechat_white_bg.png" alt="wechat"/>
-                    <img src="../public/assets/IMG/icons/email_white_bg.png" alt="email"/>
+                    <img src="/assets/IMG/icons/tg_white_bg.png" alt="tg"/>
+                    <img src="/assets/IMG/icons/phone_white_bg.png" alt="phone"/>
+                    <img src="/assets/IMG/icons/facebook_white_bg.png" alt="facebook"/>
+                    <img src="/assets/IMG/icons/wechat_white_bg.png" alt="wechat"/>
+                    <img src="/assets/IMG/icons/email_white_bg.png" alt="email"/>
                   </div>
                 </div>
               </div>
@@ -103,39 +103,39 @@
           </div>
           <div class="h_03_r_b_content__box">
             <div class="h_03_r_b_content__title__box">
-              <div class="h_03_r_b_content__title__icons"><img src="../public/assets/IMG/icons/CustomerS.png"
+              <div class="h_03_r_b_content__title__icons"><img src=" /assets/IMG/icons/CustomerS.png"
                                                                alt="jiutu"/></div>
-              <div class="h_03_r_b_content__title__h2">沟通需求配置</div>
+              <div class="h_03_r_b_content__title__h2">{{ $t('home.register.steps[1].title') }}</div>
             </div>
             <div class="h_03_r_b_content__mini_box">
               <div class="corner top-left"></div>
               <div class="corner bottom-right"></div>
               <div class="mini_box_content">
-                <div>客户经理根据您的需求</div>
-                <div>为您定制配置</div>
+                <div>{{ $t('home.register.steps[1].desc[0]') }}</div>
+                <div>{{ $t('home.register.steps[1].desc[1]') }}</div>
               </div>
             </div>
           </div>
           <div class="h_03_r_b_content__box">
             <div class="h_03_r_b_content__title__box">
               <div class="h_03_r_b_content__title__icons"><img style="width: 4.5rem;height: 4.5rem;margin-left: 6px;"
-                                                               src="../public/assets/IMG/icons/Register.png"
+                                                               src=" /assets/IMG/icons/Register.png"
                                                                alt="jiutu"/></div>
-              <div class="h_03_r_b_content__title__h2">极速开户</div>
+              <div class="h_03_r_b_content__title__h2">{{ $t('home.register.steps[2].title') }}</div>
             </div>
             <div class="h_03_r_b_content__mini_box">
               <div class="corner top-left"></div>
               <div class="corner bottom-right"></div>
               <div class="mini_box_content">
-                <div>预付款项 直接开户</div>
-                <div>支持全通道支付方式</div>
+                <div>{{ $t('home.register.steps[2].desc[0]') }}</div>
+                <div>{{ $t('home.register.steps[2].desc[1]') }}</div>
                 <div class="connect_icons">
                   <div class="connect_icons__flex">
-                    <img src="../public/assets/IMG/icons/wechat_white_bg.png" alt="wechat"/>
-                    <img src="../public/assets/IMG/icons/paypal.png" alt="paypal"/>
-                    <img src="../public/assets/IMG/icons/corporate.png" alt="corporate"/>
-                    <img src="../public/assets/IMG/icons/usd.png" alt="usd"/>
-                    <img src="../public/assets/IMG/icons/usdt.png" alt="usdt"/>
+                    <img src=" /assets/IMG/icons/wechat_white_bg.png" alt="wechat"/>
+                    <img src=" /assets/IMG/icons/paypal.png" alt="paypal"/>
+                    <img src=" /assets/IMG/icons/corporate.png" alt="corporate"/>
+                    <img src=" /assets/IMG/icons/usd.png" alt="usd"/>
+                    <img src=" /assets/IMG/icons/usdt.png" alt="usdt"/>
                   </div>
                 </div>
               </div>
@@ -146,7 +146,7 @@
     </div>
     <div v-if="isMobile" class="home_03_register_mobile">
       <div class="home_03_register__title">
-        开户流程
+        {{ $t('home.register.title') }}
         <span>/PROCESS</span></div>
       <div class="home_03_register_mobile__bg">
         <div class="register-section">
@@ -155,8 +155,8 @@
               <div class="register-icon"><img src="/assets/IMG/icons/information.png" alt="联系客户经理"/></div>
             </div>
             <div>
-              <div class="register-title">联系客户经理</div>
-              <div class="register-desc">多种联系方式<br/>无障碍快捷沟通</div>
+              <div class="register-title">{{ $t('home.register.steps[0].title') }}</div>
+              <div class="register-desc">{{ $t('home.register.steps[0].desc[0]') }}<br/>{{ $t('home.register.steps[0].desc[1]') }}</div>
               <div class="register-icons">
                 <img src="/assets/IMG/icons/tg_white_bg.png" alt="Telegram"/>
                 <img src="/assets/IMG/icons/phone_white_bg.png" alt="Phone"/>
@@ -171,8 +171,8 @@
               <div class="register-icon"><img src="/assets/IMG/icons/CustomerS.png" alt="沟通需求配置"/></div>
             </div>
             <div>
-              <div class="register-title">沟通需求配置</div>
-              <div class="register-desc">客户经理根据您的需求<br/>为您定制配置</div>
+              <div class="register-title">{{ $t('home.register.steps[1].title') }}</div>
+              <div class="register-desc">{{ $t('home.register.steps[1].desc[0]') }}<br/>{{ $t('home.register.steps[1].desc[1]') }}</div>
               <div class="register-graph">
                 <div class="audio-bars">
                   <span></span>
@@ -194,24 +194,24 @@
               <div class="register-icon"><img src="/assets/IMG/icons/Register.png" alt="极速开户"/></div>
             </div>
             <div>
-              <div class="register-title">极速开户</div>
-              <div class="register-desc">预付款项 直接开户<br/>支持全通道支付方式</div>
+              <div class="register-title">{{ $t('home.register.steps[2].title') }}</div>
+              <div class="register-desc">{{ $t('home.register.steps[2].desc[0]') }}<br/>{{ $t('home.register.steps[2].desc[1]') }}</div>
               <div class="register-icons">
-                <img src="/public/assets/IMG/icons/wechat_white_bg.png" alt="WeChat"/>
-                <img src="/public/assets/IMG/icons/paypal.png" alt="PayPal"/>
-                <img src="/public/assets/IMG/icons/corporate.png" alt="Corporate"/>
-                <img src="/public/assets/IMG/icons/usd.png" alt="USD"/>
-                <img src="/public/assets/IMG/icons/usdt.png" alt="USDT"/>
+                <img src="/assets/IMG/icons/wechat_white_bg.png" alt="WeChat"/>
+                <img src="/assets/IMG/icons/paypal.png" alt="PayPal"/>
+                <img src="/assets/IMG/icons/corporate.png" alt="Corporate"/>
+                <img src="/assets/IMG/icons/usd.png" alt="USD"/>
+                <img src="/assets/IMG/icons/usdt.png" alt="USDT"/>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="advantages-title">我们的优势 <span>/ADVANTAGES</span></div>
+        <div class="advantages-title">{{ $t('home.advantages.title') }} <span>/ADVANTAGES</span></div>
         <div class="advantages-list">
           <div class="adv-item">
-            <img src="/public/assets/IMG/icons/fast-signup.png" alt="注册"/>
-            <div class="adv-text">极速注册 无需实名</div>
+            <img src="/assets/IMG/icons/fast-signup.png" alt="注册"/>
+            <div class="adv-text">{{ $t('home.advantages.item[0]') }}</div>
             <div class="bars">
               <span style="height: 10px"></span>
               <span style="height: 20px"></span>
@@ -219,8 +219,8 @@
             </div>
           </div>
           <div class="adv-item">
-            <img src="/public/assets/IMG/icons/discount-promo.png" alt="折扣"/>
-            <div class="adv-text">专属优惠 触底折扣</div>
+            <img src="/assets/IMG/icons/discount-promo.png" alt="折扣"/>
+            <div class="adv-text">{{ $t('home.advantages.item[1]') }}</div>
             <div class="bars">
               <span style="height: 10px"></span>
               <span style="height: 20px"></span>
@@ -228,8 +228,8 @@
             </div>
           </div>
           <div class="adv-item">
-            <img src="/public/assets/IMG/icons/instant-payment.png" alt="账单"/>
-            <div class="adv-text">免手续费 账单透明</div>
+            <img src="/assets/IMG/icons/instant-payment.png" alt="账单"/>
+            <div class="adv-text">{{ $t('home.advantages.item[2]') }}</div>
             <div class="bars">
               <span style="height: 10px"></span>
               <span style="height: 20px"></span>
@@ -237,8 +237,8 @@
             </div>
           </div>
           <div class="adv-item">
-            <img src="/public/assets/IMG/icons/oem-tech.png" alt="服务"/>
-            <div class="adv-text">原厂技术 专业服务</div>
+            <img src="/assets/IMG/icons/oem-tech.png" alt="服务"/>
+            <div class="adv-text">{{ $t('home.advantages.item[3]') }}</div>
             <div class="bars">
               <span style="height: 10px"></span>
               <span style="height: 20px"></span>
@@ -250,60 +250,59 @@
     </div>
     <div class="home_04_Advantages">
       <div class="home_03_register__title">
-        我们的优势
+        {{ $t('home.advantages.title') }}
         <span>/ADVANTAGES</span></div>
       <div class="home_04_Advantages__bg">
         <div class="home_04_Advantages__left_box">
-          <div class="logo_icon"><img src="../public/assets/IMG/logos/jiutu_logo_white.png" alt="jiutu"></div>
-          <div class="zhu_icon"><img src="../public/assets/IMG/icons/5zhu.png" alt="jiutu"></div>
+          <div class="logo_icon"><img src=" /assets/IMG/logos/jiutu_logo_white.png" alt="jiutu"></div>
+          <div class="zhu_icon"><img src=" /assets/IMG/icons/5zhu.png" alt="jiutu"></div>
         </div>
         <div class="home_04_Advantages__right_box">
           <div class="home_04_Advantages__right_mini_box">
             <div class="home_04_Advantages__right_mini_box_h2">
               <div class="home_04_Advantages__right_box_mini_box_icon"><img
-                  src="../public/assets/IMG/icons/fast-signup.png" alt="jiutu"></div>
+                  src=" /assets/IMG/icons/fast-signup.png" alt="jiutu"></div>
               <div class="home_04_Advantages__right_mini_box_title">
-                <div class="home_04_Advantages__right_mini_box_title_h2">极速注册 无需实名</div>
-                <div class="home_04_Advantages__right_mini_box_title_content">Fast registration and no real name
-                  required
+                <div class="home_04_Advantages__right_mini_box_title_h2">{{ $t('home.advantages.details[0].title') }}</div>
+                <div class="home_04_Advantages__right_mini_box_title_content">{{ $t('home.advantages.details[0].subtitle') }}
                 </div>
               </div>
             </div>
-            <div class="home_04_Advantages__right_mini_box_content">无需海外信用卡，仅需一个邮箱三分钟完成注册。</div>
+            <div class="home_04_Advantages__right_mini_box_content">{{ $t('home.advantages.details[0].desc') }}</div>
             <div class="home_04_Advantages__right_mini_box_h2" style="margin-top:24%">
               <div class="home_04_Advantages__right_box_mini_box_icon"><img
-                  src="../public/assets/IMG/icons/discount-promo.png" style="margin: 6%" alt="jiutu"></div>
+                  src=" /assets/IMG/icons/discount-promo.png" style="margin: 6%" alt="jiutu"></div>
               <div class="home_04_Advantages__right_mini_box_title">
-                <div class="home_04_Advantages__right_mini_box_title_h2">专属优惠 触底折扣</div>
-                <div class="home_04_Advantages__right_mini_box_title_content">Exclusive Offers and bottom-up discounts
+                <div class="home_04_Advantages__right_mini_box_title_h2">{{ $t('home.advantages.details[1].title') }}</div>
+                <div class="home_04_Advantages__right_mini_box_title_content">{{ $t('home.advantages.details[1].subtitle') }}
                 </div>
               </div>
             </div>
-            <div class="home_04_Advantages__right_mini_box_content">全球总代理高级折扣权限，给您最大优惠。</div>
+            <div class="home_04_Advantages__right_mini_box_content">{{ $t('home.advantages.details[1].desc') }}</div>
 
           </div>
           <div class="home_04_Advantages__right_mini_box">
             <div class="home_04_Advantages__right_mini_box_h2" style="margin-top: 1rem;">
               <div class="home_04_Advantages__right_box_mini_box_icon"><img
-                  src="../public/assets/IMG/icons/instant-payment.png" style="margin-left: 5%" alt="jiutu"></div>
+                  src=" /assets/IMG/icons/instant-payment.png" style="margin-left: 5%" alt="jiutu"></div>
               <div class="home_04_Advantages__right_mini_box_title">
-                <div class="home_04_Advantages__right_mini_box_title_h2">免手续费 账单透明</div>
-                <div class="home_04_Advantages__right_mini_box_title_content">No processing fee and transparent billing
+                <div class="home_04_Advantages__right_mini_box_title_h2">{{ $t('home.advantages.details[2].title') }}</div>
+                <div class="home_04_Advantages__right_mini_box_title_content">{{ $t('home.advantages.details[2].subtitle') }}
                 </div>
               </div>
             </div>
-            <div class="home_04_Advantages__right_mini_box_content">平台出具月度账单，根据账单付款，杜绝高额手续费。</div>
+            <div class="home_04_Advantages__right_mini_box_content">{{ $t('home.advantages.details[2].desc') }}</div>
             <div class="home_04_Advantages__right_mini_box_h2" style="margin-top:24%">
               <div class="home_04_Advantages__right_box_mini_box_icon"><img
-                  src="../public/assets/IMG/icons/oem-tech.png" style="margin: 6%" alt="jiutu"></div>
+                  src=" /assets/IMG/icons/oem-tech.png" style="margin: 6%" alt="jiutu"></div>
               <div class="home_04_Advantages__right_mini_box_title">
-                <div class="home_04_Advantages__right_mini_box_title_h2">原厂技术 专业服务</div>
-                <div class="home_04_Advantages__right_mini_box_title_content">Original technical and professional
+                <div class="home_04_Advantages__right_mini_box_title_h2">{{ $t('home.advantages.details[3].title') }}</div>
+                <div class="home_04_Advantages__right_mini_box_title_content">{{ $t('home.advantages.details[3].subtitle') }}
                   services
                 </div>
               </div>
             </div>
-            <div class="home_04_Advantages__right_mini_box_content">阿里云官方认证工程师与原厂技术共同保障您的云安全。
+            <div class="home_04_Advantages__right_mini_box_content">{{ $t('home.advantages.details[3].desc') }}
             </div>
           </div>
         </div>
@@ -311,57 +310,57 @@
     </div>
     <div class="home_05_choose">
       <div class="home_03_register__title">
-        为什么选择阿里云
+        {{ $t('home.why.title') }}
         <span>/ALIBABA</span></div>
       <div class="features">
         <div class="feature-item">
           <span class="dot"></span>
           <div class="feature-content">
-            <h4>全球云计算名列前茅</h4>
-            <p>亚太地区云市场占有率断崖式第一，全球云计算市场份额名列前三。</p>
+            <h4>{{ $t('home.why.items[0].title') }}</h4>
+            <p>{{ $t('home.why.items[0].desc') }}</p>
           </div>
         </div>
 
         <div class="feature-item">
           <span class="dot"></span>
           <div class="feature-content">
-            <h4>计算资源经济实惠</h4>
-            <p>相较于 AWS 等海外服务商，配置价格下降超过 20%，适合企业与个人使用。</p>
+            <h4>{{ $t('home.why.items[1].title') }}</h4>
+            <p>{{ $t('home.why.items[1].desc') }}</p>
           </div>
         </div>
 
         <div class="feature-item">
           <span class="dot"></span>
           <div class="feature-content">
-            <h4>全球基础设施丰富</h4>
-            <p>覆盖全球 28 个地理区域，超过 85 个可用区，覆盖所有主流区域。</p>
+            <h4>{{ $t('home.why.items[2].title') }}</h4>
+            <p>{{ $t('home.why.items[2].desc') }}</p>
           </div>
         </div>
 
         <div class="feature-item">
           <span class="dot"></span>
           <div class="feature-content">
-            <h4>完善的产品服务体系</h4>
-            <p>全面的行业解决方案，全球数十亿用户共同选择，可靠易用，提升企业效率。</p>
+            <h4>{{ $t('home.why.items[3].title') }}</h4>
+            <p>{{ $t('home.why.items[3].desc') }}</p>
           </div>
         </div>
       </div>
     </div>
     <div class="home_06_Activity">
       <div class="home_03_register__title">
-        优惠活动
+        {{ $t('home.why.title') }}
         <span>/DISCOUNT</span></div>
       <div class="home_06_Activity__bg">
         <div class="content-wrapper">
           <!-- 左上文案区 -->
           <div class="text-area">
-            <h1>云启新程，智领未来！</h1>
+            <h1>{{ $t('home.why.subtitle') }}</h1>
             <div class="tags">
-              <span>高效</span>
-              <span>稳定</span>
-              <span>安全</span>
+              <span>{{ $t('home.why.tags[0]') }}</span>
+              <span>{{ $t('home.why.tags[1]') }}</span>
+              <span>{{ $t('home.why.tags[2]') }}</span>
             </div>
-            <p>现在加入，享超值优惠，让你的企业在云端腾飞！</p>
+            <p>{{ $t('home.why.desc') }}</p>
           </div>
 
           <!-- 优惠卡片 -->
@@ -411,13 +410,6 @@ import {contactLinks as contactLinksRaw} from '../public/js/contact_link.js'
 
 const contactLinks = contactLinksRaw
 
-// 定义类型接口
-interface Item {
-  id: number
-  imageUrl: string
-  title: string
-}
-
 const companies = [
   {
     imgSrc: '/assets/IMG/logos/amused-logo.jpg',
@@ -433,28 +425,29 @@ const companies = [
   }
 ]
 // 声明响应式数组
-const items = ref<Item[]>([
+const items = computed(() => [
   {
     id: 1,
     imageUrl: '/assets/IMG/icons/fast-signup.png',
-    title: '一秒开户'
+    titleKey: 'home.highlights.list.0'
   },
   {
     id: 2,
     imageUrl: '/assets/IMG/icons/instant-payment.png',
-    title: '极速代付'
+    titleKey: 'home.highlights.list.1'
   },
   {
     id: 3,
     imageUrl: '/assets/IMG/icons/discount-promo.png',
-    title: '高额折扣'
+    titleKey: 'home.highlights.list.2'
   },
   {
     id: 4,
     imageUrl: '/assets/IMG/icons/oem-tech.png',
-    title: '原厂技术'
+    titleKey: 'home.highlights.list.3'
   }
 ])
+
 
 const isMobile = ref(false)
 
@@ -488,7 +481,7 @@ a {
   margin-top: 1px;
   width: 100%;
   height: 100%;
-  background: url("../public/assets/IMG/backgrounds/home_01.jpg") no-repeat;
+  background: url(" /assets/IMG/backgrounds/home_01.jpg") no-repeat;
   background-size: 100% 100%;
   position: relative;
 }
@@ -612,7 +605,7 @@ a {
 }
 
 .home_02_banner_background {
-  background: url("../public/assets/IMG/backgrounds/home_02.jpg") no-repeat;
+  background: url(" /assets/IMG/backgrounds/home_02.jpg") no-repeat;
   width: 100%;
   height: 100%;
   margin-top: 7%;
@@ -960,7 +953,7 @@ a {
 .home_06_Activity__bg {
   width: 100%;
   height: 100%;
-  background: url('../public/assets/IMG/backgrounds/home_06.jpg') no-repeat center center;
+  background: url(' /assets/IMG/backgrounds/home_06.jpg') no-repeat center center;
   background-size: cover;
   position: relative;
   overflow: hidden;
@@ -1045,7 +1038,7 @@ a {
     margin-top: 1px;
     width: 100%;
     height: 383px;
-    background: url("../public/assets/IMG/backgrounds/home_01_Android.jpg") no-repeat;
+    background: url(" /assets/IMG/backgrounds/home_01_Android.jpg") no-repeat;
     background-size: 100% 100%;
     position: relative;
     padding-left: 5%;
@@ -1414,7 +1407,7 @@ a {
   }
 
   .home_06_Activity__bg {
-    background: url('../public/assets/IMG/backgrounds/home_06_2.jpg') no-repeat center center;
+    background: url(' /assets/IMG/backgrounds/home_06_2.jpg') no-repeat center center;
     background-size: 100% 100%;
   }
 

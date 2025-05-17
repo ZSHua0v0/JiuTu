@@ -104,10 +104,10 @@
             <p class="price">{{ offer.price }}</p>
             <ul class="features">
               <li v-for="(feature, i) in offer.features" :key="i">
-                <img src="../public/assets/IMG/icons/check.png" class="check-icon"/> {{ feature }}
+                <img src="/assets/IMG/icons/check.png" class="check-icon"/> {{ feature }}
               </li>
             </ul>
-            <button class="contact-btn"><a :href="contactLinks.CustomerService" target="_blank">联系客服</a></button>
+            <button class="contact-btn"><a :href="contactLinks.CustomerService" target="_blank"><div style="width: 100%">联系客服</div></a></button>
           </div>
         </div>
       </div>
@@ -122,7 +122,7 @@
           <div class="offer-card-mini-top"><h2 class="title">{{ offer.title }}</h2>
             <div style="display: flex;justify-content: space-between;align-items: center"><p class="price">
               {{ offer.price }}</p>
-              <img src="../public/assets/IMG/icons/arrow.png" alt="jiutu"/>
+              <img src="/assets/IMG/icons/arrow.png" alt="jiutu"/>
             </div>
           </div>
           <div class="offer-card-mini">
@@ -131,10 +131,10 @@
 
               <div class="features">
                 <div v-for="(feature, i) in offer.features" :key="i">
-                  <img src="../public/assets/IMG/icons/check.png" class="check-icon"/> {{ feature }}
+                  <img src="/assets/IMG/icons/check.png" class="check-icon"/> {{ feature }}
                 </div>
               </div>
-              <button class="contact-btn2"><a :href="contactLinks.CustomerService" target="_blank">联系客服</a></button>
+              <button class="contact-btn"><a :href="contactLinks.CustomerService" target="_blank"><div style="width: 100%">联系客服</div></a></button>
             </div>
           </div>
         </div>
@@ -211,7 +211,7 @@ a {
 .home_06_Activity__bg {
   width: 100%;
   height: 100%;
-  background: url('../public/assets/IMG/backgrounds/home_06.jpg') no-repeat center center;
+  background: url('/assets/IMG/backgrounds/home_06.jpg') no-repeat center center;
   background-size: cover;
   position: relative;
   overflow: hidden;
@@ -447,7 +447,7 @@ a {
   margin-top: 1px;
   width: 100%;
   height: 100%;
-  background: url("../public/assets/IMG/backgrounds/home_01.jpg") no-repeat;
+  background: url("/assets/IMG/backgrounds/home_01.jpg") no-repeat;
   background-size: 100% 100%;
   position: relative;
 }
@@ -564,7 +564,7 @@ a {
     margin-top: 1px;
     width: 100%;
     height: 383px;
-    background: url("../public/assets/IMG/backgrounds/home_01_Android.jpg") no-repeat;
+    background: url("/assets/IMG/backgrounds/home_01_Android.jpg") no-repeat;
     background-size: 100% 100%;
     position: relative;
     padding-left: 5%;
@@ -707,7 +707,29 @@ a {
     display: block;
     width: 100%;
   }
-
+  .contact-btn {
+    background-color: #f90;
+    color: black;
+    border: none;
+    padding: 4px 12px;
+    width: 30%;
+    cursor: pointer;
+    position: absolute;
+    bottom: 15%;
+    left: auto;
+    right: 0;
+  }
+  .contact-btn a{
+    color: #333;
+  }
+  .__border0{
+    min-height: 150px !important;
+  }
+  .__border_right {
+    border-right: none;
+    width: 100%;
+    min-height: 150px !important;
+  }
   .features > div {
     display: inline-block;
     font-size: 13px;
@@ -719,8 +741,8 @@ a {
   }
 
   .icon {
-    width: 7rem;
-    height: 7rem;
+    width: 8rem;
+    height: 8rem;
     margin-bottom: 10px;
   }
 

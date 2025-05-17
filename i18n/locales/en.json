@@ -1,0 +1,157 @@
+{
+  "menu": {
+    "home": "Home",
+    "alibaba": "Alibaba Intl",
+    "deals": "Product Deals",
+    "register": "Fast Register",
+    "solutions": "Solutions",
+    "cases": "Case Studies",
+    "guide": "Guide"
+  },
+  "home": {
+    "banner": {
+      "title_before": "Empower your cloud journey",
+      "title_span": "with Jiutu",
+      "subtitle": "Alibaba Cloud global agent, helping your business sail abroad with ease!",
+      "button": "Contact Now",
+      "tag": "Alibaba Cloud"
+    },
+    "highlights": {
+      "list": [
+        "Instant Signup",
+        "Fast Payment",
+        "Cost-saving Discount",
+        "OEM Technology"
+      ]
+    },
+    "features": [
+      {
+        "before": "Over",
+        "highlight": "12年",
+        "after": "years of industry experience"
+      },
+      {
+        "highlight1": "20+",
+        "mid": "professional engineers,",
+        "highlight2": "30+",
+        "after": "experienced account managers"
+      },
+      {
+        "before": "Served over",
+        "highlight": "2000+",
+        "after": "global enterprises"
+      },
+      {
+        "text": "Certified by major cloud providers"
+      },
+      {
+        "before": "",
+        "highlight": "200+",
+        "after": "cloud professional certifications"
+      },
+      {
+        "text": "Rich experience in architecture, migration, testing and O&M"
+      },
+      {
+        "btn": "Contact Us"
+      },
+      {
+        "title": "Reduce Cloud Cost",
+        "title1": "Technical Support",
+        "title2": "Attentive Service",
+        "title3": "Expand Industry Network"
+      }
+    ],
+    "register": {
+      "title": "Registration Process",
+      "steps": [
+        {
+          "title": "Contact Account Manager",
+          "desc": [
+            "Multiple contact options",
+            "Barrier-free communication"
+          ]
+        },
+        {
+          "title": "Discuss Requirements",
+          "desc": [
+            "Manager tailors to your needs",
+            "Customized configuration"
+          ]
+        },
+        {
+          "title": "Instant Account Opening",
+          "desc": [
+            "Advance payment, open directly",
+            "All payment channels supported"
+          ]
+        }
+      ]
+    },
+    "advantages": {
+      "title": "Our Advantages",
+      "items": [
+        "Instant Signup, No Real Name",
+        "Exclusive Discounts",
+        "Zero Fee & Transparent Billing",
+        "OEM Technology & Support"
+      ],
+      "details": [
+        {
+          "title": "Instant Signup, No Real Name",
+          "subtitle": "Fast registration and no real name required",
+          "desc": "No overseas credit card needed. Just an email and 3 minutes."
+        },
+        {
+          "title": "Exclusive Discounts",
+          "subtitle": "Exclusive Offers and bottom-up discounts",
+          "desc": "Top-tier discounts as a global distributor."
+        },
+        {
+          "title": "Zero Fee & Transparent Billing",
+          "subtitle": "No processing fee and transparent billing",
+          "desc": "Monthly invoicing and payments. No hidden charges."
+        },
+        {
+          "title": "OEM Technology & Support",
+          "subtitle": "Original technical and professional services",
+          "desc": "Certified engineers and OEM tech ensure your cloud security."
+        }
+      ]
+    },
+    "why": {
+      "title": "Why Choose Alibaba Cloud",
+      "items": [
+        {
+          "title": "Leading Global Cloud Provider",
+          "desc": "No.1 in APAC, Top 3 globally."
+        },
+        {
+          "title": "Cost-effective Resources",
+          "desc": "20%+ cheaper than AWS, ideal for businesses and individuals."
+        },
+        {
+          "title": "Global Infrastructure",
+          "desc": "28 regions, 85+ zones worldwide."
+        },
+        {
+          "title": "Comprehensive Services",
+          "desc": "Robust solutions chosen by billions for efficiency."
+        }
+      ]
+    },
+    "discount": {
+      "title": "Promotions",
+      "subtitle": "Start Smart, Rise Fast!",
+      "desc": "Join now for top-tier cloud benefits.",
+      "tags": [
+        "Efficient",
+        "Stable",
+        "Secure"
+      ]
+    },
+    "cases": {
+      "title": "Case Studies"
+    }
+  }
+}

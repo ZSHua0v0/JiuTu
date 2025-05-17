@@ -1,0 +1,144 @@
+{
+  "menu": {
+    "home": "首页",
+    "alibaba": "阿里国际",
+    "deals": "产品优惠",
+    "register": "极速开户",
+    "solutions": "解决方案",
+    "cases": "成功案例",
+    "guide": "使用指南"
+  },
+  "home": {
+    "banner": {
+      "title_before": "上云用九途",
+      "title_span": "平步青云路",
+      "subtitle": "阿里云国际版全球代理，助力您的企业扬帆出海，平步青云！",
+      "button": "立即咨询",
+      "tag": "Alibaba Cloud"
+    },
+    "highlights": {
+      "list": [
+        "一秒开户",
+        "极速付款",
+        "省钱折扣",
+        "原厂技术"
+      ]
+    },
+    "features": [
+      {
+        "before": "具有",
+        "highlight": "12年",
+        "after": "以上行业服务经验"
+      },
+      {
+        "highlight1": "20+",
+        "mid": "专业技术工程师，",
+        "highlight2": "30+",
+        "after": "资深客户经理"
+      },
+      {
+        "before": "服务超过",
+        "highlight": "2000+",
+        "after": "海内外企业"
+      },
+      {
+        "text": "国内外大型云厂商资质认证"
+      },
+      {
+        "before": "",
+        "highlight": "200+",
+        "after": "云相关专业技术认证证书"
+      },
+      {
+        "text": "丰富的云架构设计、迁移、实验和运维经验"
+      },
+      {
+        "btn": "联系我们"
+      },
+      {
+        "title":"降低上云成本",
+        "title1":"专业技术支持",
+        "title2":"提供贴心服务",
+        "title3":"拓展行业人脉"
+      }
+    ],
+    "register": {
+      "title": "开户流程",
+      "steps": [
+        {
+          "title": "联系客户经理",
+          "desc": ["多种联系方式", "无障碍快捷沟通"]
+        },
+        {
+          "title": "沟通需求配置",
+          "desc": ["客户经理根据您的需求", "为您定制配置"]
+        },
+        {
+          "title": "极速开户",
+          "desc": ["预付款项 直接开户", "支持全通道支付方式"]
+        }
+      ]
+    },
+    "advantages": {
+      "title": "我们的优势",
+      "items": [
+        "极速注册 无需实名",
+        "专属优惠 触底折扣",
+        "免手续费 账单透明",
+        "原厂技术 专业服务"
+      ],
+      "details": [
+        {
+          "title": "极速注册 无需实名",
+          "subtitle": "Fast registration and no real name required",
+          "desc": "无需海外信用卡，仅需一个邮箱三分钟完成注册。"
+        },
+        {
+          "title": "专属优惠 触底折扣",
+          "subtitle": "Exclusive Offers and bottom-up discounts",
+          "desc": "全球总代理高级折扣权限，给您最大优惠。"
+        },
+        {
+          "title": "免手续费 账单透明",
+          "subtitle": "No processing fee and transparent billing",
+          "desc": "平台出具月度账单，根据账单付款，杜绝高额手续费。"
+        },
+        {
+          "title": "原厂技术 专业服务",
+          "subtitle": "Original technical and professional services",
+          "desc": "阿里云官方认证工程师与原厂技术共同保障您的云安全。"
+        }
+      ]
+    },
+    "why": {
+      "title": "为什么选择阿里云",
+      "items": [
+        {
+          "title": "全球云计算名列前茅",
+          "desc": "亚太地区云市场占有率断崖式第一，全球云计算市场份额名列前三。"
+        },
+        {
+          "title": "计算资源经济实惠",
+          "desc": "相较于 AWS 等海外服务商，配置价格下降超过 20%，适合企业与个人使用。"
+        },
+        {
+          "title": "全球基础设施丰富",
+          "desc": "覆盖全球 28 个地理区域，超过 85 个可用区，覆盖所有主流区域。"
+        },
+        {
+          "title": "完善的产品服务体系",
+          "desc": "全面的行业解决方案，全球数十亿用户共同选择，可靠易用，提升企业效率。"
+        }
+      ]
+    },
+    "discount": {
+      "title": "优惠活动",
+      "subtitle": "云启新程，智领未来！",
+      "desc": "现在加入，享超值优惠，让你的企业在云端腾飞！",
+      "tags": ["高效", "稳定", "安全"]
+    },
+    "cases": {
+      "title": "成功案例"
+    }
+  }
+}

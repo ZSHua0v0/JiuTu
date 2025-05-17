@@ -14,20 +14,24 @@
 
     <!-- 下拉菜单 -->
     <Transition name="fade">
-      <div
-          v-if="showDropdown"
-          class="dropdown-menu"
-      >
-        <div class="menu-item">English</div>
-        <div class="menu-item">中文</div>
-        <div class="menu-item">日本語</div>
+      <div v-if="showDropdown" class="dropdown-menu">
+        <div class="menu-item" @click="changeLanguage('en')">English</div>
+        <div class="menu-item" @click="changeLanguage('zh')">中文</div>
+        <div class="menu-item" @click="changeLanguage('zh-Hant')">中文繁体</div>
       </div>
     </Transition>
+
   </div>
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
+import {ref} from 'vue'
+import {useI18n} from 'vue-i18n'
+import { useRoute, useRouter } from 'vue-router'
+
+const route = useRoute()
+const router = useRouter()
+const {locale} = useI18n()
 
 const showDropdown = ref(false)
 let hideTimeout: number | null = null
@@ -48,6 +52,21 @@ const cancelHide = () => {
 const toggleDropdown = () => {
   showDropdown.value = !showDropdown.value
 }
+
+// 切换语言
+const changeLanguage = async (lang: string) => {
+  locale.value = lang
+  document.cookie = `i18n_redirected=${lang}; path=/` // ✅ 保存语言到 cookie
+  showDropdown.value = false
+
+  const pathWithoutLocale = route.fullPath.replace(/^\/(zh|en|zh-Hant)(?=\/|$)/, '') || '/'
+  const newPath = `/${lang}${pathWithoutLocale.startsWith('/') ? pathWithoutLocale : '/' + pathWithoutLocale}`
+
+  await router.push(newPath)
+}
+
+
+
 </script>
 
 <style scoped>

@@ -70,7 +70,7 @@ const guideList = computed(() =>
 <style scoped>
 .guide-container {
   width: 65%;
-  margin: 3rem auto 10% auto;
+  margin: 10rem auto 10% auto;
   display: flex;
   flex-direction: column;
   gap: 4rem;

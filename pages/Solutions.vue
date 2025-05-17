@@ -10,7 +10,7 @@
           <div v-if="!isMobile" class="solution-left">
             <div class="left-block">
               <div class="block-title">
-                <img src="../public/assets/IMG/icons/black_star.png" alt="jiutu" class="icon"/>
+                <img src="/assets/IMG/icons/black_star.png" alt="jiutu" class="icon"/>
                 <h3>完善的解决方案</h3>
               </div>
               <ul>
@@ -22,7 +22,7 @@
             </div>
             <div class="left-block">
               <div class="block-title">
-                <img src="../public/assets/IMG/icons/black_star.png" alt="jiutu" class="icon"/>
+                <img src="/assets/IMG/icons/black_star.png" alt="jiutu" class="icon"/>
                 <h3>支持最高性能</h3>
               </div>
               <ul>
@@ -35,14 +35,14 @@
           <div v-if="isMobile" class="solution-left">
             <div class="left-block">
               <div class="block-title">
-                <img src="../public/assets/IMG/icons/black_star.png" alt="jiutu" class="icon"/>
+                <img src="/assets/IMG/icons/black_star.png" alt="jiutu" class="icon"/>
                 <h3>完善的解决方案</h3>
               </div>
               <div class="solution-left-mobile-margin">直播等保定审营销、自适应复杂链路、多类攻击模型、低延时直播</div>
             </div>
             <div class="left-block">
               <div class="block-title">
-                <img src="../public/assets/IMG/icons/black_star.png" alt="jiutu" class="icon"/>
+                <img src="/assets/IMG/icons/black_star.png" alt="jiutu" class="icon"/>
                 <h3>支持最高性能</h3>
               </div>
               <div class="solution-left-mobile-margin">日活：高达1000万&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 并发：高达100万
@@ -54,7 +54,7 @@
           <div class="solution-right">
             <div class="issue-section">
               <div class="section-title">
-                <img src="../public/assets/IMG/icons/wrong.png" alt="jiutu" class="icon"/>
+                <img src="/assets/IMG/icons/wrong.png" alt="jiutu" class="icon"/>
                 <h3>问题 Issue:</h3>
               </div>
               <div v-if="isMobile" style="margin-left: 8%">
@@ -71,7 +71,7 @@
 
             <div class="scheme-section">
               <div class="section-title">
-                <img src="../public/assets/IMG/icons/check.png" alt="jiutu" class="icon"/>
+                <img src="/assets/IMG/icons/check.png" alt="jiutu" class="icon"/>
                 <h3>解决 Scheme:</h3>
               </div>
               <p>
@@ -90,7 +90,7 @@
           <div class="solution-left __background0">
             <div class="left-block __hr">
               <div class="block-title">
-                <img src="../public/assets/IMG/icons/black_star.png" alt="jiutu" class="icon"/>
+                <img src="/assets/IMG/icons/black_star.png" alt="jiutu" class="icon"/>
                 <h3>方案优势</h3>
               </div>
               <ul class="__widthleft1">
@@ -101,7 +101,7 @@
             </div>
             <div class="left-block">
               <div class="block-title">
-                <img src="../public/assets/IMG/icons/black_star.png" alt="jiutu" class="icon"/>
+                <img src="/assets/IMG/icons/black_star.png" alt="jiutu" class="icon"/>
                 <h3>解决难题</h3>
               </div>
               <ul class="__widthleft1">
@@ -116,7 +116,7 @@
           <div class="solution-right __background1">
             <div class="issue-section">
               <div class="section-title">
-                <img src="../public/assets/IMG/icons/wrong.png" alt="jiutu" class="icon"/>
+                <img src="/assets/IMG/icons/wrong.png" alt="jiutu" class="icon"/>
                 <h3>问题 Issue:</h3>
               </div>
               <ul v-if="!isMobile" style="background: white">
@@ -132,7 +132,7 @@
 
             <div class="scheme-section">
               <div class="section-title">
-                <img src="../public/assets/IMG/icons/check.png" alt="jiutu" class="icon"/>
+                <img src="/assets/IMG/icons/check.png" alt="jiutu" class="icon"/>
                 <h3>解决 Scheme:</h3>
               </div>
               <p style="background: white" :style="isMobile ? { paddingLeft: '9%' } : {}">
@@ -154,7 +154,7 @@
           <div class="solution-left __background2" :class="{ 'solution-left2': isMobile }">
             <div class="issue-section">
               <div class="section-title">
-                <img src="../public/assets/IMG/icons/wrong.png" alt="jiutu" class="icon"/>
+                <img src="/assets/IMG/icons/wrong.png" alt="jiutu" class="icon"/>
                 <h3>问题 Issue:</h3>
               </div>
               <ul class="__padding_leFt" style="background: white" :style="isMobile ? { paddingLeft: '9%',margin: '0' } : {}">
@@ -167,7 +167,7 @@
           <div class="solution-right __background1">
             <div class="scheme-section">
               <div class="section-title">
-                <img src="../public/assets/IMG/icons/check.png" alt="jiutu" class="icon"/>
+                <img src="/assets/IMG/icons/check.png" alt="jiutu" class="icon"/>
                 <h3>解决 Scheme:</h3>
               </div>
               <p :style="isMobile ? { paddingLeft: '9%' } : {}">
@@ -194,7 +194,7 @@
             <!-- 左侧 -->
             <div class="block-card">
               <div class="block-title">
-                <img src="../public/assets/IMG/icons/black_star.png" alt="jiutu" class="icon"/>
+                <img src="/assets/IMG/icons/black_star.png" alt="jiutu" class="icon"/>
                 <h3>Quantum Ledger Database</h3>
               </div>
               <p>
@@ -205,7 +205,7 @@
             <!-- 右侧 -->
             <div class="block-card">
               <div class="block-title">
-                <img src="../public/assets/IMG/icons/black_star.png" alt="jiutu" class="icon"/>
+                <img src="/assets/IMG/icons/black_star.png" alt="jiutu" class="icon"/>
                 <h3>Managed Blockchain</h3>
               </div>
               <p>

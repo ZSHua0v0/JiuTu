@@ -8,7 +8,7 @@
     <footer class="footer">
       <div class="footer-left">
         <div class="logo-section">
-          <img src="../../public/assets/IMG/logos/jiutu_logo_white.png" alt="Logo" class="footer-logo"/>
+          <img src="/assets/IMG/logos/jiutu_logo_white.png" alt="Logo" class="footer-logo"/>
           <h2 class="company-name">九途</h2>
         </div>
         <div class="core-values-flex">
@@ -25,77 +25,77 @@
         <div class="footer-column">
           <h3>热门产品</h3>
           <ul>
-            <li>轻量云服务器</li>
-            <li>大带宽服务器</li>
-            <li>EC2服务器</li>
-            <li>站群服务器</li>
-            <li>高防服务器</li>
+            <li><nuxt-link to="/ProductDeals" style="color: #333">轻量云服务器</nuxt-link></li>
+            <li><nuxt-link to="/ProductDeals" style="color: #333">大带宽服务器</nuxt-link></li>
+            <li><nuxt-link to="/ProductDeals" style="color: #333">EC2服务器</nuxt-link></li>
+            <li><nuxt-link to="/ProductDeals" style="color: #333">站群服务器</nuxt-link></li>
+            <li><nuxt-link to="/ProductDeals" style="color: #333">高防服务器</nuxt-link></li>
           </ul>
         </div>
         <div class="footer-column">
           <h3>成功案例</h3>
           <ul>
-            <li>Amused-group</li>
-            <li>蔚蓝地图</li>
-            <li>小鱼办公</li>
-            <li>云派网络</li>
+            <li><nuxt-link to="/CaseStudies/amused-group" style="color: #333">Amused-group</nuxt-link></li>
+            <li><nuxt-link to="/CaseStudies/bluemap" style="color: #333">蔚蓝地图</nuxt-link></li>
+            <li><nuxt-link to="/CaseStudies/nemo" style="color: #333">小鱼办公</nuxt-link></li>
+            <li><nuxt-link to="/CaseStudies/yunpai" style="color: #333">云派网络</nuxt-link></li>
           </ul>
         </div>
         <div class="footer-column">
           <h3>使用指南</h3>
           <ul class="__border_bottom">
-            <li>创建EC2与宝塔部署</li>
-            <li>边缘网络加速</li>
-            <li>轻量应用服务器</li>
-            <li>域名购买及解析</li>
-            <li>云服务器ECS</li>
-            <li>专有宿主机LDDH</li>
+            <li><nuxt-link to="/guide/ec2-bt" style="color: #333">创建EC2与宝塔部署</nuxt-link></li>
+            <li><nuxt-link to="/guide/ena" style="color: #333">边缘网络加速</nuxt-link></li>
+            <li><nuxt-link to="/guide/sas" style="color: #333">轻量应用服务器</nuxt-link></li>
+            <li><nuxt-link to="/guide/domain" style="color: #333">域名购买及解析</nuxt-link></li>
+            <li><nuxt-link to="/guide/ecs" style="color: #333">云服务器ECS</nuxt-link></li>
+            <li><nuxt-link to="/guide/ddh" style="color: #333">专有宿主机LDDH</nuxt-link></li>
           </ul>
         </div>
       </div>
 
       <div v-if="!isMobile" class="footer-right">
         <div class="footer-column-flex">
-          <div>关于我们</div>
-          <div>联系我们</div>
+          <div><nuxt-link to="/FastRegister" style="color: #333">关于我们</nuxt-link></div>
+          <div><nuxt-link to="/FastRegister" style="color: #333">联系我们</nuxt-link></div>
         </div>
         <div class="footer-column-flex">
-          <div>站点地图</div>
-          <div>标签地图</div>
-          <div>隐私政策</div>
+          <div><nuxt-link to="/FastRegister" style="color: #333">站点地图</nuxt-link></div>
+          <div><nuxt-link to="/FastRegister" style="color: #333">标签地图</nuxt-link></div>
+          <div><nuxt-link to="/FastRegister" style="color: #333">隐私政策</nuxt-link></div>
         </div>
         <div class="icon-list">
-          <img src="../../public/assets/IMG/icons/wechat_white_bg.png" alt="WeChat"/>
-          <img src="../../public/assets/IMG/icons/phone_white_bg.png" alt="Phone"/>
-          <img src="../../public/assets/IMG/icons/tg_white_bg.png" alt="Mail"/>
-          <img class="imgW2" src="../../public/assets/IMG/icons/CustomerS2.png" alt="Support"/>
+          <img src="/assets/IMG/icons/wechat_white_bg.png" alt="WeChat"/>
+          <img src="/assets/IMG/icons/phone_white_bg.png" alt="Phone"/>
+          <img src="/assets/IMG/icons/tg_white_bg.png" alt="Mail"/>
+          <img class="imgW2" src="/assets/IMG/icons/CustomerS2.png" alt="Support"/>
         </div>
       </div>
 
       <div v-if="isMobile" class="footer-right">
         <div class="footer-column-flex">
-          <div>关于我们</div>
-          <div>联系我们</div>
+          <div><nuxt-link to="/FastRegister" style="color: #333">关于我们</nuxt-link></div>
+          <div><nuxt-link to="/FastRegister" style="color: #333">联系我们</nuxt-link></div>
         </div>
         <div class="footer-column-flex">
-          <div>站点地图</div>
-          <div>标签地图</div>
-          <div>隐私政策</div>
+          <div><nuxt-link to="/FastRegister" style="color: #333">站点地图</nuxt-link></div>
+          <div><nuxt-link to="/FastRegister" style="color: #333">标签地图</nuxt-link></div>
+          <div><nuxt-link to="/FastRegister" style="color: #333">隐私政策</nuxt-link></div>
         </div>
 
       </div>
       <div v-if="isMobile" class="icon-list">
         <a :href="contactLinks.CustomerService" target="_blank">
-          <img class="imgW2" src="../../public/assets/IMG/icons/CustomerS2.png" alt="Support"/>
+          <img class="imgW2" src="/assets/IMG/icons/CustomerS2.png" alt="Support"/>
         </a>
         <a :href="contactLinks.wechat" target="_blank">
-          <img src="../../public/assets/IMG/icons/wechat_white_bg.png" alt="WeChat"/>
+          <img src="/assets/IMG/icons/wechat_white_bg.png" alt="WeChat"/>
         </a>
         <a :href="contactLinks.phone" target="_blank">
-          <img src="../../public/assets/IMG/icons/phone_white_bg.png" alt="Phone"/>
+          <img src="/assets/IMG/icons/phone_white_bg.png" alt="Phone"/>
         </a>
         <a :href="contactLinks.telegram" target="_blank">
-          <img src="../../public/assets/IMG/icons/tg_white_bg.png" alt="Mail"/>
+          <img src="/assets/IMG/icons/tg_white_bg.png" alt="Mail"/>
         </a>
       </div>
     </footer>

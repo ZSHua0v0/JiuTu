@@ -1,6 +1,6 @@
 <template>
   <div class="app-container">
-    <AppHeader/>
+    <AppHeader class="app-header"></AppHeader>
     <div class="app-content">
       <main class="main-content">
         <slot/> <!-- 页面内容插入点 -->
@@ -18,6 +18,15 @@ import AppFooter from "./AppFooter.vue";
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+
+}
+.app-header{
+  position: fixed;
+  width: 100%;
+  height: 93px;
+}
+.main-content{
+  margin-top: 93px;
 }
 </style>
 <!--# 主容器布局-->
