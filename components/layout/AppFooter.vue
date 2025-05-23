@@ -2,67 +2,76 @@
   <div>
     <div v-if="isMobile" class="music-bars">
       <span v-for="i in 13" key="i"></span>
-      <!-- 可继续添加更多 span -->
     </div>
 
     <footer class="footer">
-      <div class="footer-left">
+      <div :class="[
+      'footer-left',
+      locale === 'en' ? 'footer-left_en' : ''
+    ]">
         <div class="logo-section">
           <img src="/assets/IMG/logos/jiutu_logo_white.png" alt="Logo" class="footer-logo"/>
-          <h2 class="company-name">九途</h2>
+          <h2 class="company-name">{{ $t('Footer.company.name') }}</h2>
         </div>
         <div class="core-values-flex">
-          <div class="core-values">
-            <p>九途核心价值：</p>
-            <p>降低上云成本 &nbsp;&nbsp;专业技术支持</p>
-            <p>提供贴心服务 &nbsp;&nbsp;拓展行业人脉</p>
+          <div :class="[
+      'core-values',
+      locale === 'en' ? 'core-values_en' : ''
+    ]">
+            <p>{{ $t('Footer.company.coreTitle') }}</p>
+            <p>{{ $t('Footer.company.core1') }} &nbsp;&nbsp;{{ $t('Footer.company.core2') }}</p>
+            <p>{{ $t('Footer.company.core3') }} &nbsp;&nbsp;{{ $t('Footer.company.core4') }}</p>
           </div>
-          <button class="contact-button"><a :href="contactLinks.CustomerService" target="_blank">联系我们</a></button>
+          <button class="contact-button">
+            <a :href="contactLinks.CustomerService" target="_blank">{{ $t('Footer.company.contact') }}</a>
+          </button>
         </div>
       </div>
 
       <div class="footer-middle">
         <div class="footer-column">
-          <h3>热门产品</h3>
+          <h3>{{ $t('Footer.product.title') }}</h3>
           <ul>
-            <li><nuxt-link to="/ProductDeals" style="color: #333">轻量云服务器</nuxt-link></li>
-            <li><nuxt-link to="/ProductDeals" style="color: #333">大带宽服务器</nuxt-link></li>
-            <li><nuxt-link to="/ProductDeals" style="color: #333">EC2服务器</nuxt-link></li>
-            <li><nuxt-link to="/ProductDeals" style="color: #333">站群服务器</nuxt-link></li>
-            <li><nuxt-link to="/ProductDeals" style="color: #333">高防服务器</nuxt-link></li>
+            <li><nuxt-link to="/ProductDeals" style="color: #333">{{ $t('Footer.product.items[0]') }}</nuxt-link></li>
+            <li><nuxt-link to="/ProductDeals" style="color: #333">{{ $t('Footer.product.items[1]') }}</nuxt-link></li>
+            <li><nuxt-link to="/ProductDeals" style="color: #333">{{ $t('Footer.product.items[2]') }}</nuxt-link></li>
+            <li><nuxt-link to="/ProductDeals" style="color: #333">{{ $t('Footer.product.items[3]') }}</nuxt-link></li>
+            <li><nuxt-link to="/ProductDeals" style="color: #333">{{ $t('Footer.product.items[4]') }}</nuxt-link></li>
           </ul>
         </div>
+
         <div class="footer-column">
-          <h3>成功案例</h3>
+          <h3>{{ $t('Footer.cases.title') }}</h3>
           <ul>
-            <li><nuxt-link to="/CaseStudies/amused-group" style="color: #333">Amused-group</nuxt-link></li>
-            <li><nuxt-link to="/CaseStudies/bluemap" style="color: #333">蔚蓝地图</nuxt-link></li>
-            <li><nuxt-link to="/CaseStudies/nemo" style="color: #333">小鱼办公</nuxt-link></li>
-            <li><nuxt-link to="/CaseStudies/yunpai" style="color: #333">云派网络</nuxt-link></li>
+            <li><nuxt-link to="/CaseStudies/amused-group" style="color: #333">{{ $t('Footer.cases.items[0]') }}</nuxt-link></li>
+            <li><nuxt-link to="/CaseStudies/bluemap" style="color: #333">{{ $t('Footer.cases.items[1]') }}</nuxt-link></li>
+            <li><nuxt-link to="/CaseStudies/nemo" style="color: #333">{{ $t('Footer.cases.items[2]') }}</nuxt-link></li>
+            <li><nuxt-link to="/CaseStudies/yunpai" style="color: #333">{{ $t('Footer.cases.items[3]') }}</nuxt-link></li>
           </ul>
         </div>
+
         <div class="footer-column">
-          <h3>使用指南</h3>
+          <h3>{{ $t('Footer.guide.title') }}</h3>
           <ul class="__border_bottom">
-            <li><nuxt-link to="/guide/ec2-bt" style="color: #333">创建EC2与宝塔部署</nuxt-link></li>
-            <li><nuxt-link to="/guide/ena" style="color: #333">边缘网络加速</nuxt-link></li>
-            <li><nuxt-link to="/guide/sas" style="color: #333">轻量应用服务器</nuxt-link></li>
-            <li><nuxt-link to="/guide/domain" style="color: #333">域名购买及解析</nuxt-link></li>
-            <li><nuxt-link to="/guide/ecs" style="color: #333">云服务器ECS</nuxt-link></li>
-            <li><nuxt-link to="/guide/ddh" style="color: #333">专有宿主机LDDH</nuxt-link></li>
+            <li><nuxt-link to="/guide/ec2-bt" style="color: #333">{{ $t('Footer.guide.items[0]') }}</nuxt-link></li>
+            <li><nuxt-link to="/guide/ena" style="color: #333">{{ $t('Footer.guide.items[1]') }}</nuxt-link></li>
+            <li><nuxt-link to="/guide/sas" style="color: #333">{{ $t('Footer.guide.items[2]') }}</nuxt-link></li>
+            <li><nuxt-link to="/guide/domain" style="color: #333">{{ $t('Footer.guide.items[3]') }}</nuxt-link></li>
+            <li><nuxt-link to="/guide/ecs" style="color: #333">{{ $t('Footer.guide.items[4]') }}</nuxt-link></li>
+            <li><nuxt-link to="/guide/ddh" style="color: #333">{{ $t('Footer.guide.items[5]') }}</nuxt-link></li>
           </ul>
         </div>
       </div>
 
       <div v-if="!isMobile" class="footer-right">
         <div class="footer-column-flex">
-          <div><nuxt-link to="/FastRegister" style="color: #333">关于我们</nuxt-link></div>
-          <div><nuxt-link to="/FastRegister" style="color: #333">联系我们</nuxt-link></div>
+          <div><nuxt-link to="/FastRegister" style="color: #333">{{ $t('Footer.right.row1[0]') }}</nuxt-link></div>
+          <div><nuxt-link to="/FastRegister" style="color: #333">{{ $t('Footer.right.row1[1]') }}</nuxt-link></div>
         </div>
         <div class="footer-column-flex">
-          <div><nuxt-link to="/FastRegister" style="color: #333">站点地图</nuxt-link></div>
-          <div><nuxt-link to="/FastRegister" style="color: #333">标签地图</nuxt-link></div>
-          <div><nuxt-link to="/FastRegister" style="color: #333">隐私政策</nuxt-link></div>
+          <div><a href="/sitemap_index.xml" target="_blank" style="color: #333">{{ $t('Footer.right.row2[0]') }}</a></div>
+          <div><nuxt-link to="/tags" style="color: #333">{{ $t('Footer.right.row2[1]') }}</nuxt-link></div>
+          <div><nuxt-link to="/privacy" style="color: #333">{{ $t('Footer.right.row2[2]') }}</nuxt-link></div>
         </div>
         <div class="icon-list">
           <img src="/assets/IMG/icons/wechat_white_bg.png" alt="WeChat"/>
@@ -74,16 +83,16 @@
 
       <div v-if="isMobile" class="footer-right">
         <div class="footer-column-flex">
-          <div><nuxt-link to="/FastRegister" style="color: #333">关于我们</nuxt-link></div>
-          <div><nuxt-link to="/FastRegister" style="color: #333">联系我们</nuxt-link></div>
+          <div><nuxt-link to="/FastRegister" style="color: #333">{{ $t('Footer.right.row1[0]') }}</nuxt-link></div>
+          <div><nuxt-link to="/FastRegister" style="color: #333">{{ $t('Footer.right.row1[1]') }}</nuxt-link></div>
         </div>
         <div class="footer-column-flex">
-          <div><nuxt-link to="/FastRegister" style="color: #333">站点地图</nuxt-link></div>
-          <div><nuxt-link to="/FastRegister" style="color: #333">标签地图</nuxt-link></div>
-          <div><nuxt-link to="/FastRegister" style="color: #333">隐私政策</nuxt-link></div>
+          <div><a href="/sitemap_index.xml" target="_blank" style="color: #333">{{ $t('Footer.right.row2[0]') }}</a></div>
+          <div><nuxt-link to="/tags" style="color: #333">{{ $t('Footer.right.row2[1]') }}</nuxt-link></div>
+          <div><nuxt-link to="/privacy" style="color: #333">{{ $t('Footer.right.row2[2]') }}</nuxt-link></div>
         </div>
-
       </div>
+
       <div v-if="isMobile" class="icon-list">
         <a :href="contactLinks.CustomerService" target="_blank">
           <img class="imgW2" src="/assets/IMG/icons/CustomerS2.png" alt="Support"/>
@@ -106,7 +115,21 @@
 a {
   text-decoration: none;
 }
-
+.footer-left_en {
+  flex: 0.4 1 230px !important;
+  display: flex
+;
+  flex-direction: column;
+  gap: 1rem;
+  margin-right: 8%;
+}
+.core-values_en{
+  margin-top: 1rem;
+  background-color: #ffb12b;
+  padding: 0;
+  line-height: 1.8;
+  font-size: clamp(1rem, 0vw, 1.2rem);
+}
 .footer {
   background-color: #ffe5b2;
   display: flex;
@@ -430,9 +453,15 @@ a {
 </style>
 <script setup>
 import {onBeforeUnmount, onMounted, ref} from "vue";
-import {contactLinks as contactLinksRaw} from '../../public/js/contact_link.js'
+import { getContactLinks } from '~/utils/ts/contact_link'
 
-const contactLinks = contactLinksRaw
+const contactLinks = ref({})
+
+onMounted(async () => {
+  contactLinks.value = await getContactLinks()
+})
+
+const {locale} = useI18n()
 
 const isMobile = ref(false)
 

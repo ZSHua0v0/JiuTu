@@ -12,6 +12,8 @@
 <script setup>
 import AppHeader from './AppHeader.vue'
 import AppFooter from "./AppFooter.vue";
+import { usePageMeta } from '@/composables/usePageMeta'
+usePageMeta()
 </script>
 <style scoped>
 .app-container {
@@ -21,12 +23,10 @@ import AppFooter from "./AppFooter.vue";
 
 }
 .app-header{
-  position: fixed;
-  width: 100%;
-  height: 93px;
-}
-.main-content{
-  margin-top: 93px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: white; /* 建议设定背景防止透明 */
 }
 </style>
 <!--# 主容器布局-->

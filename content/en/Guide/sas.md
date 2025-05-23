@@ -3,6 +3,10 @@ title: Simple Application Server
 description: Simple Application Server is a lightweight cloud server for quick setup and easy management, suitable for deploying simple applications.
 _path: /en/guide/sas
 order: 3
+lang: en
+tags:
+  - nuxt
+  - seo
 ---
 
 <div>

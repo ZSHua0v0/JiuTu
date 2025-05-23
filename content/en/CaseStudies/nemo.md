@@ -4,6 +4,10 @@ description: A.I.Nemo, founded in 2014, is a Chinese hardware startup focused on
 image: /assets/IMG/logos/nemo-logo.jpg
 _path: /en/CaseStudies/nemo
 order: 3
+lang: en
+tags:
+  - nuxt
+  - seo
 ---
 
 <div style="margin: 0 auto;text-align: center;">

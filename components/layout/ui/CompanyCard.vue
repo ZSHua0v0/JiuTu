@@ -5,7 +5,7 @@
       <h2 class="company-title">{{ title }}</h2>
       <p class="company-description">{{ description }}</p>
       <NuxtLink :to="link">
-        <button class="detail-button">查看详情</button>
+        <button class="detail-button">{{ $t('home.cases.btn') }}</button>
       </NuxtLink>
     </div>
   </div>

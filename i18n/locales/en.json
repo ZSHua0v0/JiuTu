@@ -1,45 +1,45 @@
 {
   "menu": {
     "home": "Home",
-    "alibaba": "Alibaba Intl",
+    "alibaba": "Alibaba International",
     "deals": "Product Deals",
-    "register": "Fast Register",
+    "register": "Quick Registration",
     "solutions": "Solutions",
-    "cases": "Case Studies",
-    "guide": "Guide"
+    "cases": "Success Stories",
+    "guide": "User Guide"
   },
   "home": {
     "banner": {
-      "title_before": "Empower your cloud journey",
-      "title_span": "with Jiutu",
-      "subtitle": "Alibaba Cloud global agent, helping your business sail abroad with ease!",
+      "title_before": "Cloud with Jiutu",
+      "title_span": "Smooth Cloud Journey",
+      "subtitle": "Alibaba Cloud International global agent, helping your enterprise sail overseas smoothly!",
       "button": "Contact Now",
       "tag": "Alibaba Cloud"
     },
     "highlights": {
       "list": [
-        "Instant Signup",
+        "Instant Registration",
         "Fast Payment",
-        "Cost-saving Discount",
-        "OEM Technology"
+        "Money-saving Discounts",
+        "Official Technical Support"
       ]
     },
     "features": [
       {
         "before": "Over",
-        "highlight": "12年",
-        "after": "years of industry experience"
+        "highlight": "12 years",
+        "after": "of industry service experience"
       },
       {
         "highlight1": "20+",
         "mid": "professional engineers,",
         "highlight2": "30+",
-        "after": "experienced account managers"
+        "after": "senior account managers"
       },
       {
-        "before": "Served over",
+        "before": "Serving over",
         "highlight": "2000+",
-        "after": "global enterprises"
+        "after": "domestic and overseas enterprises"
       },
       {
         "text": "Certified by major cloud providers"
@@ -47,19 +47,19 @@
       {
         "before": "",
         "highlight": "200+",
-        "after": "cloud professional certifications"
+        "after": "cloud-related professional certifications"
       },
       {
-        "text": "Rich experience in architecture, migration, testing and O&M"
+        "text": "Extensive experience in cloud architecture design, migration, testing, and operations"
       },
       {
         "btn": "Contact Us"
       },
       {
-        "title": "Reduce Cloud Cost",
-        "title1": "Technical Support",
-        "title2": "Attentive Service",
-        "title3": "Expand Industry Network"
+        "title": "Reduce Cloud Costs",
+        "title1": "Professional Technical Support",
+        "title2": "Thoughtful Services",
+        "title3": "Expand Industry Connections"
       }
     ],
     "register": {
@@ -67,55 +67,46 @@
       "steps": [
         {
           "title": "Contact Account Manager",
-          "desc": [
-            "Multiple contact options",
-            "Barrier-free communication"
-          ]
+          "desc": ["Multiple contact methods", "Seamless communication"]
         },
         {
-          "title": "Discuss Requirements",
-          "desc": [
-            "Manager tailors to your needs",
-            "Customized configuration"
-          ]
+          "title": "Discuss Configuration Needs",
+          "desc": ["Account manager tailors configuration", "based on your requirements"]
         },
         {
-          "title": "Instant Account Opening",
-          "desc": [
-            "Advance payment, open directly",
-            "All payment channels supported"
-          ]
+          "title": "Quick Registration",
+          "desc": ["Prepayment for direct registration", "Supports all payment channels"]
         }
       ]
     },
     "advantages": {
       "title": "Our Advantages",
       "items": [
-        "Instant Signup, No Real Name",
+        "Quick Registration without Real-name",
         "Exclusive Discounts",
-        "Zero Fee & Transparent Billing",
-        "OEM Technology & Support"
+        "No Handling Fees, Transparent Billing",
+        "Official Technical Support"
       ],
       "details": [
         {
-          "title": "Instant Signup, No Real Name",
+          "title": "Quick Registration without Real-name",
           "subtitle": "Fast registration and no real name required",
-          "desc": "No overseas credit card needed. Just an email and 3 minutes."
+          "desc": "No overseas credit card needed, just an email to complete registration in three minutes."
         },
         {
           "title": "Exclusive Discounts",
           "subtitle": "Exclusive Offers and bottom-up discounts",
-          "desc": "Top-tier discounts as a global distributor."
+          "desc": "Global agent with high-level discount privileges, offering you maximum benefits."
         },
         {
-          "title": "Zero Fee & Transparent Billing",
+          "title": "No Handling Fees, Transparent Billing",
           "subtitle": "No processing fee and transparent billing",
-          "desc": "Monthly invoicing and payments. No hidden charges."
+          "desc": "Monthly bills issued by the platform, pay according to the bill, avoiding high fees."
         },
         {
-          "title": "OEM Technology & Support",
+          "title": "Official Technical Support",
           "subtitle": "Original technical and professional services",
-          "desc": "Certified engineers and OEM tech ensure your cloud security."
+          "desc": "Alibaba Cloud certified engineers and official technical support ensure your cloud security."
         }
       ]
     },
@@ -123,35 +114,401 @@
       "title": "Why Choose Alibaba Cloud",
       "items": [
         {
-          "title": "Leading Global Cloud Provider",
-          "desc": "No.1 in APAC, Top 3 globally."
+          "title": "Leading Global Cloud Computing",
+          "desc": "Dominant market share in Asia-Pacific, top three in global cloud computing market."
         },
         {
-          "title": "Cost-effective Resources",
-          "desc": "20%+ cheaper than AWS, ideal for businesses and individuals."
+          "title": "Cost-effective Computing Resources",
+          "desc": "Compared to AWS and other overseas providers, configuration prices are over 20% lower, suitable for businesses and individuals."
         },
         {
-          "title": "Global Infrastructure",
-          "desc": "28 regions, 85+ zones worldwide."
+          "title": "Rich Global Infrastructure",
+          "desc": "Covers 28 geographic regions worldwide, over 85 availability zones, covering all major areas."
         },
         {
-          "title": "Comprehensive Services",
-          "desc": "Robust solutions chosen by billions for efficiency."
+          "title": "Comprehensive Product and Service System",
+          "desc": "Complete industry solutions, chosen by billions of users globally, reliable and easy to use, enhancing enterprise efficiency."
         }
       ]
     },
     "discount": {
-      "title": "Promotions",
-      "subtitle": "Start Smart, Rise Fast!",
-      "desc": "Join now for top-tier cloud benefits.",
-      "tags": [
-        "Efficient",
-        "Stable",
-        "Secure"
+      "title": "Promotional Activities",
+      "subtitle": "Start a New Cloud Journey, Lead the Future!",
+      "desc": "Join now to enjoy great discounts and let your enterprise soar in the cloud!",
+      "tags": ["Efficient", "Stable", "Secure"],
+      "Spend": "Spend",
+      "Save": "Save"
+    },
+    "cases": {
+      "title": "Success Stories",
+      "btn": "View Details"
+    }
+  },
+  "GlobalAlibaba": {
+    "ranking": {
+      "apac": "Asia-Pacific Cloud Market",
+      "china": "China Cloud Market",
+      "global": "Global Cloud Market"
+    },
+    "title": "Alibaba Cloud Service",
+    "slash": "/SERVICE",
+    "cards": {
+      "0": "Local data centers have become critical infrastructure in the digital age, comparable in importance to roads, railways, and bridges. Alibaba Cloud continuously invests in building stable and reliable global data centers, collaborating with local ecosystem partners to provide localized solutions that solve customer pain points. It has become the cloud provider with the most data centers and CDN nodes in the Asia-Pacific region.",
+      "1": "Providing reliable and user-friendly cloud services, globally intelligent big data, integrated IoT, and mobile collaboration anytime, anywhere. Alibaba Cloud offers multiple industry-specific and general solutions, fully empowering enterprises. To date, it has served more than 3 million customers in over 200 countries and regions worldwide.",
+      "2": "Alibaba Cloud provides a series of China Gateway solutions to help overseas clients enter and grow rapidly in China. With a complete suite of products and services, it offers one-stop support from company registration to IT infrastructure setup. Additionally, Alibaba Cloud helps overseas clients integrate into the Alibaba ecosystem and brings them into the Chinese market through global partnerships.",
+      "3": "With extensive experience protecting Alibaba Group's security, Alibaba Cloud helps clients defend against various threats. Its built-in cloud security capabilities meet global compliance standards, making it the most certified cloud provider in Asia, committed long-term to personal data privacy protection."
+    },
+    "mobileCards": {
+      "0": "Local data centers have become essential infrastructure for digital-era cities, comparable to finance, railways, and bridges. Alibaba Cloud continues investing in front-line data centers and building ecosystems with local partners to provide localized solutions for key business scenarios. It is the provider with the most data centers and CDN nodes in the Asia-Pacific region.",
+      "1": "Delivering reliable, easy-to-use cloud services, globally intelligent big data, integrated IoT, and flexible mobile collaboration. Alibaba Cloud provides both industry-specific and general-purpose solutions to comprehensively empower businesses, serving over 3 million customers in more than 200 countries and regions.",
+      "2": "Alibaba Cloud offers a range of China Gateway solutions to help overseas clients enter and scale quickly in China. With comprehensive services, it supports needs from company registration to network setup and cross-border infrastructure. It also helps overseas clients integrate into the Alibaba ecosystem and enter the China market with global partners.",
+      "3": "Alibaba Cloud has extensive experience in safeguarding Alibaba Group, helping clients counter various threats. As the leading cloud provider in Asia for security compliance, Alibaba Cloud meets global standards and is committed to long-term protection of personal privacy."
+    }
+  },
+  "ProductPage": {
+    "activity": {
+      "title": "Start Your Cloud Journey, Lead the Future with Intelligence!",
+      "tags": ["Efficient", "Stable", "Secure"],
+      "desc": "Join now for incredible offers and take your business to the cloud!"
+    },
+    "banner": {
+      "tag": "Alibaba Cloud",
+      "title_before": "Start Your Cloud Journey",
+      "title_span": "Smooth Sailing in the Cloud",
+      "subtitle": "Alibaba Cloud global agent, helping your business sail overseas smoothly!",
+      "button": "Consult Now"
+    },
+    "process": {
+      "title": "Account Opening Process",
+      "slash": "/PROCESS",
+      "steps": [
+        {
+          "title": "Pre-sales Consultation",
+          "desc_cn": "多种渠道联系客户经理，沟通您的业务需求。",
+          "desc_en": "Connect with an account manager through multiple channels to communicate your business needs."
+        },
+        {
+          "title": "Business Communication",
+          "desc_cn": "明确需求与预算，协助您在云官网选购产品和服务，并获取折扣优惠。",
+          "desc_en": "Clarify your needs and budget, and assist you in purchasing products and services on the cloud official website. Take the discount offer."
+        },
+        {
+          "title": "Prepayment",
+          "desc_cn": "预估月消费，预付款到九途，支持全渠道支付方式。",
+          "desc_en": "Estimate monthly consumption, prepay to Jiutu, support omni-channel payment methods."
+        },
+        {
+          "title": "Account Registration",
+          "desc_cn": "协助您注册阿里云国际账号，并挂靠到九途云组织下",
+          "desc_en": "Assist you in registering an Alibaba Cloud international account and attaching it to the Jiutu Cloud organization."
+        },
+        {
+          "title": "Billing Review",
+          "desc_cn": "每月平台自动出具月账单，并完成开票。",
+          "desc_en": "Every month, the platform automatically issues monthly bills and completes invoicing."
+        },
+        {
+          "title": "Customer Follow-up",
+          "desc_cn": "每月沟通业务情况，了解您的实时需求。",
+          "desc_en": "Communicate your business situation on a monthly basis to understand your real-time needs."
+        }
+      ]
+    },
+    "products": {
+      "title": "Popular Products",
+      "slash": "/PRODUCTS",
+      "contact": "Contact Support",
+      "list": [
+        {
+          "title": "Lightweight Server",
+          "price": "$4.5/month",
+          "features": ["vCPU 2 cores", "1GB RAM", "2TB bandwidth", "ESSD 50GB", "30Mbps peak"]
+        },
+        {
+          "title": "ECS Cloud Server",
+          "price": "$7.9/month",
+          "features": ["Burstable T6", "2H4G", "40G High-efficiency Disk", "1M Public Bandwidth"]
+        },
+        {
+          "title": "CDN",
+          "price": "$0.0085/GB",
+          "features": ["China Mainland Acceleration", "500G Free for New Users", "Pay-as-you-go from $0.0085/GB"]
+        },
+        {
+          "title": "DDoS Protection",
+          "price": "$85 Discount",
+          "features": ["Insurance Plan", "100Mbps Business Bandwidth", "Standard Package", "10x Protection (Upgradable)"]
+        }
+      ]
+    }
+  },
+  "FastRegister": {
+    "banner": {
+      "title": "Alibaba Cloud International",
+      "contact": "Contact Us",
+      "keywords": [
+        "Lightweight High Defense",
+        "Cloud Database",
+        "Software Development",
+        "Object Storage",
+        "Cross-border E-commerce",
+        "Data Analytics"
+      ]
+    },
+    "process": {
+      "title": "Registration Process",
+      "slash": "/PROCESS",
+      "steps": [
+        {
+          "title": "Contact Account Manager",
+          "desc": [
+            "Multiple Contact Methods",
+            "Barrier-Free Fast Communication"
+          ]
+        },
+        {
+          "title": "Discuss Requirements",
+          "desc": [
+            "Manager will assess your needs",
+            "Customized Configuration for You"
+          ]
+        },
+        {
+          "title": "Rapid Account Opening",
+          "desc": [
+            "Prepayment for Direct Opening",
+            "Supports All Payment Channels"
+          ]
+        }
+      ]
+    },
+    "connect": {
+      "title": "Contact Us",
+      "slash": "/CONNECT",
+      "cooperation": "I want to cooperate with Jiutu",
+      "form": {
+        "dark": {
+          "detail": "Project Details",
+          "date": "Target Date",
+          "budget": "Project Budget"
+        },
+        "light": {
+          "detail": "Message"
+        },
+        "placeholder": "Please describe your project, including any specific requirements, target date, and scenarios.",
+        "submit": "Send Message"
+      }
+    }
+  },
+  "Solutions": {
+    "video": {
+      "title": "Video Acceleration & Cross-border Live Streaming",
+      "slash": "/ACCELERATION",
+      "left": {
+        "block1": {
+          "title": "Comprehensive Solutions",
+          "items": [
+            "Live streaming compliance and marketing",
+            "Adaptive complex network routing",
+            "Multiple attack models",
+            "Low-latency live streaming"
+          ]
+        },
+        "block2": {
+          "title": "Top Performance Support",
+          "items": [
+            "Daily active users: up to 10 million",
+            "Concurrent users: up to 1 million",
+            "Instant startup: as fast as one step"
+          ]
+        }
+      },
+      "issueTitle": "Issue:",
+      "issues": [
+        "Latency and buffering in cross-border live streaming",
+        "Stability and standardization of live streams",
+        "Live content segmentation"
+      ],
+      "schemeTitle": "Solution:",
+      "scheme": "The cloud architecture leverages globally distributed data centers and CDN technology to deliver high-performance computing and scalability, supporting high concurrency and low-latency live streaming. Cross-border streaming is stabilized through intelligent routing and link optimization. Proprietary streaming tools enable real-time video editing and segmentation for diverse scenarios. AI-powered analytics ensure seamless content delivery. 24/7 technical support guarantees system stability and rapid issue resolution."
+    },
+    "game": {
+      "title": "Game Global Expansion",
+      "slash": "/GAME",
+      "left": {
+        "advantages": {
+          "title": "Solution Advantages",
+          "items": [
+            "High-quality adaptive bitrate streaming",
+            "High availability through application monitoring and automated traffic scheduling",
+            "Easy deployment with instant setup and unified global resource monitoring"
+          ]
+        },
+        "problems": {
+          "title": "Challenges Addressed",
+          "items": [
+            "Poor login experience, including slow or unstable logins",
+            "High latency in cross-region networks",
+            "Slow downloads of game packages and updates across regions"
+          ]
+        }
+      },
+      "issueTitle": "Issue:",
+      "issues": [
+        "Latency and packet loss, access speed",
+        "High concurrency during traffic peaks",
+        "Network attacks and cheating behaviors",
+        "Global data synchronization"
+      ],
+      "schemeTitle": "Solution:",
+      "scheme": "Cloud providers deploy data centers in major global regions to ensure game servers are close to players, reducing latency and packet loss. Rapid scaling supports traffic peaks during global expansion. DDoS protection, data security, and anti-cheating services safeguard games from attacks. CDN accelerates content distribution, reducing load times and enhancing global access speed."
+    },
+    "website": {
+      "title": "Independent Website",
+      "slash": "/WEBSITE",
+      "issueTitle": "Issue:",
+      "issues": [
+        "Ensuring website stability during traffic peaks and streamlining the site-building process"
+      ],
+      "schemeTitle": "Solution:",
+      "scheme": "Independent sites may face traffic fluctuations, especially during promotions or special events. Cloud servers offer elastic scaling to dynamically adjust resources like CPU and memory, ensuring stable website operation. Rapid deployment and configuration support quick launches and iterations. Some cloud providers offer one-click setup services, simplifying the site-building process."
+    },
+    "blockchain": {
+      "title": "Blockchain",
+      "slash": "/BLOCKCHAIN",
+      "description": "Jiutu's global cloud marketplace brings together leading partners to support all major blockchain protocols, including over 70 verified blockchain and distributed ledger technology solutions.",
+      "cards": [
+        {
+          "title": "Quantum Ledger Database",
+          "content": "A fully managed ledger database designed to provide a transparent, immutable, and cryptographically verifiable transaction log. It includes a built-in journal that stores a complete and sequential history of data changes, allowing only appends without overwrites or deletions."
+        },
+        {
+          "title": "Managed Blockchain",
+          "content": "A fully managed service that enables you to easily join public networks or create and manage scalable private networks using Hyperledger Fabric and Ethereum. Start using blockchain by creating an AWS account."
+        }
+      ]
+    }
+  },
+  "Footer": {
+    "musicMobile": "Music Wave Animation",
+    "company": {
+      "name": "Jiutu",
+      "coreTitle": "Jiutu Core Values:",
+      "core1": "Reduce Cloud Adoption Costs",
+      "core2": "Professional Technical Support",
+      "core3": "Thoughtful Services",
+      "core4": "Expand Industry Connections",
+      "contact": "Contact Us"
+    },
+    "product": {
+      "title": "Popular Products",
+      "items": [
+        "Lightweight Cloud Server",
+        "High Bandwidth Server",
+        "EC2 Server",
+        "SEO Server",
+        "High-Defense Server"
       ]
     },
     "cases": {
-      "title": "Case Studies"
+      "title": "Success Stories",
+      "items": [
+        "Amused-group",
+        "Blue Map",
+        "Nemo Office",
+        "Yunpai Network"
+      ]
+    },
+    "guide": {
+      "title": "User Guide",
+      "items": [
+        "Create EC2 & Deploy with BT Panel",
+        "Edge Network Acceleration",
+        "Lightweight Application Server",
+        "Domain Purchase & Resolution",
+        "Cloud Server ECS",
+        "Dedicated Host LDDH"
+      ]
+    },
+    "right": {
+      "row1": [
+        "About Us",
+        "Contact Us"
+      ],
+      "row2": [
+        "Site Map",
+        "Tag Map",
+        "Privacy Policy"
+      ]
+    }
+  },
+  "tags": {
+    "title": "All Tags",
+    "tagPrefix": "Tag:"
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "sections": {
+      "collect": {
+        "title": "1. Information Collection",
+        "content": [
+          "We may collect your information in the following situations:",
+          "Online inquiry or form submission: name, contact info (email, phone, etc);",
+          "Analytics data: browser, IP address, access time, visited pages, etc;",
+          "Information collected through Telegram, WeChat, or other support channels."
+        ]
+      },
+      "use": {
+        "title": "2. Use of Information",
+        "content": [
+          "Collected information may be used for:",
+          "Providing Alibaba Cloud account setup, deployment, and consulting services;",
+          "Customer support and notifications;",
+          "Optimizing performance and user experience;",
+          "Compliance with legal obligations."
+        ]
+      },
+      "share": {
+        "title": "3. Sharing and Disclosure",
+        "content": [
+          "We do not sell or disclose your personal info unless:",
+          "You have authorized it explicitly;",
+          "Required by law or regulations;",
+          "Required by service providers (e.g., Alibaba Cloud);",
+          "Required by hosting or technical service providers."
+        ]
+      },
+      "cookie": {
+        "title": "4. Cookies & Tracking",
+        "content": "We use cookies and analytics to track usage. You may disable this in browser settings."
+      },
+      "security": {
+        "title": "5. Data Security",
+        "content": "We take reasonable measures to protect your data from unauthorized access or loss."
+      },
+      "rights": {
+        "title": "6. Your Rights",
+        "content": "You may request access, correction, or deletion of your data. Please contact us via the methods below."
+      },
+      "thirdparty": {
+        "title": "7. Third-Party Links",
+        "content": "Our site may contain links to external sites. Please refer to their privacy policies before use."
+      },
+      "minor": {
+        "title": "8. Minors",
+        "content": "This site is intended for adults. If you are a minor, please browse with guardian supervision."
+      },
+      "change": {
+        "title": "9. Policy Changes",
+        "content": "We may update this policy from time to time. Changes will be posted on this page."
+      },
+      "contact": {
+        "title": "10. Contact",
+        "content": "If you have questions, contact us via:",
+        "telegram": "Telegram",
+        "email": "Email",
+        "wechat": "WeChat"
+      }
     }
   }
 }

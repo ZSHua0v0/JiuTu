@@ -9,12 +9,15 @@ import { useRoute } from 'vue-router'
 import { useAsyncData } from 'nuxt/app'
 
 const route = useRoute()
+const { locale } = useI18n()
+
+const slug = route.params.slug
+const contentPath = `/${locale.value}/guide/${slug}`
 
 const { data: article } = await useAsyncData(
-    `guide-${route.params.slug}`,
-    () => queryContent().where({ _path: route.path }).findOne()
+    `guide-${locale.value}-${slug}`,
+    () => queryContent(contentPath).findOne()
 )
-
 </script>
 
 

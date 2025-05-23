@@ -4,6 +4,10 @@ description: Blue Map is an environmental protection app developed by the Instit
 image: /assets/IMG/logos/blue-map-logo.jpg
 _path: /en/CaseStudies/bluemap
 order: 2
+lang: en
+tags:
+  - nuxt
+  - seo
 ---
 
 <div style="margin: 0 auto;text-align: center;">

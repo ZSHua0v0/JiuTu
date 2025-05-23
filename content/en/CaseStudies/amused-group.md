@@ -4,6 +4,10 @@ description: "Amused Group is a cultural and creative industry company. It prima
 image: "/assets/IMG/logos/amused-logo.jpg"
 _path: "/en/CaseStudies/amused-group"
 order: 1
+lang: en
+tags:
+  - nuxt
+  - seo
 ---
 
 <div style="margin: 0 auto;text-align: center;">

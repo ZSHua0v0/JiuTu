@@ -1,0 +1,162 @@
+{
+  "/": {
+    "zh": {
+      "title": "首页 - 上云用九途 平步青云路",
+      "description": "阿里云国际版全球代理，助力企业出海，提供咨询、部署、折扣一站式解决方案。",
+      "keywords": "云服务器, 阿里云国际, 企业出海",
+      "tags": ["首页", "推荐", "云计算"]
+    },
+    "zh-Hant": {
+      "title": "首頁 - 上雲用九途 平步青雲路",
+      "description": "阿里雲國際版全球代理，助力企業出海，提供諮詢、部署、折扣一站式解決方案。",
+      "keywords": "雲伺服器, 阿里雲國際, 企業出海",
+      "tags": ["首頁", "推薦", "雲計算"]
+    },
+    "en": {
+      "title": "Home - Jiutu Cloud Solutions",
+      "description": "Alibaba Cloud global partner. Fast registration, consulting, and deployment services.",
+      "keywords": "cloud hosting, alibaba international, jiutu",
+      "tags": ["home", "cloud", "featured"]
+    }
+  },
+  "/GlobalAlibaba": {
+    "zh": {
+      "title": "阿里国际 - Alibaba Cloud 全球化解决方案",
+      "description": "阿里云全球覆盖，服务200多个国家和地区，提供安全、可靠的云服务。",
+      "keywords": "阿里云国际, 全球部署, 云服务",
+      "tags": ["阿里云", "国际化", "云服务"]
+    },
+    "zh-Hant": {
+      "title": "阿里國際 - Alibaba Cloud 全球化解決方案",
+      "description": "阿里雲全球覆蓋，服務200多個國家和地區，提供安全、可靠的雲服務。",
+      "keywords": "阿里雲國際, 全球部署, 雲服務",
+      "tags": ["阿里雲", "國際化", "雲服務"]
+    },
+    "en": {
+      "title": "Global Alibaba Cloud Solutions",
+      "description": "Alibaba Cloud services over 200 countries. Secure, scalable global infrastructure.",
+      "keywords": "alibaba cloud, global, hosting",
+      "tags": ["alibaba", "global", "cloud"]
+    }
+  },
+  "/ProductDeals": {
+    "zh": {
+      "title": "产品优惠 - 云产品限时折扣",
+      "description": "限时满减促销，助力企业轻松上云，享受高性能云产品优惠。",
+      "keywords": "云产品优惠, 云促销, 满减活动",
+      "tags": ["优惠", "活动", "云产品"]
+    },
+    "zh-Hant": {
+      "title": "產品優惠 - 雲產品限時折扣",
+      "description": "限時滿減促銷，助力企業輕鬆上雲，享受高性能雲產品優惠。",
+      "keywords": "雲產品優惠, 雲促銷, 滿減活動",
+      "tags": ["優惠", "活動", "雲產品"]
+    },
+    "en": {
+      "title": "Product Deals - Limited Time Cloud Offers",
+      "description": "Join now and enjoy discounts on high-performance Alibaba Cloud products.",
+      "keywords": "cloud discounts, promotion, limited offers",
+      "tags": ["deals", "discount", "cloud"]
+    }
+  },
+  "/FastRegister": {
+    "zh": {
+      "title": "极速开户 - 阿里云国际账号注册",
+      "description": "协助客户快速完成阿里云国际站账号注册和绑定组织。",
+      "keywords": "快速开户, 阿里云账号, 注册服务",
+      "tags": ["开户", "快速", "账号"]
+    },
+    "zh-Hant": {
+      "title": "極速開戶 - 阿里雲國際帳號註冊",
+      "description": "協助客戶快速完成阿里雲國際站帳號註冊和綁定組織。",
+      "keywords": "快速開戶, 阿里雲帳號, 註冊服務",
+      "tags": ["開戶", "快速", "帳號"]
+    },
+    "en": {
+      "title": "Fast Registration - Open Alibaba International Account",
+      "description": "Get started quickly with Alibaba Cloud international registration and support.",
+      "keywords": "account setup, alibaba international, fast registration",
+      "tags": ["register", "account", "alibaba"]
+    }
+  },
+  "/Solutions": {
+    "zh": {
+      "title": "解决方案 - 视频加速、游戏出海、区块链等",
+      "description": "多行业场景云解决方案，覆盖直播、游戏、电商、区块链等高性能场景。",
+      "keywords": "视频加速, 游戏出海, 区块链解决方案",
+      "tags": ["解决方案", "加速", "出海"]
+    },
+    "zh-Hant": {
+      "title": "解決方案 - 視訊加速、遊戲出海、區塊鏈等",
+      "description": "多行業場景雲解決方案，涵蓋直播、遊戲、電商、區塊鏈等高效能場景。",
+      "keywords": "視訊加速, 遊戲出海, 區塊鏈解決方案",
+      "tags": ["解決方案", "加速", "出海"]
+    },
+    "en": {
+      "title": "Solutions - Live Streaming, Game Overseas, Blockchain",
+      "description": "Industry-specific cloud solutions including live, gaming, and blockchain.",
+      "keywords": "live streaming, gaming, blockchain cloud",
+      "tags": ["solutions", "streaming", "blockchain"]
+    }
+  },
+  "/CaseStudies": {
+    "zh": {
+      "title": "成功案例 - 企业出海最佳实践",
+      "description": "精选客户案例展示九途如何助力企业成功出海和上云转型。",
+      "keywords": "成功案例, 企业出海, 云转型",
+      "tags": ["案例", "出海", "上云"]
+    },
+    "zh-Hant": {
+      "title": "成功案例 - 企業出海最佳實踐",
+      "description": "精選客戶案例展示九途如何助力企業成功出海與上雲轉型。",
+      "keywords": "成功案例, 企業出海, 雲轉型",
+      "tags": ["案例", "出海", "上雲"]
+    },
+    "en": {
+      "title": "Case Studies - Cross-border Cloud Success",
+      "description": "Real-world examples of cloud migration and global expansion powered by Jiutu.",
+      "keywords": "case studies, cloud success, international",
+      "tags": ["cases", "cloud", "expansion"]
+    }
+  },
+  "/guide": {
+    "zh": {
+      "title": "使用指南 - 云服务器部署与配置说明",
+      "description": "详细指导如何使用阿里云服务，包括ECS部署、域名解析、边缘加速等。",
+      "keywords": "使用指南, 云服务器, 边缘加速",
+      "tags": ["指南", "教程", "部署"]
+    },
+    "zh-Hant": {
+      "title": "使用指南 - 雲伺服器部署與配置說明",
+      "description": "詳細指導如何使用阿里雲服務，包括ECS部署、域名解析、邊緣加速等。",
+      "keywords": "使用指南, 雲伺服器, 邊緣加速",
+      "tags": ["指南", "教學", "部署"]
+    },
+    "en": {
+      "title": "Guide - ECS Deployment & Cloud Setup",
+      "description": "Comprehensive guide for Alibaba Cloud services including ECS, CDN and setup.",
+      "keywords": "ecs guide, setup, configuration",
+      "tags": ["guide", "how-to", "ecs"]
+    }
+  },
+  "/tags": {
+    "zh": {
+      "title": "所有标签 - 九途推荐标签分类",
+      "description": "查看所有云产品、解决方案、优惠活动等推荐标签。",
+      "keywords": "标签, 分类, 推荐",
+      "tags": ["标签", "推荐", "分类"]
+    },
+    "zh-Hant": {
+      "title": "所有標籤 - 九途推薦標籤分類",
+      "description": "查看所有雲產品、解決方案、優惠活動等推薦標籤。",
+      "keywords": "標籤, 分類, 推薦",
+      "tags": ["標籤", "推薦", "分類"]
+    },
+    "en": {
+      "title": "All Tags - Jiutu Recommended Tag Categories",
+      "description": "Browse all tags for cloud products, solutions, and promotions.",
+      "keywords": "tags, categories, featured",
+      "tags": ["tags", "categories", "featured"]
+    }
+  }
+}

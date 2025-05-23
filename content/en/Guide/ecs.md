@@ -3,6 +3,10 @@ title: Elastic Compute Service (ECS)
 description: Elastic Compute Service (ECS) is a high-performance, stable, reliable, and scalable IaaS cloud computing service provided by Alibaba Cloud.
 _path: /en/guide/ecs
 order: 1
+lang: en
+tags:
+  - nuxt
+  - seo
 ---
 
 <div style="margin: 5% 0;font-family: '微软雅黑',serif">

@@ -67,9 +67,14 @@ import {useRouter} from 'vue-router' // 用于监听页面跳转
 import NavMenu from './ui/NavMenu.vue'
 import LanguageButton from "./ui/LanguageButton.vue"
 import MenuClickButton from "./ui/MenuClickButton.vue"
-import {contactLinks as contactLinksRaw} from '../../public/js/contact_link.js' // 建议改为 ~/data 结构
+import { getContactLinks } from '~/utils/ts/contact_link'
 
-const contactLinks = contactLinksRaw
+const contactLinks = ref({})
+
+onMounted(async () => {
+  contactLinks.value = await getContactLinks()
+})
+
 const isMobile = ref(false)
 
 const menuStore = useMenuStore()

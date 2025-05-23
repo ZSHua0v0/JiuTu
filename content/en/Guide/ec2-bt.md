@@ -3,6 +3,10 @@ title: Create EC2 and Deploy BT Panel
 description:
 _path: /en/guide/ec2-bt
 order: 6
+lang: en
+tags:
+  - nuxt
+  - seo
 ---
 
 <div>

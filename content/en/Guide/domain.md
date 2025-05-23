@@ -3,6 +3,10 @@ title: Domain Purchase and Resolution
 description: 
 _path: /en/guide/domain
 order: 5
+lang: en
+tags:
+  - nuxt
+  - seo
 ---
 
 <div>

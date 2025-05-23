@@ -1,12 +1,12 @@
 <template>
   <div>
-    <div class="GlobalAlibaba_banner_01">
-    </div>
+    <div :class="['GlobalAlibaba_banner_01', bannerBgClass]">
+  </div>
     <div class="GlobalAlibaba_box_02">
       <div class="GlobalAlibaba_box_02_mini_box">
         <div class="GlobalAlibaba_box_02_mini_box_icons"><img src="/assets/IMG/icons/Gold.png"
                                                               alt="jiutu"/><span>1</span></div>
-        <div class="GlobalAlibaba_box_02_mini_box_title">亚太计算市场<span>No.1</span></div>
+        <div class="GlobalAlibaba_box_02_mini_box_title">{{ $t('GlobalAlibaba.ranking.apac') }}<span>No.1</span></div>
       </div>
       <div v-if="isMobile" class="bar-line">
         <span style="height: 6px;"></span>
@@ -21,12 +21,11 @@
         <span style="height: 8px;"></span>
         <span style="height: 12px;"></span>
       </div>
-
 
       <div class="GlobalAlibaba_box_02_mini_box">
         <div class="GlobalAlibaba_box_02_mini_box_icons"><img src="/assets/IMG/icons/Gold.png"
                                                               alt="jiutu"/><span>1</span></div>
-        <div class="GlobalAlibaba_box_02_mini_box_title">中国云计算市场<span>No.1</span></div>
+        <div class="GlobalAlibaba_box_02_mini_box_title">{{ $t('GlobalAlibaba.ranking.china') }}<span>No.1</span></div>
       </div>
       <div v-if="isMobile" class="bar-line">
         <span style="height: 6px;"></span>
@@ -42,11 +41,10 @@
         <span style="height: 12px;"></span>
       </div>
 
-
       <div class="GlobalAlibaba_box_02_mini_box">
         <div class="GlobalAlibaba_box_02_mini_box_icons"><img src="/assets/IMG/icons/Gold.png"
                                                               alt="jiutu"/><span>3</span></div>
-        <div class="GlobalAlibaba_box_02_mini_box_title">全球云计算市场<span>No.3</span></div>
+        <div class="GlobalAlibaba_box_02_mini_box_title">{{ $t('GlobalAlibaba.ranking.global') }}<span>No.3</span></div>
       </div>
       <div v-if="isMobile" class="bar-line">
         <span style="height: 6px;"></span>
@@ -63,102 +61,76 @@
       </div>
     </div>
 
-
     <div class="GlobalAlibaba_box_03">
       <div class="GlobalAlibaba_box_03__title">
-        阿里云服务
-        <span>/SERVICE</span></div>
+        {{ $t('GlobalAlibaba.title') }}
+        <span>{{ $t('GlobalAlibaba.slash') }}</span></div>
       <div class="GlobalAlibaba_box_03_mini_box">
         <div class="GlobalAlibaba_box_03_mini_box_left"></div>
         <div class="GlobalAlibaba_box_03_mini_box_right">
           <div>
-            <div class="GlobalAlibaba_box_03_mini_box_icons"><img src="/assets/IMG/icons/star.png" alt="star">
-            </div>
-            <div class="GlobalAlibaba_box_03_mini_box_content">
-              本地数据中心已经成为数字时代城市的重要基础设施，其重要性不亚于公路、铁路、桥梁。阿里云持续投资在全球建立稳定可靠的数据中心，与与本地生态合作伙伴建立生态圈致力为客户提供能解决其业务痛点的本地化解决方案，成为在亚太地区拥有数据中心最多、拥有CDN节点最多的云服务提供商。
-            </div>
+            <div class="GlobalAlibaba_box_03_mini_box_icons"><img src="/assets/IMG/icons/star.png" alt="star"></div>
+            <div class="GlobalAlibaba_box_03_mini_box_content">{{ $t('GlobalAlibaba.cards.0') }}</div>
           </div>
           <div>
-            <div class="GlobalAlibaba_box_03_mini_box_icons"><img src="/assets/IMG/icons/star.png" alt="star">
-            </div>
-            <div class="GlobalAlibaba_box_03_mini_box_content">
-              提供可靠易用的云、全局智能的大数据、云端一体的智联网和随时随地的移动协同。阿里云提供多个行业解决方案和行业通用解决方案，全方面为企业赋能，至今已服务全球200多个国家的300多万客户。
-            </div>
-
+            <div class="GlobalAlibaba_box_03_mini_box_icons"><img src="/assets/IMG/icons/star.png" alt="star"></div>
+            <div class="GlobalAlibaba_box_03_mini_box_content">{{ $t('GlobalAlibaba.cards.1') }}</div>
           </div>
           <div>
-            <div class="GlobalAlibaba_box_03_mini_box_icons"><img src="/assets/IMG/icons/star.png" alt="star">
-            </div>
-            <div class="GlobalAlibaba_box_03_mini_box_content">
-              阿里云提供了一系列的中国门户解决方案帮助海外客户进入中国并在中国快速发展。阿里云完整的产品与服务，一站式帮助客户完成从注册公司到快速搭建信息技术架构等一系列需求。另外，阿里云能够帮助海外客户接入阿里巴巴生态体，并且与全球合作伙伴携手将海外客户带入中国市场。
-            </div>
+            <div class="GlobalAlibaba_box_03_mini_box_icons"><img src="/assets/IMG/icons/star.png" alt="star"></div>
+            <div class="GlobalAlibaba_box_03_mini_box_content">{{ $t('GlobalAlibaba.cards.2') }}</div>
           </div>
           <div>
-            <div class="GlobalAlibaba_box_03_mini_box_icons"><img src="/assets/IMG/icons/star.png" alt="star">
-            </div>
-            <div class="GlobalAlibaba_box_03_mini_box_content">
-              阿里云拥有守护阿里巴巴集团安全的丰富经验，帮助客户抵御各种安全威胁。云安全自带安全能力，作为安全资质最全的亚洲云计算服务商，阿里云满足全球安全合规标准，长期致力于保护个人隐私。
-            </div>
+            <div class="GlobalAlibaba_box_03_mini_box_icons"><img src="/assets/IMG/icons/star.png" alt="star"></div>
+            <div class="GlobalAlibaba_box_03_mini_box_content">{{ $t('GlobalAlibaba.cards.3') }}</div>
           </div>
         </div>
       </div>
     </div>
 
     <div v-if="isMobile" class="aliyun-section">
-      <h2>阿里云服务 <span class="slash">/SERVICE</span></h2>
+      <h2>{{ $t('GlobalAlibaba.title') }} <span class="slash">{{ $t('GlobalAlibaba.slash') }}</span></h2>
 
       <!-- 图1 -->
       <div class="image-crop">
         <img src="/assets/IMG/backgrounds/GlobalAlibaba_banner_03.jpg" alt="图1" class="slice slice-1"/>
       </div>
-      <p>
-        本地数据中心已成为数字时代城市的重要基础设施。其重要性不亚于金融、铁路、桥梁。
-        阿里云持续投资在主要资源设定的前缘数据中心，与本地生态合作共建生态圈，致力为客户提供覆盖关键业务场景的本地化解决方案，
-        成为在亚太地区拥有数据中心数量最多、拥有CDN节点最多的云服务提供商。
-      </p>
+      <p>{{ $t('GlobalAlibaba.mobileCards.0') }}</p>
 
       <!-- 图2 -->
       <div class="image-crop">
         <img src="/assets/IMG/backgrounds/GlobalAlibaba_banner_03.jpg" alt="图2" class="slice slice-2"/>
       </div>
-      <p>
-        提供可靠易用的云、全局智能的大数据、云端一体的智能联网和随地域的移动协同。
-        阿里云提供多个行业解决方案和行业通用解决方案，全面面向企业赋能，
-        至今已服务全球200多个国家的300多万客户。
-      </p>
+      <p>{{ $t('GlobalAlibaba.mobileCards.1') }}</p>
 
       <!-- 图3 -->
       <div class="image-crop">
         <img src="/assets/IMG/backgrounds/GlobalAlibaba_banner_03.jpg" alt="图3" class="slice slice-3"/>
       </div>
-      <p>
-        阿里云提供了一系列的 China Gateway 解决方案帮助海外客户进入中国并在中国快速发展。
-        阿里云完整的产品与服务，一站式帮助客户完成从注册公司到连接通道建设和跨境一站网络需求。
-        另外，阿里云智能将帮助海外客户融入阿里巴巴生态，并且与全球合作伙伴共享的跨境客户带入中国市场。
-      </p>
+      <p>{{ $t('GlobalAlibaba.mobileCards.2') }}</p>
 
       <!-- 最后一段 -->
       <div class="image-crop">
         <img src="/assets/IMG/backgrounds/GlobalAlibaba_banner_03.jpg" alt="图3" class="slice slice-4"/>
       </div>
-      <p class="last-paragraph">
-        阿里云拥有守护阿里巴巴集团安全的丰富经验，帮助客户抵御各种安全威胁。
-        云安全的审计合规能力，作为安全合规层面的亚洲行业旗舰服务商，
-        阿里云还是全球安全合规标准、长期致力于保护个人隐私。
-      </p>
+      <p class="last-paragraph">{{ $t('GlobalAlibaba.mobileCards.3') }}</p>
     </div>
   </div>
 </template>
 
+
 <script setup>
 import {onBeforeUnmount, onMounted, ref} from "vue";
-
+import { usePageMeta } from '@/composables/usePageMeta'
+usePageMeta()
 const isMobile = ref(false)
-
+const bannerBgClass = computed(() => {
+  return `banner-bg-${locale.value || 'zh'}`
+})
 function checkIsMobile() {
   isMobile.value = window.innerWidth <= 768
 }
-
+const { locale } = useI18n()
 onMounted(() => {
   checkIsMobile()
   window.addEventListener('resize', checkIsMobile)
@@ -173,11 +145,23 @@ onBeforeUnmount(() => {
 .GlobalAlibaba_banner_01 {
   width: 100%;
   height: clamp(600px, 20vw + 200px, 700px);
-  background: url("/assets/IMG/backgrounds/GlobalAlibaba_banner_01.jpg") no-repeat;
   background-size: 100% 100%;
   margin: 0 auto;
 }
+/* 中文简体背景 */
+.banner-bg-zh {
+  background-image: url('/assets/IMG/backgrounds/GlobalAlibaba_banner_01.jpg');
+}
 
+/* 英文背景 */
+.banner-bg-en {
+  background-image: url('/assets/IMG/backgrounds/GlobalAlibaba_banner_01_en.jpg');
+}
+
+/* 繁体背景 */
+.banner-bg-zh-Hant {
+  background-image: url('/assets/IMG/backgrounds/GlobalAlibaba_banner_01_zh-Hant.jpg');
+}
 .GlobalAlibaba_box_02 {
   margin: 2% auto 0 auto;
   display: flex;

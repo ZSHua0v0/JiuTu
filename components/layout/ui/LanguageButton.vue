@@ -56,14 +56,21 @@ const toggleDropdown = () => {
 // 切换语言
 const changeLanguage = async (lang: string) => {
   locale.value = lang
-  document.cookie = `i18n_redirected=${lang}; path=/` // ✅ 保存语言到 cookie
+  document.cookie = `i18n_redirected=${lang}; path=/` // 保存语言到 cookie
   showDropdown.value = false
 
-  const pathWithoutLocale = route.fullPath.replace(/^\/(zh|en|zh-Hant)(?=\/|$)/, '') || '/'
-  const newPath = `/${lang}${pathWithoutLocale.startsWith('/') ? pathWithoutLocale : '/' + pathWithoutLocale}`
+  const rawPath = route.fullPath
+  const pathWithoutLocale = rawPath.replace(/^\/(zh|en|zh-Hant)(?=\/|$)/, '') || '/'
+
+  // prefix_except_default 策略：默认语言 zh 不加前缀
+  const newPath =
+      lang === 'zh'
+          ? pathWithoutLocale.startsWith('/') ? pathWithoutLocale : '/' + pathWithoutLocale
+          : `/${lang}${pathWithoutLocale.startsWith('/') ? pathWithoutLocale : '/' + pathWithoutLocale}`
 
   await router.push(newPath)
 }
+
 
 
 

@@ -1,8 +1,8 @@
 <template>
   <div class="coupon-card">
     <div class="text">
-      <div class="line line_margin">满$<span class="highlight">{{ amount }}</span></div>
-      <div class="line line_margin2">减$<span class="highlight">{{ discount }}</span></div>
+      <div class="line line_margin">{{ $t('home.discount.Spend')}}$<span class="highlight">{{ amount }}</span></div>
+      <div class="line line_margin2">{{ $t('home.discount.Save')}}$<span class="highlight">{{ discount }}</span></div>
     </div>
   </div>
 </template>
@@ -68,12 +68,12 @@ defineProps({
 }
 .line_margin{
   position: absolute;
-  left: 10%;
+  left: 2%;
   top: 24%;
 }
 .line_margin2{
   position: absolute;
-  left: 40%;
+  left: 33%;
   top: 46%;
 }
 @media (max-width: 768px) {

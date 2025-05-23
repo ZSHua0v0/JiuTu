@@ -14,16 +14,22 @@
 
 <script setup>
 import {computed} from "vue";
+import { usePageMeta } from '@/composables/usePageMeta'
+usePageMeta()
 import { useI18n } from 'vue-i18n'
 
 const { locale } = useI18n()
 
+const defaultLocale = 'zh'
+const prefix = locale.value === defaultLocale ? '' : `/${locale.value}`
+
 const { data: rawList } = await useAsyncData('guide-list', () =>
-    queryContent(`${locale.value}/guide`)
+    queryContent(`${prefix}/guide`)
         .only(['title', 'description', 'image', '_path', 'order'])
         .sort({ order: 1 })
         .find()
 )
+
 
 const guideList = computed(() =>
     (rawList.value || []).map(item => ({
@@ -40,7 +46,7 @@ const guideList = computed(() =>
 <style scoped>
 .guide-container {
   width: 65%;
-  margin: 10rem auto 10% auto;
+  margin: 3rem auto 10% auto;
   display: flex;
   flex-direction: column;
   gap: 4rem;

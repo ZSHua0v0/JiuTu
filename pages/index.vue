@@ -3,10 +3,13 @@
     <div class="home_01_banner">
       <div class="home_01_banner_background">
         <div class="cover-image__tag">{{ $t('home.banner.tag') }}</div>
-        <div class="cover-image__title">{{ $t('home.banner.title_before') }}<span>{{ $t('home.banner.title_span') }}</span></div>
+        <div class="cover-image__title">{{ $t('home.banner.title_before') }}<span>{{
+            $t('home.banner.title_span')
+          }}</span></div>
         <div class="cover-image__subtitle">{{ $t('home.banner.subtitle') }}</div>
-        <button class="cover-image__button"><a :href="contactLinks.CustomerService" target="_blank">{{ $t('home.banner.button')}}</a>
-        </button>
+        <a :href="contactLinks.CustomerService"
+           target="_blank"><button class="cover-image__button">{{ $t('home.banner.button') }}
+        </button></a>
       </div>
     </div>
     <div class="home_tag_icons">
@@ -20,15 +23,21 @@
         <div class="home_02_banner__tag">
           <div class="home_02_banner__left">
             <div class="home_02_banner__tag__title">
-              <div>{{ $t('home.features[0].before') }}<span>{{ $t('home.features[0].highlight') }}</span>{{ $t('home.features[0].after') }}<br/></div>
-              <div><span>{{ $t('home.features[1].highlight1') }}</span>{{ $t('home.features[1].mid') }}<span>{{ $t('home.features[1].highlight2') }}</span>{{ $t('home.features[1].after') }}<br/></div>
-              <div>{{ $t('home.features[2].before') }}<span>{{ $t('home.features[2].highlight') }}</span>{{ $t('home.features[2].after') }}<br/></div>
+              <div>{{ $t('home.features[0].before') }}<span>{{
+                  $t('home.features[0].highlight')
+                }}</span>{{ $t('home.features[0].after') }}<br/></div>
+              <div><span>{{ $t('home.features[1].highlight1') }}</span>{{
+                  $t('home.features[1].mid')
+                }}<span>{{ $t('home.features[1].highlight2') }}</span>{{ $t('home.features[1].after') }}<br/></div>
+              <div>{{ $t('home.features[2].before') }}<span>{{
+                  $t('home.features[2].highlight')
+                }}</span>{{ $t('home.features[2].after') }}<br/></div>
               <div>{{ $t('home.features[3].text') }}<br/></div>
               <div><span>{{ $t('home.features[4].highlight') }}</span>{{ $t('home.features[4].after') }}<br/></div>
               <div>{{ $t('home.features[5].text') }}<br/></div>
               <div class="home_02_banner__left__btn">
                 <div class="cire"></div>
-                <a :href="contactLinks.CustomerService" style="text-decoration: none">
+                <a :href="contactLinks.CustomerService" target="_blank" style="text-decoration: none">
                   <div class="contact_btn">{{ $t('home.features[6].btn') }}</div>
                 </a>
               </div>
@@ -40,7 +49,7 @@
                                                          alt="start"/></div>
           </div>
         </div>
-        <div class="home_02_banner_footer__title">
+        <div class="home_02_banner_footer__title" :style="{ gap: locale === 'en' ? '0.5rem' : '2rem' }">
           <div v-if="isMobile==false" class="icon_cloud"><img src=" /assets/IMG/icons/cloud.png" alt=""/></div>
           <div class="content_flex">
             <div>{{ $t('home.features[7].title') }}</div>
@@ -59,14 +68,22 @@
         </div>
       </div>
       <div class="home_02_banner__tag__title">
-        <div>{{ $t('home.features[0].before') }}<span>{{ $t('home.features[0].highlight') }}</span>{{ $t('home.features[0].after') }}<br/></div>
-        <div><span>{{ $t('home.features[1].highlight1') }}</span>{{ $t('home.features[1].mid') }}<span>{{ $t('home.features[1].highlight2') }}</span>{{ $t('home.features[1].after') }}<br/></div>
-        <div>{{ $t('home.features[2].before') }}<span>{{ $t('home.features[2].highlight') }}</span>{{ $t('home.features[2].after') }}<br/></div>
+        <div>{{ $t('home.features[0].before') }}<span>{{
+            $t('home.features[0].highlight')
+          }}</span>{{ $t('home.features[0].after') }}<br/></div>
+        <div><span>{{ $t('home.features[1].highlight1') }}</span>{{
+            $t('home.features[1].mid')
+          }}<span>{{ $t('home.features[1].highlight2') }}</span>{{ $t('home.features[1].after') }}<br/></div>
+        <div>{{ $t('home.features[2].before') }}<span>{{
+            $t('home.features[2].highlight')
+          }}</span>{{ $t('home.features[2].after') }}<br/></div>
         <div>{{ $t('home.features[3].text') }}<br/></div>
         <div><span>{{ $t('home.features[4].highlight') }}</span>{{ $t('home.features[4].after') }}<br/></div>
         <div>{{ $t('home.features[5].text') }}<br/></div>
         <div class="home_02_banner__left__btn">
-          <div class="contact_btn"><a :href="contactLinks.CustomerService" target="_blank">{{ $t('home.features[6].btn') }}</a></div>
+          <div class="contact_btn"><a :href="contactLinks.CustomerService" target="_blank">{{
+              $t('home.features[6].btn')
+            }}</a></div>
           <div class="cire"></div>
         </div>
       </div>
@@ -76,14 +93,23 @@
         {{ $t('home.register.title') }}
         <span>/PROCESS</span></div>
       <div class="home_03_register__bg">
-        <div class="h_03_r_b_content">
+        <div :class="[
+      'h_03_r_b_content',
+      locale === 'en' ? 'h_03_r_b_content_gap' : ''
+    ]">
           <div class="h_03_r_b_content__box">
             <div class="h_03_r_b_content__title__box">
               <div class="h_03_r_b_content__title__icons"><img src=" /assets/IMG/icons/information.png"
                                                                alt="jiutu"/></div>
-              <div class="h_03_r_b_content__title__h2">{{ $t('home.register.steps[0].title') }}</div>
+              <div :class="[
+      'h_03_r_b_content__title_h2',
+      locale === 'en' ? 'h_03_r_b_content__title__h2_en' : ''
+    ]">{{ $t('home.register.steps[0].title') }}</div>
             </div>
-            <div class="h_03_r_b_content__mini_box">
+            <div :class="[
+      'h_03_r_b_content__mini_box',
+      locale === 'en' ? 'h_03_r_b_content__mini_box_en' : ''
+    ]">
               <div class="corner top-left"></div>
               <div class="corner bottom-right"></div>
               <div class="mini_box_content">
@@ -105,9 +131,15 @@
             <div class="h_03_r_b_content__title__box">
               <div class="h_03_r_b_content__title__icons"><img src=" /assets/IMG/icons/CustomerS.png"
                                                                alt="jiutu"/></div>
-              <div class="h_03_r_b_content__title__h2">{{ $t('home.register.steps[1].title') }}</div>
+              <div :class="[
+      'h_03_r_b_content__title_h2',
+      locale === 'en' ? 'h_03_r_b_content__title__h2_en' : ''
+    ]">{{ $t('home.register.steps[1].title') }}</div>
             </div>
-            <div class="h_03_r_b_content__mini_box">
+            <div :class="[
+      'h_03_r_b_content__mini_box',
+      locale === 'en' ? 'h_03_r_b_content__mini_box_en' : ''
+    ]">
               <div class="corner top-left"></div>
               <div class="corner bottom-right"></div>
               <div class="mini_box_content">
@@ -121,9 +153,15 @@
               <div class="h_03_r_b_content__title__icons"><img style="width: 4.5rem;height: 4.5rem;margin-left: 6px;"
                                                                src=" /assets/IMG/icons/Register.png"
                                                                alt="jiutu"/></div>
-              <div class="h_03_r_b_content__title__h2">{{ $t('home.register.steps[2].title') }}</div>
+              <div :class="[
+      'h_03_r_b_content__title_h2',
+      locale === 'en' ? 'h_03_r_b_content__title__h2_en' : ''
+    ]">{{ $t('home.register.steps[2].title') }}</div>
             </div>
-            <div class="h_03_r_b_content__mini_box">
+            <div :class="[
+      'h_03_r_b_content__mini_box',
+      locale === 'en' ? 'h_03_r_b_content__mini_box_en' : ''
+    ]">
               <div class="corner top-left"></div>
               <div class="corner bottom-right"></div>
               <div class="mini_box_content">
@@ -156,7 +194,10 @@
             </div>
             <div>
               <div class="register-title">{{ $t('home.register.steps[0].title') }}</div>
-              <div class="register-desc">{{ $t('home.register.steps[0].desc[0]') }}<br/>{{ $t('home.register.steps[0].desc[1]') }}</div>
+              <div class="register-desc">{{
+                  $t('home.register.steps[0].desc[0]')
+                }}<br/>{{ $t('home.register.steps[0].desc[1]') }}
+              </div>
               <div class="register-icons">
                 <img src="/assets/IMG/icons/tg_white_bg.png" alt="Telegram"/>
                 <img src="/assets/IMG/icons/phone_white_bg.png" alt="Phone"/>
@@ -172,7 +213,10 @@
             </div>
             <div>
               <div class="register-title">{{ $t('home.register.steps[1].title') }}</div>
-              <div class="register-desc">{{ $t('home.register.steps[1].desc[0]') }}<br/>{{ $t('home.register.steps[1].desc[1]') }}</div>
+              <div class="register-desc">{{
+                  $t('home.register.steps[1].desc[0]')
+                }}<br/>{{ $t('home.register.steps[1].desc[1]') }}
+              </div>
               <div class="register-graph">
                 <div class="audio-bars">
                   <span></span>
@@ -195,7 +239,10 @@
             </div>
             <div>
               <div class="register-title">{{ $t('home.register.steps[2].title') }}</div>
-              <div class="register-desc">{{ $t('home.register.steps[2].desc[0]') }}<br/>{{ $t('home.register.steps[2].desc[1]') }}</div>
+              <div class="register-desc">{{
+                  $t('home.register.steps[2].desc[0]')
+                }}<br/>{{ $t('home.register.steps[2].desc[1]') }}
+              </div>
               <div class="register-icons">
                 <img src="/assets/IMG/icons/wechat_white_bg.png" alt="WeChat"/>
                 <img src="/assets/IMG/icons/paypal.png" alt="PayPal"/>
@@ -263,8 +310,12 @@
               <div class="home_04_Advantages__right_box_mini_box_icon"><img
                   src=" /assets/IMG/icons/fast-signup.png" alt="jiutu"></div>
               <div class="home_04_Advantages__right_mini_box_title">
-                <div class="home_04_Advantages__right_mini_box_title_h2">{{ $t('home.advantages.details[0].title') }}</div>
-                <div class="home_04_Advantages__right_mini_box_title_content">{{ $t('home.advantages.details[0].subtitle') }}
+                <div class="home_04_Advantages__right_mini_box_title_h2">{{
+                    $t('home.advantages.details[0].title')
+                  }}
+                </div>
+                <div class="home_04_Advantages__right_mini_box_title_content">
+                  {{ $t('home.advantages.details[0].subtitle') }}
                 </div>
               </div>
             </div>
@@ -273,8 +324,12 @@
               <div class="home_04_Advantages__right_box_mini_box_icon"><img
                   src=" /assets/IMG/icons/discount-promo.png" style="margin: 6%" alt="jiutu"></div>
               <div class="home_04_Advantages__right_mini_box_title">
-                <div class="home_04_Advantages__right_mini_box_title_h2">{{ $t('home.advantages.details[1].title') }}</div>
-                <div class="home_04_Advantages__right_mini_box_title_content">{{ $t('home.advantages.details[1].subtitle') }}
+                <div class="home_04_Advantages__right_mini_box_title_h2">{{
+                    $t('home.advantages.details[1].title')
+                  }}
+                </div>
+                <div class="home_04_Advantages__right_mini_box_title_content">
+                  {{ $t('home.advantages.details[1].subtitle') }}
                 </div>
               </div>
             </div>
@@ -286,8 +341,12 @@
               <div class="home_04_Advantages__right_box_mini_box_icon"><img
                   src=" /assets/IMG/icons/instant-payment.png" style="margin-left: 5%" alt="jiutu"></div>
               <div class="home_04_Advantages__right_mini_box_title">
-                <div class="home_04_Advantages__right_mini_box_title_h2">{{ $t('home.advantages.details[2].title') }}</div>
-                <div class="home_04_Advantages__right_mini_box_title_content">{{ $t('home.advantages.details[2].subtitle') }}
+                <div class="home_04_Advantages__right_mini_box_title_h2">{{
+                    $t('home.advantages.details[2].title')
+                  }}
+                </div>
+                <div class="home_04_Advantages__right_mini_box_title_content">
+                  {{ $t('home.advantages.details[2].subtitle') }}
                 </div>
               </div>
             </div>
@@ -296,8 +355,12 @@
               <div class="home_04_Advantages__right_box_mini_box_icon"><img
                   src=" /assets/IMG/icons/oem-tech.png" style="margin: 6%" alt="jiutu"></div>
               <div class="home_04_Advantages__right_mini_box_title">
-                <div class="home_04_Advantages__right_mini_box_title_h2">{{ $t('home.advantages.details[3].title') }}</div>
-                <div class="home_04_Advantages__right_mini_box_title_content">{{ $t('home.advantages.details[3].subtitle') }}
+                <div class="home_04_Advantages__right_mini_box_title_h2">{{
+                    $t('home.advantages.details[3].title')
+                  }}
+                </div>
+                <div class="home_04_Advantages__right_mini_box_title_content">
+                  {{ $t('home.advantages.details[3].subtitle') }}
                   services
                 </div>
               </div>
@@ -348,19 +411,22 @@
     </div>
     <div class="home_06_Activity">
       <div class="home_03_register__title">
-        {{ $t('home.why.title') }}
+        {{ $t('home.discount.title') }}
         <span>/DISCOUNT</span></div>
       <div class="home_06_Activity__bg">
-        <div class="content-wrapper">
+        <div :class="[
+      'content-wrapper',
+      locale === 'en' ? 'content-wrapper_en' : ''
+    ]">
           <!-- 左上文案区 -->
           <div class="text-area">
-            <h1>{{ $t('home.why.subtitle') }}</h1>
+            <h1>{{ $t('home.discount.subtitle') }}</h1>
             <div class="tags">
-              <span>{{ $t('home.why.tags[0]') }}</span>
-              <span>{{ $t('home.why.tags[1]') }}</span>
-              <span>{{ $t('home.why.tags[2]') }}</span>
+              <span :class="locale === 'en' ? 'tags_span_en' : ''">{{ $t('home.discount.tags[0]') }}</span>
+              <span :class="locale === 'en' ? 'tags_span_en' : ''">{{ $t('home.discount.tags[1]') }}</span>
+              <span :class="locale === 'en' ? 'tags_span_en' : ''">{{ $t('home.discount.tags[2]') }}</span>
             </div>
-            <p>{{ $t('home.why.desc') }}</p>
+            <p>{{ $t('home.discount.desc') }}</p>
           </div>
 
           <!-- 优惠卡片 -->
@@ -385,11 +451,11 @@
     </div>
     <div class="home_07_Case">
       <div class="home_03_register__title">
-        成功案例
+        {{ $t('home.cases.title') }}
         <span>/CASE</span></div>
       <div class="home_07_Case__box">
         <CompanyCard
-            v-for="(company, index) in companies"
+            v-for="(company, index) in companyCards"
             :key="index"
             :img-src="company.imgSrc"
             :title="company.title"
@@ -405,25 +471,45 @@
 <script setup lang="ts">
 import CouponCard from '../components/layout/ui/CouponCard.vue'
 import CompanyCard from '../components/layout/ui/CompanyCard.vue'
-import {ref, onMounted, onBeforeUnmount} from 'vue'
-import {contactLinks as contactLinksRaw} from '../public/js/contact_link.js'
+import {ref, onMounted, onBeforeUnmount,watch} from 'vue'
+import { getContactLinks } from '~/utils/ts/contact_link'
+import { usePageMeta } from '@/composables/usePageMeta'
+usePageMeta()
+const contactLinks = ref({})
+// 当前语言（如 zh、en）
+const {locale} = useI18n()
+onMounted(async () => {
+  contactLinks.value = await getContactLinks()
+})
+// 响应语言变化，重新设置 TDK
+watch(locale, () => {
+  usePageMeta()
+})
 
-const contactLinks = contactLinksRaw
+const localePath = useLocalePath()
 
-const companies = [
-  {
-    imgSrc: '/assets/IMG/logos/amused-logo.jpg',
-    title: 'Amused Group',
-    description: 'Amused Group 是一家文化创意产业公司。它主要经营两个领域：创意活动和实体产品。Amused Group 旗下共有四家公司，分别是 Amused Style、Amused Life、Amused Art 和 Amused Touch。它的最终目标是成为可与 Disney 匹敌的文化商业帝国。',
-    link: '/CaseStudies/amused-group'
-  },
-  {
-    imgSrc: '/assets/IMG/logos/blue-map-logo.jpg',
-    title: '蔚蓝地图',
-    description: '蔚蓝地图是公众环境研究中心开发的一款环保APP，囊括实时空气信息、全国空气质量地图、水质地图和污染源地图，旨在为公众提供方便快捷的环境信息服务。通过蔚蓝地图APP至今已经推动超过450家污染企业反馈整改。',
-    link: '/CaseStudies/bluemap'
-  }
-]
+
+// 加载当前语言下，order 为 1 和 2 的文章
+const defaultLocale = 'zh'
+const prefix = locale.value === defaultLocale ? '' : `/${locale.value}`
+
+const {data: companies} = await useAsyncData('companies', () =>
+    queryContent(`${prefix}/CaseStudies`)
+        .where({order: {$in: [1, 2]}}) // 筛选
+        .sort({order: 1})               // 排序
+        .find()
+)
+
+
+// 格式化成卡片数据（你可以自定义字段）
+const companyCards = computed(() =>
+    companies.value.map(item => ({
+      imgSrc: item.image,
+      title: item.title,
+      description: item.description,
+      link: localePath(item._path) // 自动加上 /zh 或 /en 前缀
+    }))
+)
 // 声明响应式数组
 const items = computed(() => [
   {
@@ -465,10 +551,25 @@ onBeforeUnmount(() => {
 })
 </script>
 <style scoped>
+
 a {
   text-decoration: none;
 }
-
+.tags_span_en{
+  width: 5.5rem !important;
+}
+.h_03_r_b_content__title_h2{
+  font-size: clamp(14px, 1.3vw, 2rem);
+  height: 5rem;
+  line-height: 5rem;
+  white-space: nowrap;
+}
+.h_03_r_b_content__title_h2_en{
+  font-size: clamp(14px, 1.3vw, 2rem);
+  height: 5rem;
+  line-height: 5rem;
+  white-space: nowrap;
+}
 .home_01_banner {
   display: flex;
   justify-content: center;
@@ -594,6 +695,8 @@ a {
   width: 4rem;
   height: 4rem;
   padding: 5px;
+  display: block;
+  margin: 0 auto;
 }
 
 .home_02_banner {
@@ -613,7 +716,6 @@ a {
   position: relative;
 
 }
-
 .home_02_banner__tag {
   color: #f7f7f6;
   text-align: right;
@@ -745,6 +847,21 @@ a {
   gap: clamp(0rem, 5vw, 8rem);
 }
 
+.h_03_r_b_content_gap {
+  display: flex;
+  justify-content: center;
+  gap: clamp(0rem, 1.2vw, 8rem);
+}
+.h_03_r_b_content__mini_box_en{
+  display: flex
+;
+  flex-direction: column;
+  position: relative;
+  padding: 15px 15px 0 !important;
+  margin: 14% auto 0 auto;
+  height: 53%;
+  width: 100%;
+}
 .h_03_r_b_content__title__box {
   display: flex;
   justify-content: center;
@@ -768,7 +885,11 @@ a {
   height: 5rem;
   line-height: 5rem;
 }
-
+.h_03_r_b_content__title__h2_en {
+  font-size: clamp(14px, 1.1vw, 2rem);
+  height: 5rem;
+  line-height: 5rem;
+}
 .h_03_r_b_content__mini_box {
   display: flex;
   flex-direction: column; /* 竖排 */
@@ -971,7 +1092,19 @@ a {
   flex-direction: column;
   justify-content: space-between;
 }
-
+.content-wrapper_en{
+  position: absolute;
+  top: -6% !important;
+  left: 0;
+  padding: 40px;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  display: flex
+;
+  flex-direction: column;
+  justify-content: space-between;
+}
 /* 左上角文本 */
 .text-area h1 {
   font-size: clamp(1.6rem, 3vw, 3rem);

@@ -29,6 +29,8 @@
 
 <script setup>
 import { ref, onMounted, onBeforeUnmount, computed } from 'vue'
+import { usePageMeta } from '@/composables/usePageMeta'
+usePageMeta()
 import { useAsyncData } from '#app'
 // const { data: caseList } = await useAsyncData('CaseStudies', () =>
 //     queryContent('/CaseStudies').find()
@@ -55,12 +57,16 @@ onBeforeUnmount(() => {
 
 const { locale } = useI18n()
 
+const defaultLocale = 'zh'
+const prefix = locale.value === defaultLocale ? '' : `/${locale.value}`
+
 const { data: rawList } = await useAsyncData('case-list', () =>
-    queryContent(`/${locale.value}/CaseStudies`)  // 注意加语言前缀
+    queryContent(`${prefix}/CaseStudies`)
         .only(['title', 'description', 'image', '_path', 'order'])
         .sort({ order: 1 })
         .find()
 )
+
 
 const caseList = computed(() =>
     (rawList.value || []).map(item => ({

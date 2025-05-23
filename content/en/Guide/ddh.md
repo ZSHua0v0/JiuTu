@@ -3,6 +3,10 @@ title: Dedicated Host (DDH)
 description: Dedicated Host (DDH) is a cloud hosting service provided by Alibaba Cloud that offers physically isolated resources for enterprise customers.
 _path: /en/guide/ddh
 order: 4
+lang: en
+tags:
+  - nuxt
+  - seo
 ---
 
 <div>

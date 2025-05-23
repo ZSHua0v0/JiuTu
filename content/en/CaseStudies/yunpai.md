@@ -4,6 +4,10 @@ description: Beijing Yunpai Technology focuses on mobile cloud technologies. Its
 image: /assets/IMG/logos/yunpai-logo.jpg
 _path: /en/CaseStudies/yunpai
 order: 4
+lang: en
+tags:
+  - nuxt
+  - seo
 ---
 
 <div style="margin: 0 auto;text-align: center;">

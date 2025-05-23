@@ -7,17 +7,19 @@
         </div>
         <div class="FastRegister_banner_01_content_box">
           <div style="margin-left: 4%">
-            <h1>阿里云国际版</h1>
+            <h1>{{ $t('FastRegister.banner.title') }}</h1>
             <div class="dots" v-for="i in 15" :key="i"></div>
-            <div class="contact-btn"><a :href="contactLinks.CustomerService" target="_blank">联系我们</a></div>
+            <div class="contact-btn">
+              <a :href="contactLinks.CustomerService" target="_blank">{{ $t('FastRegister.banner.contact') }}</a>
+            </div>
           </div>
           <div class="keywords">
-            <span>轻量高防</span>
-            <span>云数据库</span>
-            <span>软件开发</span>
-            <span>对象存储</span>
-            <span>跨境电商</span>
-            <span>数据分析</span>
+            <span>{{ $t('FastRegister.banner.keywords.0') }}</span>
+            <span>{{ $t('FastRegister.banner.keywords.1') }}</span>
+            <span>{{ $t('FastRegister.banner.keywords.2') }}</span>
+            <span>{{ $t('FastRegister.banner.keywords.3') }}</span>
+            <span>{{ $t('FastRegister.banner.keywords.4') }}</span>
+            <span>{{ $t('FastRegister.banner.keywords.5') }}</span>
           </div>
           <div class="alibaba-text">Alibaba Cloud</div>
         </div>
@@ -26,24 +28,30 @@
         </div>
       </div>
     </div>
+
     <div v-if="!isMobile" class="home_03_register">
       <div class="home_03_register__title">
-        开户流程
-        <span>/PROCESS</span></div>
+        {{ $t('FastRegister.process.title') }}
+        <span>{{ $t('FastRegister.process.slash') }}</span>
+      </div>
       <div class="home_03_register__bg">
-        <div class="h_03_r_b_content">
+        <div :class="[
+      'h_03_r_b_content',
+      locale === 'en' ? 'h_03_r_b_content_en' : ''
+    ]">
           <div class="h_03_r_b_content__box">
             <div class="h_03_r_b_content__title__box">
-              <div class="h_03_r_b_content__title__icons"><img src="/assets/IMG/icons/information.png"
-                                                               alt="jiutu"/></div>
-              <div class="h_03_r_b_content__title__h2">联系客户经理</div>
+              <div class="h_03_r_b_content__title__icons">
+                <img src="/assets/IMG/icons/information.png" alt="jiutu"/>
+              </div>
+              <div class="h_03_r_b_content__title__h2">{{ $t('FastRegister.process.steps.0.title') }}</div>
             </div>
             <div class="h_03_r_b_content__mini_box">
               <div class="corner top-left"></div>
               <div class="corner bottom-right"></div>
               <div class="mini_box_content">
-                <div>多种联系方式</div>
-                <div>无障碍快捷沟通</div>
+                <div>{{ $t('FastRegister.process.steps.0.desc.0') }}</div>
+                <div>{{ $t('FastRegister.process.steps.0.desc.1') }}</div>
                 <div class="connect_icons">
                   <div class="connect_icons__flex">
                     <img src="/assets/IMG/icons/tg_white_bg.png" alt="tg"/>
@@ -56,34 +64,37 @@
               </div>
             </div>
           </div>
+
           <div class="h_03_r_b_content__box">
             <div class="h_03_r_b_content__title__box">
-              <div class="h_03_r_b_content__title__icons"><img src="/assets/IMG/icons/CustomerS.png"
-                                                               alt="jiutu"/></div>
-              <div class="h_03_r_b_content__title__h2">沟通需求配置</div>
+              <div class="h_03_r_b_content__title__icons">
+                <img src="/assets/IMG/icons/CustomerS.png" alt="jiutu"/>
+              </div>
+              <div class="h_03_r_b_content__title__h2">{{ $t('FastRegister.process.steps.1.title') }}</div>
             </div>
             <div class="h_03_r_b_content__mini_box">
               <div class="corner top-left"></div>
               <div class="corner bottom-right"></div>
               <div class="mini_box_content">
-                <div>客户经理根据您的需求</div>
-                <div>为您定制配置</div>
+                <div>{{ $t('FastRegister.process.steps.1.desc.0') }}</div>
+                <div>{{ $t('FastRegister.process.steps.1.desc.1') }}</div>
               </div>
             </div>
           </div>
+
           <div class="h_03_r_b_content__box">
             <div class="h_03_r_b_content__title__box">
-              <div class="h_03_r_b_content__title__icons"><img style="width: 4.5rem;height: 4.5rem;margin-left: 6px;"
-                                                               src=" /assets/IMG/icons/Register.png"
-                                                               alt="jiutu"/></div>
-              <div class="h_03_r_b_content__title__h2">极速开户</div>
+              <div class="h_03_r_b_content__title__icons">
+                <img style="width: 4.5rem;height: 4.5rem;margin-left: 6px;" src=" /assets/IMG/icons/Register.png" alt="jiutu"/>
+              </div>
+              <div class="h_03_r_b_content__title__h2">{{ $t('FastRegister.process.steps.2.title') }}</div>
             </div>
             <div class="h_03_r_b_content__mini_box">
               <div class="corner top-left"></div>
               <div class="corner bottom-right"></div>
               <div class="mini_box_content">
-                <div>预付款项 直接开户</div>
-                <div>支持全通道支付方式</div>
+                <div>{{ $t('FastRegister.process.steps.2.desc.0') }}</div>
+                <div>{{ $t('FastRegister.process.steps.2.desc.1') }}</div>
                 <div class="connect_icons">
                   <div class="connect_icons__flex">
                     <img src=" /assets/IMG/icons/wechat_white_bg.png" alt="wechat"/>
@@ -96,22 +107,32 @@
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </div>
+
     <div v-if="isMobile" class="home_03_register_mobile">
       <div class="home_03_register__title">
-        开户流程
-        <span>/PROCESS</span></div>
+        {{ $t('FastRegister.process.title') }}
+        <span>{{ $t('FastRegister.process.slash') }}</span>
+      </div>
       <div class="home_03_register_mobile__bg">
         <div class="register-section">
+
+          <!-- Step 1 -->
           <div class="register-box">
             <div class="register-icon-border">
-              <div class="register-icon"><img src="/assets/IMG/icons/information.png" alt="联系客户经理"/></div>
+              <div class="register-icon">
+                <img src="/assets/IMG/icons/information.png" :alt="$t('FastRegister.process.steps.0.title')" />
+              </div>
             </div>
             <div>
-              <div class="register-title">联系客户经理</div>
-              <div class="register-desc">多种联系方式<br/>无障碍快捷沟通</div>
+              <div class="register-title">{{ $t('FastRegister.process.steps.0.title') }}</div>
+              <div class="register-desc">
+                {{ $t('FastRegister.process.steps.0.desc.0') }}<br />
+                {{ $t('FastRegister.process.steps.0.desc.1') }}
+              </div>
               <div class="register-icons">
                 <img src="/assets/IMG/icons/tg_white_bg.png" alt="Telegram"/>
                 <img src="/assets/IMG/icons/phone_white_bg.png" alt="Phone"/>
@@ -121,13 +142,20 @@
               </div>
             </div>
           </div>
+
+          <!-- Step 2 -->
           <div class="register-box2">
             <div class="register-icon-border">
-              <div class="register-icon"><img src="/assets/IMG/icons/CustomerS.png" alt="沟通需求配置"/></div>
+              <div class="register-icon">
+                <img src="/assets/IMG/icons/CustomerS.png" :alt="$t('FastRegister.process.steps.1.title')" />
+              </div>
             </div>
             <div>
-              <div class="register-title">沟通需求配置</div>
-              <div class="register-desc">客户经理根据您的需求<br/>为您定制配置</div>
+              <div class="register-title">{{ $t('FastRegister.process.steps.1.title') }}</div>
+              <div class="register-desc">
+                {{ $t('FastRegister.process.steps.1.desc.0') }}<br />
+                {{ $t('FastRegister.process.steps.1.desc.1') }}
+              </div>
               <div class="register-graph">
                 <div class="audio-bars">
                   <span></span>
@@ -139,18 +167,23 @@
                   <span></span>
                   <span></span>
                 </div>
-
-                <!--            <img src="/public/assets/IMG/icons/bar-graph.png" alt="图表" />-->
               </div>
             </div>
           </div>
+
+          <!-- Step 3 -->
           <div class="register-box">
             <div class="register-icon-border">
-              <div class="register-icon"><img src="/assets/IMG/icons/Register.png" alt="极速开户"/></div>
+              <div class="register-icon">
+                <img src="/assets/IMG/icons/Register.png" :alt="$t('FastRegister.process.steps.2.title')" />
+              </div>
             </div>
             <div>
-              <div class="register-title">极速开户</div>
-              <div class="register-desc">预付款项 直接开户<br/>支持全通道支付方式</div>
+              <div class="register-title">{{ $t('FastRegister.process.steps.2.title') }}</div>
+              <div class="register-desc">
+                {{ $t('FastRegister.process.steps.2.desc.0') }}<br />
+                {{ $t('FastRegister.process.steps.2.desc.1') }}
+              </div>
               <div class="register-icons">
                 <img src="/assets/IMG/icons/wechat_white_bg.png" alt="WeChat"/>
                 <img src="/assets/IMG/icons/paypal.png" alt="PayPal"/>
@@ -160,17 +193,20 @@
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </div>
+
     <div v-if="!isMobile" class="FastRegister_box_03">
       <!-- 标题 -->
       <div class="home_03_register__title" style="display: flex;justify-content: space-between">
-        <div style="width: 40%">联系我们
-          <span class="color_withe">/CONNECT</span>
+        <div style="width: 40%">
+          {{ $t('FastRegister.connect.title') }}
+          <span class="color_withe">{{ $t('FastRegister.connect.slash') }}</span>
         </div>
         <div class="switch-box">
-          <span>我想与九途合作</span>
+          <span>{{ $t('FastRegister.connect.cooperation') }}</span>
           <div>
             <label>
               <input class="toggle-checkbox" type="checkbox" v-model="isDarkMode">
@@ -184,56 +220,58 @@
                 </div>
               </div>
             </label>
-
           </div>
         </div>
       </div>
+
       <div class="FastRegister_box_03_form_box">
         <div class="FastRegister_box_03_form_box_mini">
           <!-- 表单区域 -->
-          <form v-if="isDarkMode" class="connect-form">
-            <label>项目详情</label>
-            <textarea rows="8"></textarea>
+          <form v-if="isDarkMode" class="connect-form" action="https://formspree.io/f/mldbwvwo" method="POST">
+            <label>{{ $t('FastRegister.connect.form.dark.detail') }}</label>
+            <textarea name="项目名称" rows="8"></textarea>
 
-            <label>目标日期</label>
-            <input type="text"/>
+            <label>{{ $t('FastRegister.connect.form.dark.date') }}</label>
+            <input name="目标日期" type="text" />
 
-            <label>项目预算</label>
-            <input type="text"/>
+            <label>{{ $t('FastRegister.connect.form.dark.budget') }}</label>
+            <input name="项目预算" type="text" />
 
-            <button type="submit">发送消息</button>
+            <button type="submit">{{ $t('FastRegister.connect.form.submit') }}</button>
           </form>
 
-          <form v-else class="connect-form">
-            <label>Message</label>
-            <textarea rows="8"></textarea>
+          <form v-else class="connect-form" action="https://formspree.io/f/mldbwvwo" method="POST">
+            <label>{{ $t('FastRegister.connect.form.light.detail') }}</label>
+              <textarea name="Message" rows="8"></textarea>
 
-            <button type="submit">发送消息</button>
+            <button type="submit">{{ $t('FastRegister.connect.form.submit') }}</button>
           </form>
+
           <!-- 底部图标 -->
           <div class="contact-icons">
-            <a href="/" target="_blank"><img src=" /assets/IMG/icons/email_white_bg.png" alt="jiutu"/></a>
-            <a href="/" target="_blank"><img src=" /assets/IMG/icons/wechat_white_bg.png" alt="jiutu"/></a>
-            <a href="/" target="_blank"><img src=" /assets/IMG/icons/tg_white_bg.png" alt="jiutu"/></a>
-            <a href="/" target="_blank"><img src=" /assets/IMG/icons/phone_white_bg.png" alt="jiutu"/></a>
-            <a href="/" target="_blank"><img src=" /assets/IMG/icons/facebook_white_bg.png" alt="jiutu"/></a>
+            <a href="/" target="_blank"><img src="/assets/IMG/icons/email_white_bg.png" alt="jiutu" /></a>
+            <a href="/" target="_blank"><img src="/assets/IMG/icons/wechat_white_bg.png" alt="jiutu" /></a>
+            <a href="/" target="_blank"><img src="/assets/IMG/icons/tg_white_bg.png" alt="jiutu" /></a>
+            <a href="/" target="_blank"><img src="/assets/IMG/icons/phone_white_bg.png" alt="jiutu" /></a>
+            <a href="/" target="_blank"><img src="/assets/IMG/icons/facebook_white_bg.png" alt="jiutu" /></a>
           </div>
         </div>
       </div>
     </div>
+
     <div v-if="isMobile" class="FastRegister_box_03">
       <!-- 标题 -->
       <div class="home_03_register__title" style="display: flex;justify-content: space-between">
-        <div style="width: 70%">联系我们
-          <span class="color_withe">/CONNECT</span>
+        <div style="width: 70%">
+          {{ $t('FastRegister.connect.title') }}
+          <span class="color_withe">{{ $t('FastRegister.connect.slash') }}</span>
         </div>
-
-
       </div>
     </div>
+
   </div>
   <div v-if="isMobile" style="display:flex;justify-content: space-between;background: #feb001;padding-left: 5%;color:#000;padding-top: 5%;padding-right: 5%">
-    <span>我想与九途合作</span>
+    <span>{{ $t('FastRegister.connect.cooperation') }}</span>
     <label>
       <input class="toggle-checkbox" type="checkbox" v-model="isDarkMode">
       <div class="toggle-slot">
@@ -247,40 +285,45 @@
       </div>
     </label>
   </div>
-  <div  v-if="isMobile">
+  <div v-if="isMobile">
     <div class="FastRegister_box_03_form_box">
       <div class="FastRegister_box_03_form_box_mini">
         <!-- 表单区域 -->
         <form v-if="isDarkMode" class="connect-form">
-          <label>项目详情*</label>
-          <textarea rows="8" placeholder="请描述您的项目，包括任何具体的要求、目标时间和应用场景。"></textarea>
+          <label>{{ $t('FastRegister.connect.form.dark.detail') }}*</label>
+          <textarea
+              rows="8"
+              :placeholder="$t('FastRegister.connect.form.placeholder')"
+          ></textarea>
 
-          <label>目标日期*</label>
-          <input type="text"/>
+          <label>{{ $t('FastRegister.connect.form.dark.date') }}*</label>
+          <input type="text" />
 
-          <label>项目预算*</label>
-          <input type="text"/>
+          <label>{{ $t('FastRegister.connect.form.dark.budget') }}*</label>
+          <input type="text" />
 
-          <button type="submit">发送消息</button>
+          <button type="submit">{{ $t('FastRegister.connect.form.submit') }}</button>
         </form>
 
         <form v-else class="connect-form">
-          <label>Message</label>
+          <label>{{ $t('FastRegister.connect.form.light.detail') }}</label>
           <textarea rows="8"></textarea>
 
-          <button type="submit">发送消息</button>
+          <button type="submit">{{ $t('FastRegister.connect.form.submit') }}</button>
         </form>
+
         <!-- 底部图标 -->
         <div class="contact-icons">
-          <a href="/" target="_blank"><img src=" /assets/IMG/icons/email_white_bg.png" alt="jiutu"/></a>
-          <a href="/" target="_blank"><img src=" /assets/IMG/icons/wechat_white_bg.png" alt="jiutu"/></a>
-          <a href="/" target="_blank"><img src=" /assets/IMG/icons/tg_white_bg.png" alt="jiutu"/></a>
-          <a href="/" target="_blank"><img src=" /assets/IMG/icons/phone_white_bg.png" alt="jiutu"/></a>
-          <a href="/" target="_blank"><img src=" /assets/IMG/icons/facebook_white_bg.png" alt="jiutu"/></a>
+          <a href="/" target="_blank"><img src="/assets/IMG/icons/email_white_bg.png" alt="jiutu" /></a>
+          <a href="/" target="_blank"><img src="/assets/IMG/icons/wechat_white_bg.png" alt="jiutu" /></a>
+          <a href="/" target="_blank"><img src="/assets/IMG/icons/tg_white_bg.png" alt="jiutu" /></a>
+          <a href="/" target="_blank"><img src="/assets/IMG/icons/phone_white_bg.png" alt="jiutu" /></a>
+          <a href="/" target="_blank"><img src="/assets/IMG/icons/facebook_white_bg.png" alt="jiutu" /></a>
         </div>
       </div>
     </div>
   </div>
+
 </template>
 
 <style scoped>
@@ -319,7 +362,12 @@ a{
   margin: 0 auto;
   position: relative;
 }
-
+.h_03_r_b_content_en{
+  display: flex
+;
+  justify-content: center;
+  gap: clamp(0rem, 2vw, 8rem) !important;
+}
 .stars {
   display: flex;
   font-size: 20px;
@@ -941,9 +989,18 @@ h1 {
 </style>
 <script setup>
 import { onBeforeUnmount, onMounted, ref, watch } from 'vue'
-import {contactLinks as contactLinksRaw} from '../public/js/contact_link.js'
+import { usePageMeta } from '@/composables/usePageMeta'
+usePageMeta()
+import {useI18n} from "vue-i18n";
+const { locale } = useI18n()
+import { getContactLinks } from '~/utils/ts/contact_link'
 
-const contactLinks = contactLinksRaw
+const contactLinks = ref({})
+
+onMounted(async () => {
+  contactLinks.value = await getContactLinks()
+})
+
 const isDarkMode = ref(true) // 默认勾选，暗黑模式
 const isMobile = ref(false)
 

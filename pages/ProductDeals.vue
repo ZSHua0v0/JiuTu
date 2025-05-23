@@ -2,16 +2,19 @@
   <div>
     <div v-if="!isMobile" class="home_06_Activity">
       <div class="home_06_Activity__bg">
-        <div class="content-wrapper">
+        <div :class="[
+      'content-wrapper',
+      locale === 'en' ? 'content-wrapper_en' : ''
+    ]">
           <!-- 左上文案区 -->
           <div class="text-area">
-            <h1>云启新程，智领未来！</h1>
+            <h1>{{ $t('ProductPage.activity.title') }}</h1>
             <div class="tags">
-              <span>高效</span>
-              <span>稳定</span>
-              <span>安全</span>
+              <span :class="locale === 'en' ? 'tags_span_en' : ''">{{ $t('ProductPage.activity.tags[0]') }}</span>
+              <span :class="locale === 'en' ? 'tags_span_en' : ''">{{ $t('ProductPage.activity.tags[1]') }}</span>
+              <span :class="locale === 'en' ? 'tags_span_en' : ''">{{ $t('ProductPage.activity.tags[2]') }}</span>
             </div>
-            <p>现在加入，享超值优惠，让你的企业在云端腾飞！</p>
+            <p>{{ $t('ProductPage.activity.desc') }}</p>
           </div>
 
           <!-- 优惠卡片 -->
@@ -26,76 +29,80 @@
     </div>
     <div v-if="isMobile" class="home_01_banner">
       <div class="home_01_banner_background">
-        <div class="cover-image__tag">Alibaba Cloud</div>
-        <div class="cover-image__title">上云用九途<span>平步青云路</span></div>
-        <div class="cover-image__subtitle">阿里云国际版全球代理，助力您的企业扬帆出海，平步青云！</div>
-        <button class="cover-image__button"><a :href="contactLinks.CustomerService" target="_blank">立即咨询</a>
+        <div class="cover-image__tag">{{ $t('ProductPage.banner.tag') }}</div>
+        <div class="cover-image__title">
+          {{ $t('ProductPage.banner.title_before') }}
+          <span>{{ $t('ProductPage.banner.title_span') }}</span>
+        </div>
+        <div class="cover-image__subtitle">{{ $t('ProductPage.banner.subtitle') }}</div>
+        <button class="cover-image__button">
+          <a :href="contactLinks.CustomerService" target="_blank">
+            {{ $t('ProductPage.banner.button') }}
+          </a>
         </button>
       </div>
     </div>
+
     <div class="ProductDetail_02_box">
       <div class="ProductDetail_02_box__title">
-        开户流程
-        <span>/PROCESS</span></div>
+        {{ $t('ProductPage.process.title') }}
+        <span>{{ $t('ProductPage.process.slash') }}</span>
+      </div>
       <div class="ProductDetail_02_box_content">
         <div class="ProductDetail_02_box_content_mini">
           <div class="ProductDetail_02_box_content_mini_box">
             <div class="ProductDetail_02_box_content_mini_box_mini">
-              <div class="ProductDetail_02_box_content_mini_box_mini_title">售前咨询</div>
-              <div>多种渠道联系客户经理，沟通您的业务需求。</div>
-              <div>connect with an account manager through multiple channels to communicate your business needs.</div>
+              <div class="ProductDetail_02_box_content_mini_box_mini_title">{{ $t('ProductPage.process.steps[0].title') }}</div>
+              <div>{{ $t('ProductPage.process.steps[0].desc_cn') }}</div>
+              <div>{{ $t('ProductPage.process.steps[0].desc_en') }}</div>
             </div>
           </div>
           <div class="ProductDetail_02_box_content_mini_box __margin_top">
             <div class="ProductDetail_02_box_content_mini_box_mini">
-              <div class="ProductDetail_02_box_content_mini_box_mini_title">沟通业务</div>
-              <div>明确需求与预算，协助您在云官网选购产品和服务，并获取折扣优惠。</div>
-              <div>Clarify your needs and budget, and assist you in purchasing products and services on the cloud
-                official website,Take the discount offer.
-              </div>
+              <div class="ProductDetail_02_box_content_mini_box_mini_title">{{ $t('ProductPage.process.steps[1].title') }}</div>
+              <div>{{ $t('ProductPage.process.steps[1].desc_cn') }}</div>
+              <div>{{ $t('ProductPage.process.steps[1].desc_en') }}</div>
             </div>
           </div>
           <div class="ProductDetail_02_box_content_mini_box __margin_top">
             <div class="ProductDetail_02_box_content_mini_box_mini">
-              <div class="ProductDetail_02_box_content_mini_box_mini_title">预付款项</div>
-              <div>预估月消费，预付款到九途，支持全渠道支付方式。</div>
-              <div style="width: 100%">Estimated monthly consumption, prepayment to Jiutu,support omni-channel payment
-                methods.
-              </div>
+              <div class="ProductDetail_02_box_content_mini_box_mini_title">{{ $t('ProductPage.process.steps[2].title') }}</div>
+              <div>{{ $t('ProductPage.process.steps[2].desc_cn') }}</div>
+              <div style="width: 100%">{{ $t('ProductPage.process.steps[2].desc_en') }}</div>
             </div>
           </div>
         </div>
         <div class="ProductDetail_02_box_content_mini2">
           <div class="ProductDetail_02_box_content_mini_box2">
             <div class="ProductDetail_02_box_content_mini_box_mini">
-              <div class="ProductDetail_02_box_content_mini_box_mini_title">获取账号</div>
-              <div>协助您注册阿里云国际账号，并挂靠到九途云组织下</div>
-              <div>Assist you in registering an Alibaba Cloud international account and attaching it to the Jiutu Cloud
-                organization.
-              </div>
+              <div class="ProductDetail_02_box_content_mini_box_mini_title">{{ $t('ProductPage.process.steps[3].title') }}</div>
+              <div>{{ $t('ProductPage.process.steps[3].desc_cn') }}</div>
+              <div>{{ $t('ProductPage.process.steps[3].desc_en') }}</div>
             </div>
           </div>
           <div class="ProductDetail_02_box_content_mini_box2 __margin_top">
             <div class="ProductDetail_02_box_content_mini_box_mini">
-              <div class="ProductDetail_02_box_content_mini_box_mini_title">账单核对</div>
-              <div>每月平台自动出具月账单，并完成开票。</div>
-              <div>Every month, the platform automatically issues monthly bills and completes invoicing</div>
+              <div class="ProductDetail_02_box_content_mini_box_mini_title">{{ $t('ProductPage.process.steps[4].title') }}</div>
+              <div>{{ $t('ProductPage.process.steps[4].desc_cn') }}</div>
+              <div>{{ $t('ProductPage.process.steps[4].desc_en') }}</div>
             </div>
           </div>
           <div class="ProductDetail_02_box_content_mini_box2 __margin_top">
             <div class="ProductDetail_02_box_content_mini_box_mini">
-              <div class="ProductDetail_02_box_content_mini_box_mini_title">客户回访</div>
-              <div>每月沟通业务情况，了解您的实时需求。</div>
-              <div>Communicate your business situation on a monthly basis to understand your real-time needs.</div>
+              <div class="ProductDetail_02_box_content_mini_box_mini_title">{{ $t('ProductPage.process.steps[5].title') }}</div>
+              <div>{{ $t('ProductPage.process.steps[5].desc_cn') }}</div>
+              <div>{{ $t('ProductPage.process.steps[5].desc_en') }}</div>
             </div>
           </div>
         </div>
       </div>
     </div>
+
     <div v-if="!isMobile" class="ProductDetail_03_box">
       <div class="ProductDetail_02_box__title __border_bottom">
-        主流产品
-        <span>/PRODUCTS</span></div>
+        {{ $t('ProductPage.products.title') }}
+        <span>{{ $t('ProductPage.products.slash') }}</span>
+      </div>
       <div class="product-offers">
         <div class="offer-card" v-for="(offer, index) in offers" :key="index">
           <img :src="offer.icon" alt="icon" class="icon"/>
@@ -107,34 +114,43 @@
                 <img src="/assets/IMG/icons/check.png" class="check-icon"/> {{ feature }}
               </li>
             </ul>
-            <button class="contact-btn"><a :href="contactLinks.CustomerService" target="_blank"><div style="width: 100%">联系客服</div></a></button>
+            <button class="contact-btn">
+              <a :href="contactLinks.CustomerService" target="_blank">
+                <div style="width: 100%">{{ $t('ProductPage.products.contact') }}</div>
+              </a>
+            </button>
           </div>
         </div>
       </div>
-
     </div>
+
     <div v-if="isMobile" class="ProductDetail_03_box">
       <div class="ProductDetail_02_box__title __border_bottom">
-        主流产品
-        <span>/PRODUCTS</span></div>
+        {{ $t('ProductPage.products.title') }}
+        <span>{{ $t('ProductPage.products.slash') }}</span>
+      </div>
       <div class="product-offers">
         <div class="offer-card" v-for="(offer, index) in offers" :key="index">
-          <div class="offer-card-mini-top"><h2 class="title">{{ offer.title }}</h2>
-            <div style="display: flex;justify-content: space-between;align-items: center"><p class="price">
-              {{ offer.price }}</p>
+          <div class="offer-card-mini-top">
+            <h2 class="title">{{ offer.title }}</h2>
+            <div style="display: flex;justify-content: space-between;align-items: center">
+              <p class="price">{{ offer.price }}</p>
               <img src="/assets/IMG/icons/arrow.png" alt="jiutu"/>
             </div>
           </div>
           <div class="offer-card-mini">
             <img :src="offer.icon" alt="icon" class="icon"/>
             <div :class="index === 3 ? '__border0' : '__border_right'">
-
               <div class="features">
                 <div v-for="(feature, i) in offer.features" :key="i">
                   <img src="/assets/IMG/icons/check.png" class="check-icon"/> {{ feature }}
                 </div>
               </div>
-              <button class="contact-btn"><a :href="contactLinks.CustomerService" target="_blank"><div style="width: 100%">联系客服</div></a></button>
+              <button class="contact-btn">
+                <a :href="contactLinks.CustomerService" target="_blank">
+                  <div style="width: 100%">{{ $t('ProductPage.products.contact') }}</div>
+                </a>
+              </button>
             </div>
           </div>
         </div>
@@ -143,38 +159,67 @@
   </div>
 </template>
 
+
 <script setup>
 
 import CouponCard from "~/components/layout/ui/CouponCard.vue";
 import {onBeforeUnmount, onMounted, ref} from "vue";
-import {contactLinks as contactLinksRaw} from '../public/js/contact_link.js'
+import { getContactLinks } from '~/utils/ts/contact_link'
+import { usePageMeta } from '@/composables/usePageMeta'
+usePageMeta()
+const contactLinks = ref({})
 
-const contactLinks = contactLinksRaw
+onMounted(async () => {
+  contactLinks.value = await getContactLinks()
+})
+
+import {useI18n} from "vue-i18n";
+const { t } = useI18n()
 
 const offers = [
   {
     icon: '/assets/IMG/icons/db.png',
-    title: '轻量服务器',
-    price: '$4.5/月',
-    features: ['vCPU2核', '内存1GB', '流量2TB', 'ESSD50GB', '限峰值带宽30Mbps']
+    title: t('ProductPage.products.list.0.title'),
+    price: t('ProductPage.products.list.0.price'),
+    features: [
+      t('ProductPage.products.list.0.features.0'),
+      t('ProductPage.products.list.0.features.1'),
+      t('ProductPage.products.list.0.features.2'),
+      t('ProductPage.products.list.0.features.3'),
+      t('ProductPage.products.list.0.features.4')
+    ]
   },
   {
     icon: '/assets/IMG/icons/cloud1.png',
-    title: '云服务器ECS',
-    price: '$7.9/月',
-    features: ['突发性能T6', '2H4G', '40G高效云盘', '1M公网带宽']
+    title: t('ProductPage.products.list.1.title'),
+    price: t('ProductPage.products.list.1.price'),
+    features: [
+      t('ProductPage.products.list.1.features.0'),
+      t('ProductPage.products.list.1.features.1'),
+      t('ProductPage.products.list.1.features.2'),
+      t('ProductPage.products.list.1.features.3')
+    ]
   },
   {
     icon: '/assets/IMG/icons/wifi.png',
-    title: 'CDN',
-    price: '$0.0085/GB',
-    features: ['中国内地加速流量包', '新用户500G免费下行流量', '按需计费价格低至$0.0085/GB']
+    title: t('ProductPage.products.list.2.title'),
+    price: t('ProductPage.products.list.2.price'),
+    features: [
+      t('ProductPage.products.list.2.features.0'),
+      t('ProductPage.products.list.2.features.1'),
+      t('ProductPage.products.list.2.features.2')
+    ]
   },
   {
     icon: '/assets/IMG/icons/shield.png',
-    title: 'DDOS高防',
-    price: '$85折',
-    features: ['保险版', '100Mbps业务带宽', '标准套餐', '防护次数x10（可升级）']
+    title: t('ProductPage.products.list.3.title'),
+    price: t('ProductPage.products.list.3.price'),
+    features: [
+      t('ProductPage.products.list.3.features.0'),
+      t('ProductPage.products.list.3.features.1'),
+      t('ProductPage.products.list.3.features.2'),
+      t('ProductPage.products.list.3.features.3')
+    ]
   }
 ]
 const isMobile = ref(false)
@@ -182,6 +227,7 @@ const isMobile = ref(false)
 function checkIsMobile() {
   isMobile.value = window.innerWidth <= 768
 }
+const { locale } = useI18n()
 
 onMounted(() => {
   checkIsMobile()
@@ -194,6 +240,22 @@ onBeforeUnmount(() => {
 </script>
 
 <style scoped>
+.tags_span_en{
+  width: 5.5rem !important;
+}
+.content-wrapper_en {
+  position: absolute;
+  top: -6% !important;
+  left: 0;
+  padding: 40px;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  display: flex
+;
+  flex-direction: column;
+  justify-content: space-between;
+}
 a {
   text-decoration: none;
 }

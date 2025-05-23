@@ -3,111 +3,117 @@
     <div class="Solutions_box">
       <div class="Solutions_box_01">
         <div class="home_03_register__title">
-          视频加速&跨境直播
-          <span>/ACCELERATION</span></div>
+          {{ $t('Solutions.video.title') }}
+          <span>{{ $t('Solutions.video.slash') }}</span>
+        </div>
         <div class="solution-container">
           <!-- 左侧区域 -->
-          <div v-if="!isMobile" class="solution-left">
+          <div v-if="!isMobile" :class="[
+      'solution-left',
+      locale === 'en' ? 'solution-left_en' : ''
+    ]">
             <div class="left-block">
               <div class="block-title">
-                <img src="/assets/IMG/icons/black_star.png" alt="jiutu" class="icon"/>
-                <h3>完善的解决方案</h3>
+                <img src="/assets/IMG/icons/black_star.png" alt="jiutu" class="icon" />
+                <h3>{{ $t('Solutions.video.left.block1.title') }}</h3>
               </div>
               <ul>
-                <li>直播等保定审营销</li>
-                <li>自适应复杂链路</li>
-                <li>多类攻击模型</li>
-                <li>低延时直播</li>
+                <li>{{ $t('Solutions.video.left.block1.items.0') }}</li>
+                <li>{{ $t('Solutions.video.left.block1.items.1') }}</li>
+                <li>{{ $t('Solutions.video.left.block1.items.2') }}</li>
+                <li>{{ $t('Solutions.video.left.block1.items.3') }}</li>
               </ul>
             </div>
             <div class="left-block">
               <div class="block-title">
-                <img src="/assets/IMG/icons/black_star.png" alt="jiutu" class="icon"/>
-                <h3>支持最高性能</h3>
+                <img src="/assets/IMG/icons/black_star.png" alt="jiutu" class="icon" />
+                <h3>{{ $t('Solutions.video.left.block2.title') }}</h3>
               </div>
               <ul>
-                <li>日活：高达1000万</li>
-                <li>并发：高达100万</li>
-                <li>秒开：低至一步</li>
+                <li>{{ $t('Solutions.video.left.block2.items.0') }}</li>
+                <li>{{ $t('Solutions.video.left.block2.items.1') }}</li>
+                <li>{{ $t('Solutions.video.left.block2.items.2') }}</li>
               </ul>
             </div>
           </div>
+
           <div v-if="isMobile" class="solution-left">
             <div class="left-block">
               <div class="block-title">
-                <img src="/assets/IMG/icons/black_star.png" alt="jiutu" class="icon"/>
-                <h3>完善的解决方案</h3>
+                <img src="/assets/IMG/icons/black_star.png" alt="jiutu" class="icon" />
+                <h3>{{ $t('Solutions.video.left.block1.title') }}</h3>
               </div>
-              <div class="solution-left-mobile-margin">直播等保定审营销、自适应复杂链路、多类攻击模型、低延时直播</div>
+              <div class="solution-left-mobile-margin">
+                {{ $t('Solutions.video.left.block1.itemsMobile') }}
+              </div>
             </div>
             <div class="left-block">
               <div class="block-title">
-                <img src="/assets/IMG/icons/black_star.png" alt="jiutu" class="icon"/>
-                <h3>支持最高性能</h3>
+                <img src="/assets/IMG/icons/black_star.png" alt="jiutu" class="icon" />
+                <h3>{{ $t('Solutions.video.left.block2.title') }}</h3>
               </div>
-              <div class="solution-left-mobile-margin">日活：高达1000万&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 并发：高达100万
-              </div>
-              <div class="solution-left-mobile-margin">秒开：低至一步</div>
+              <div class="solution-left-mobile-margin">{{ $t('Solutions.video.left.block2.itemsMobile.0') }}</div>
+              <div class="solution-left-mobile-margin">{{ $t('Solutions.video.left.block2.itemsMobile.1') }}</div>
             </div>
           </div>
+
           <!-- 右侧区域 -->
           <div class="solution-right">
             <div class="issue-section">
               <div class="section-title">
-                <img src="/assets/IMG/icons/wrong.png" alt="jiutu" class="icon"/>
-                <h3>问题 Issue:</h3>
+                <img src="/assets/IMG/icons/wrong.png" alt="jiutu" class="icon" />
+                <h3>{{ $t('Solutions.video.issueTitle') }}</h3>
               </div>
               <div v-if="isMobile" style="margin-left: 8%">
-                跨境直播的延迟和卡顿问题、直播的稳定性和标准性、直播素材的切割
+                {{ $t('Solutions.video.issuesMobile') }}
               </div>
               <ul v-if="!isMobile">
-                <li>跨境直播的延迟和卡顿问题</li>
-                <li>直播的稳定性和标准性</li>
-                <li>直播素材的切割</li>
+                <li>{{ $t('Solutions.video.issues.0') }}</li>
+                <li>{{ $t('Solutions.video.issues.1') }}</li>
+                <li>{{ $t('Solutions.video.issues.2') }}</li>
               </ul>
             </div>
 
-            <hr class="divider"/>
+            <hr class="divider" />
 
             <div class="scheme-section">
               <div class="section-title">
-                <img src="/assets/IMG/icons/check.png" alt="jiutu" class="icon"/>
-                <h3>解决 Scheme:</h3>
+                <img src="/assets/IMG/icons/check.png" alt="jiutu" class="icon" />
+                <h3>{{ $t('Solutions.video.schemeTitle') }}</h3>
               </div>
-              <p>
-                云服务架构通过全球分布式数据中心和CDN（内容分发网络）技术在服务器端提供卓越性能计算和扩展性，支持高并发、低延迟的直播需求。跨境直播通过智能回源和链路优化技术，确保直播流的稳定和标准性。云服务整合自研流媒体，有效管理视频的实时剪切，支持多场景的媒体分割，为优质直播保驾护航。同时结合云智能分析技术，实现视频内容的实时剪辑与传输。跨境直播需有专业的技术支持和稳定服务，云服务提供高频率稳定的7x24小时的技术支持和运维服务，确保直播系统的稳定运行和及时问题解决。
-              </p>
+              <p>{{ $t('Solutions.video.scheme') }}</p>
             </div>
           </div>
         </div>
       </div>
       <div class="Solutions_box_01 __margin_topP">
         <div class="home_03_register__title">
-          游戏出海
-          <span>/GAME</span></div>
+          {{ $t('Solutions.game.title') }}
+          <span>{{ $t('Solutions.game.slash') }}</span>
+        </div>
         <div class="solution-container2">
           <!-- 左侧区域 -->
           <div class="solution-left __background0">
             <div class="left-block __hr">
               <div class="block-title">
-                <img src="/assets/IMG/icons/black_star.png" alt="jiutu" class="icon"/>
-                <h3>方案优势</h3>
+                <img src="/assets/IMG/icons/black_star.png" alt="jiutu" class="icon" />
+                <h3>{{ $t('Solutions.game.left.advantages.title') }}</h3>
               </div>
               <ul class="__widthleft1">
-                <li>高质量一自适应码率推流</li>
-                <li>高可用一通过监测应用程序运行状态，自动调度用户流量，保证服务连续性</li>
-                <li>易部署一即开即用、全局资源统一监控运维，业务部署更敏捷</li>
+                <li>{{ $t('Solutions.game.left.advantages.items.0') }}</li>
+                <li>{{ $t('Solutions.game.left.advantages.items.1') }}</li>
+                <li>{{ $t('Solutions.game.left.advantages.items.2') }}</li>
               </ul>
             </div>
             <div class="left-block">
               <div class="block-title">
-                <img src="/assets/IMG/icons/black_star.png" alt="jiutu" class="icon"/>
-                <h3>解决难题</h3>
+                <img src="/assets/IMG/icons/black_star.png" alt="jiutu" class="icon" />
+                <h3>{{ $t('Solutions.game.left.problems.title') }}</h3>
               </div>
               <ul class="__widthleft1">
-                <li>登录体验差，如登录慢、登录异常、经常掉线等问题</li>
-                <li>延迟高，如跨区域跨境网络延迟无法满足基本体验问题</li>
-                <li>下载更新慢，如游戏安装包、缓存包、更新包跨区域跨境下载慢</li>
+                <li>{{ $t('Solutions.game.left.problems.items.0') }}</li>
+                <li>{{ $t('Solutions.game.left.problems.items.1') }}</li>
+                <li>{{ $t('Solutions.game.left.problems.items.2') }}</li>
               </ul>
             </div>
           </div>
@@ -116,64 +122,27 @@
           <div class="solution-right __background1">
             <div class="issue-section">
               <div class="section-title">
-                <img src="/assets/IMG/icons/wrong.png" alt="jiutu" class="icon"/>
-                <h3>问题 Issue:</h3>
+                <img src="/assets/IMG/icons/wrong.png" alt="jiutu" class="icon" />
+                <h3>{{ $t('Solutions.game.issueTitle') }}</h3>
               </div>
               <ul v-if="!isMobile" style="background: white">
-                <li>延迟和丢包率，访问速度</li>
-                <li>流量高峰多并发</li>
-                <li>网络攻击和作弊行为</li>
-                <li>全球数据同步</li>
+                <li>{{ $t('Solutions.game.issues.0') }}</li>
+                <li>{{ $t('Solutions.game.issues.1') }}</li>
+                <li>{{ $t('Solutions.game.issues.2') }}</li>
+                <li>{{ $t('Solutions.game.issues.3') }}</li>
               </ul>
               <div v-if="isMobile" style="border-bottom: 2px solid #feb001;padding-bottom: 3%;padding-left: 9%">
-                延迟和丢包率，访问速度、流量高峰多并发、网络攻击和作弊行为、全球数据同步
+                {{ $t('Solutions.game.issuesMobile') }}
               </div>
             </div>
 
             <div class="scheme-section">
               <div class="section-title">
-                <img src="/assets/IMG/icons/check.png" alt="jiutu" class="icon"/>
-                <h3>解决 Scheme:</h3>
+                <img src="/assets/IMG/icons/check.png" alt="jiutu" class="icon" />
+                <h3>{{ $t('Solutions.game.schemeTitle') }}</h3>
               </div>
               <p style="background: white" :style="isMobile ? { paddingLeft: '9%' } : {}">
-                云服务器提供商在全球主要区域部署数据中心，确保游戏服务器尽可能靠近玩家，减少延迟和丢包率，提升游戏体验。<br
-                  v-if="!isMobile"/>
-                云服务器支持快速扩容和缩容，以应对游戏出海过程中可能出现的流量高峰，保证服务稳定性。<br v-if="!isMobile"/>
-                提供DDoS攻击防护、数据安全和反作弊等安全服务，保护游戏免受网络攻击和作弊行为的影响。<br v-if="!isMobile"/>
-                通过CDN加速游戏内容的分发，减少加载时间，提高全球玩家的访问速度。 </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="Solutions_box_01 __margin_topP">
-        <div class="home_03_register__title">
-          独立网站
-          <span>/WEBSITE</span></div>
-        <div class="solution-container3">
-          <!-- 左侧区域 -->
-          <div class="solution-left __background2" :class="{ 'solution-left2': isMobile }">
-            <div class="issue-section">
-              <div class="section-title">
-                <img src="/assets/IMG/icons/wrong.png" alt="jiutu" class="icon"/>
-                <h3>问题 Issue:</h3>
-              </div>
-              <ul class="__padding_leFt" style="background: white" :style="isMobile ? { paddingLeft: '9%',margin: '0' } : {}">
-                <li>流量高峰时确保网站的稳定运行网站的搭建流程</li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- 右侧区域 -->
-          <div class="solution-right __background1">
-            <div class="scheme-section">
-              <div class="section-title">
-                <img src="/assets/IMG/icons/check.png" alt="jiutu" class="icon"/>
-                <h3>解决 Scheme:</h3>
-              </div>
-              <p :style="isMobile ? { paddingLeft: '9%' } : {}">
-                独立站可能面临访问量波动的问题，尤其在促销或特殊活动期间。云服务器提供的弹性扩展能力可以动态调整资源如CPU和内存，以应对流量高峰，确保网站的稳定运行。<br
-                  v-if="!isMobile"/>
-                云服务器支持快速部署和配置，帮助独立站快速上线和迭代。一些云服务商还提供一键搭建服务，简化了网站的搭建流程。
+                {{ $t('Solutions.game.scheme') }}
               </p>
             </div>
           </div>
@@ -181,12 +150,46 @@
       </div>
       <div class="Solutions_box_01 __margin_topP">
         <div class="home_03_register__title">
-          区块链
-          <span>/BLOCKCHAIN</span></div>
+          {{ $t('Solutions.website.title') }}
+          <span>{{ $t('Solutions.website.slash') }}</span>
+        </div>
+        <div class="solution-container3">
+          <!-- 左侧区域 -->
+          <div class="solution-left __background2" :class="{ 'solution-left2': isMobile }">
+            <div class="issue-section">
+              <div class="section-title">
+                <img src="/assets/IMG/icons/wrong.png" alt="jiutu" class="icon" />
+                <h3>{{ $t('Solutions.website.issueTitle') }}</h3>
+              </div>
+              <ul class="__padding_leFt" style="background: white" :style="isMobile ? { paddingLeft: '9%', margin: '0' } : {}">
+                <li>{{ $t('Solutions.website.issues.0') }}</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- 右侧区域 -->
+          <div class="solution-right __background1">
+            <div class="scheme-section">
+              <div class="section-title">
+                <img src="/assets/IMG/icons/check.png" alt="jiutu" class="icon" />
+                <h3>{{ $t('Solutions.website.schemeTitle') }}</h3>
+              </div>
+              <p :style="isMobile ? { paddingLeft: '9%' } : {}">
+                {{ $t('Solutions.website.scheme') }}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="Solutions_box_01 __margin_topP">
+        <div class="home_03_register__title">
+          {{ $t('Solutions.blockchain.title') }}
+          <span>{{ $t('Solutions.blockchain.slash') }}</span>
+        </div>
         <div class="blockchain-section">
           <!-- 顶部描述文字 -->
           <p class="section-description">
-            九途出海云市场汇聚业内领先的众多合作伙伴，可为所有主要区块链协议提供支持，包括70多种经过验证的区块链和分布式分类账技术解决方案。
+            {{ $t('Solutions.blockchain.description') }}
           </p>
 
           <!-- 左右区块 -->
@@ -194,24 +197,19 @@
             <!-- 左侧 -->
             <div class="block-card">
               <div class="block-title">
-                <img src="/assets/IMG/icons/black_star.png" alt="jiutu" class="icon"/>
-                <h3>Quantum Ledger Database</h3>
+                <img src="/assets/IMG/icons/black_star.png" alt="jiutu" class="icon" />
+                <h3>{{ $t('Solutions.blockchain.cards.0.title') }}</h3>
               </div>
-              <p>
-                完全托管式分类账数据库目标是提供一个透明、不可变、可以加密方式验证的交易日志。它包含一个内置日志，用于存储备个准确日期排序的数据更改记录。该日志为只追加型，这意味着用户可以向该日志添加数据，但不能覆盖或删除数据。
-              </p>
+              <p>{{ $t('Solutions.blockchain.cards.0.content') }}</p>
             </div>
 
             <!-- 右侧 -->
             <div class="block-card">
               <div class="block-title">
-                <img src="/assets/IMG/icons/black_star.png" alt="jiutu" class="icon"/>
-                <h3>Managed Blockchain</h3>
+                <img src="/assets/IMG/icons/black_star.png" alt="jiutu" class="icon" />
+                <h3>{{ $t('Solutions.blockchain.cards.1.title') }}</h3>
               </div>
-              <p>
-                Managed Blockchain 是一种完全托管式服务，让您可以使用 Hyperledger Fabric 和以太坊轻松加入公有网络或创建和管理可扩展的私有网络。立即创建
-                AWS 账户开始使用区块链。
-              </p>
+              <p>{{ $t('Solutions.blockchain.cards.1.content') }}</p>
             </div>
           </div>
         </div>
@@ -222,9 +220,11 @@
 
 <script setup>
 import {onBeforeUnmount, onMounted, ref} from "vue";
+const {locale} = useI18n()
 
 const isMobile = ref(false)
-
+import { usePageMeta } from '@/composables/usePageMeta'
+usePageMeta()
 function checkIsMobile() {
   isMobile.value = window.innerWidth <= 768
 }
@@ -237,6 +237,7 @@ onMounted(() => {
 onBeforeUnmount(() => {
   window.removeEventListener('resize', checkIsMobile)
 })
+
 </script>
 
 <style scoped>
@@ -250,7 +251,12 @@ onBeforeUnmount(() => {
   font-weight: 550;
 
 }
-
+.solution-left_en{
+  background: #ffe3b3;
+  padding: 1rem 1rem;
+  width: 340px !important;
+  box-sizing: border-box;
+}
 .Solutions_box_01 {
   margin: 5% 0 2% 0;
 }

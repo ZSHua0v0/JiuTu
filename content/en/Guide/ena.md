@@ -3,6 +3,10 @@ title: Edge Network Acceleration
 description: Edge Network Acceleration is built upon Alibaba Cloud’s widely distributed edge node resources and provides end-to-end fast connection services.
 _path: /en/guide/ena
 order: 2
+lang: en
+tags:
+  - nuxt
+  - seo
 ---
 
 # **What is Edge Network Acceleration**
